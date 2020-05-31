@@ -1,12 +1,11 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.mirinsoft.com"><img src="https://github.com/mirinsoft/spydish/blob/master/spydish/Resources/icon.ico" alt="Spydish" width="200"></a>
+  <a href="http://www.mirinsoft.com"><img src="https://github.com/mirinsoft/spydish/blob/master/icon.ico" alt="Spydish" width="200"></a>
   <br>
   Burnbytes
   <br>
 </h1>
-
 <h4 align="center">The Spydish app is the simplest and easiest way to perform a quick privacy check.
 </h4>
 
