@@ -28,9 +28,9 @@ alt="GitHub issues">
 </p>
 
 <p align="center">
-  <a href="#why">About</a> •
-  <a href="#features">Features</a> •
+  <a href="#about">About</a> •
   <a href="#download">Download</a> •
+  <a href="#credits">Credits</a> •
   <a href="#license">License</a>
 </p>
 
