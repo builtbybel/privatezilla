@@ -3,7 +3,7 @@
   <br>
   <a href="http://www.mirinsoft.com"><img src="https://github.com/mirinsoft/spydish/blob/master/icon.ico" alt="Spydish" width="200"></a>
   <br>
-  Burnbytes
+  Spydish
   <br>
 </h1>
 <h4 align="center">The Spydish app is the simplest and easiest way to perform a quick privacy check.
