@@ -36,10 +36,13 @@ alt="GitHub issues">
 
 ![screenshot](https://github.com/mirinsoft/spydish/blob/master/spydish.png)
 
+## About
+
+- More to come...
+
 ## Download
 
 - (Latest release) [Download](https://github.com/mirinsoft/burnbytes/releases)
-- (Source Code) [Download](https://github.com/mirinsoft/burnbytes/releases) 
 
 ## Credits
 
