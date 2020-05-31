@@ -42,7 +42,7 @@ alt="GitHub issues">
 
 ## Download
 
-- (Latest release) [Download](https://github.com/mirinsoft/burnbytes/releases)
+- (Latest release) [Download](https://github.com/mirinsoft/spydish/releases)
 
 ## Credits
 
