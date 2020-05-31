@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.mirinsoft.com"><img src="https://github.com/mirinsoft/spydish/blob/master/icon.ico" alt="Spydish" width="200"></a>
+  <a href="http://www.mirinsoft.com"><img src="https://github.com/mirinsoft/spydish/blob/master/icon.png" alt="Spydish" width="200"></a>
   <br>
   Spydish
   <br>
