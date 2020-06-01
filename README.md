@@ -38,7 +38,7 @@ alt="GitHub issues">
 
 ## About
 
-- More to come...
+- https://www.mirinsoft.com/blog/19-apps/33-check-your-privacy-state-with-spydish
 
 ## Download
 
