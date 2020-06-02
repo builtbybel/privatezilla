@@ -34,7 +34,7 @@ alt="GitHub issues">
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://github.com/mirinsoft/spydish/blob/master/spydish.png)
+![intro](https://github.com/mirinsoft/spydish/blob/master/intro.gif)
 
 ## About
 
