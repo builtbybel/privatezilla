@@ -52,4 +52,5 @@ Spydish integrates the most critical Windows 10 privacy policies and allows you 
 
 ## License
 
-- Donationware
+- Freeware (private)
+- Donationware (commercial)
