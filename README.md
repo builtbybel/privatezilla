@@ -30,6 +30,7 @@ alt="GitHub issues">
 <p align="center">
   <a href="#about">About</a> •
   <a href="#download">Download</a> •
+  <a href="#download">Community package</a> •
   <a href="#credits">Credits</a> •
   <a href="#license">License</a>
 </p>
@@ -45,6 +46,10 @@ Spydish integrates the most critical Windows 10 privacy policies and allows you 
 ## Download
 
 - (Latest release) [Download](https://github.com/mirinsoft/spydish/releases)
+
+## Community package
+
+- All objects (templates and scripts) included can be viewed [here](https://github.com/mirinsoft/spydish/tree/master/scripts)
 
 ## Credits
 
