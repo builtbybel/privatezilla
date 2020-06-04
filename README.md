@@ -43,6 +43,11 @@ Spydish integrates the most critical Windows 10 privacy policies and allows you 
 
 - https://www.mirinsoft.com/blog/19-apps/33-check-your-privacy-state-with-spydish
 
+### System Requirements
+
+- Windows 10 (supports 1803 - 2004)
+- .NET Framework 4.5
+
 ## Download
 
 - (Latest release) [Download](https://github.com/mirinsoft/spydish/releases)
