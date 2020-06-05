@@ -51,18 +51,18 @@ Get-ScheduledTask -TaskName "GoogleUpdateTaskMachineUA" | Disable-ScheduledTask
 
 ###- Disable Media Player telemetry
 # This will disable Media Player telemetry
-New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\MediaPlayer\Preferences" -Name UsageTracking -Type String -Value 0 -Force
-New-ItemProperty -Path "HKCU:\Software\Policies\Microsoft\WindowsMediaPlayer" -Name PreventCDDVDMetadataRetrieval -Type String -Value 1 -Force
-New-ItemProperty -Path "HKCU:\Software\Policies\Microsoft\WindowsMediaPlayer" -Name PreventMusicFileMetadataRetrieval -Type String -Value 1 -Force
-New-ItemProperty -Path "HKCU:\Software\Policies\Microsoft\WindowsMediaPlayer" -Name PreventRadioPresetsRetrieval -Type String -Value 0 -Force
-New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\WMDRM" -Name DisableOnline -Type String -Value 1 -Force
+New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\MediaPlayer\Preferences" -Name UsageTracking -Type DWord -Value 0 -Force
+New-ItemProperty -Path "HKCU:\Software\Policies\Microsoft\WindowsMediaPlayer" -Name PreventCDDVDMetadataRetrieval -Type DWord -Value 1 -Force
+New-ItemProperty -Path "HKCU:\Software\Policies\Microsoft\WindowsMediaPlayer" -Name PreventMusicFileMetadataRetrieval -Type DWord -Value 1 -Force
+New-ItemProperty -Path "HKCU:\Software\Policies\Microsoft\WindowsMediaPlayer" -Name PreventRadioPresetsRetrieval -Type DWord -Value 0 -Force
+New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\WMDRM" -Name DisableOnline -Type DWord -Value 1 -Force
 Set-Service WMPNetworkSvc -StartupType Disabled
 
 ###- Disable Microsoft Office telemetry
 # This will disable Microsoft Office telemetry (supports Microsoft Office 2013 and 2016)
 Get-ScheduledTask -TaskName "OfficeTelemetryAgentFallBack2016" | Disable-ScheduledTask
 Get-ScheduledTask -TaskName "OfficeTelemetryAgentLogOn2016" | Disable-ScheduledTask
-New-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Office\15.0\osm" -Name Enablelogging -Type String -Value 0 -Force
-New-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Office\15.0\osm" -Name EnableUpload -Type String -Value 0 -Force
-New-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Office\16.0\osm" -Name Enablelogging -Type String -Value 0 -Force
-New-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Office\16.0\osm" -Name EnableUpload -Type String -Value 0 -Force
+New-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Office\15.0\osm" -Name Enablelogging -Type DWord -Value 0 -Force
+New-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Office\15.0\osm" -Name EnableUpload -Type DWord -Value 0 -Force
+New-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Office\16.0\osm" -Name Enablelogging -Type DWord -Value 0 -Force
+New-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Office\16.0\osm" -Name EnableUpload -Type DWord -Value 0 -Force
