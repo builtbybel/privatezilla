@@ -62,6 +62,7 @@ The community package for Spydish adds support for several advanced features, e.
 - New automation templates					  
 - All objects (templates and scripts) included can be viewed [here](https://github.com/mirinsoft/spydish/tree/master/scripts)
 
+### How-to Install
 * **[Download](https://github.com/mirinsoft/spydish/blob/master/scripts/packages.zip)** the latest `packages.zip` file.
 * **Extract the package** to Spydish installation directory
 * **Restart Spydish**
