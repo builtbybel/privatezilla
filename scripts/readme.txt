@@ -4,7 +4,8 @@ This feature enhances Spydish and adds several community powered PowerShell scri
 - Block Microsoft telemetry IPs via Windows Firewall and hosts file
 - Remove OneDrive integration
 - Remove Windows Defender 
-- and much more besides. 
+- Block telemetry of third-party apps, e.g. CCleaner, Firefox, Microsoft Office
+- and many more
 
 These are third party script files and the author of this app does not guarantee that they will also work for you. Every script contains a link to the original author.  
 If you don't understand the scripts and know what they do, you should also NOT execute them.
