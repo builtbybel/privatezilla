@@ -61,6 +61,7 @@ The community package for Spydish adds support for several advanced features, e.
 - Blocking telemetry via firewall and host files
 - Support for all-in-one PowerShell debloating script [Windows10Debloater.ps1](https://github.com/Sycnex/Windows10Debloater)
 - New automation templates					  
+
 All objects (templates and scripts) included can be viewed [here](https://github.com/mirinsoft/spydish/tree/master/scripts)
 
 ### How-to Install
