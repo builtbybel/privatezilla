@@ -56,9 +56,10 @@ Spydish integrates the most critical Windows 10 privacy policies and allows you 
 
 The community package for Spydish adds support for several advanced features, e.g.
 - Removal of specific pre-installed apps
-- One-Drive
-- Windows Defender
+- Uninstall of One-Drive
+- Removal of Windows Defender
 - Blocking telemetry via firewall and host files
+- Support for all-in-one PowerShell debloating script [Windows10Debloater.ps1](https://github.com/Sycnex/Windows10Debloater)
 - New automation templates					  
 - All objects (templates and scripts) included can be viewed [here](https://github.com/mirinsoft/spydish/tree/master/scripts)
 
