@@ -41,7 +41,9 @@ alt="GitHub issues">
 
 Spydish integrates the most critical Windows 10 privacy policies and allows you to quickly perform a privacy check against these policies. Active policies are marked with the status "Configured" as in the Group Policy Editor and indicates that your privacy is protected. The inactive ones are declared as "Not configured". All available policies (currently 50) can be enabled as well as disabled.
 
-- https://www.mirinsoft.com/blog/19-apps/33-check-your-privacy-state-with-spydish
+Latest new from the developer blog
+- [Stable release of new Spydish app is out❗👀💩👮](https://www.mirinsoft.com/blog/19-apps/34-stable-release-of-new-spydish-app-is-out)
+- [Ready for Windows 10, version 2004!? The new Spydish app can help!👀🙈👮](https://www.mirinsoft.com/blog/19-apps/33-check-your-privacy-state-with-spydish)
 
 ### System Requirements
 
