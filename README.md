@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.mirinsoft.com"><img src="https://github.com/mirinsoft/spydish/blob/master/icon.png" alt="Spydish" width="200"></a>
+  <a href="http://www.mirinsoft.com"><img src="https://github.com/mirinsoft/spydish/blob/master/assets/icon.png" alt="Spydish" width="200"></a>
   <br>
   Spydish
   <br>
@@ -35,7 +35,7 @@ alt="GitHub issues">
   <a href="#license">License</a>
 </p>
 
-![intro](https://github.com/mirinsoft/spydish/blob/master/intro.gif)
+![intro](https://github.com/mirinsoft/spydish/blob/master/assets/intro.gif)
 
 ## About
 
