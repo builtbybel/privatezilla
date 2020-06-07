@@ -69,6 +69,10 @@ All objects (templates and scripts) included can be viewed [here](https://github
 * **Extract the package** to Spydish installation directory
 * **Restart Spydish**
 
+### Intro of community package after Installing
+
+![community-package](https://github.com/mirinsoft/spydish/blob/master/assets/community-pkg.gif)
+
 ## Credits
 
 - [Icon by FFra](https://www.deviantart.com/ffra/art/MAXIMAL-Icons-Updated-387287801)
