@@ -6,7 +6,7 @@
   Spydish
   <br>
 </h1>
-<h4 align="center">The Spydish app is the simplest and easiest way to perform a quick privacy check.
+<h4 align="center">The Spydish app is the simplest way to perform a quick privacy and security check of your Windows 10 copy.
 </h4>
 
 <p align="center">
