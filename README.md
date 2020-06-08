@@ -57,7 +57,7 @@ Latest news from the developer blog
 ## Community package
 ### For advanced users only!
 
-The community package for Spydish adds support for several advanced features, e.g.
+The community package for Spydish adds support for several advanced scripting features based upon PowerShell, e.g.
 - Removal of specific pre-installed apps
 - Uninstall of One-Drive
 - Removal of Windows Defender
