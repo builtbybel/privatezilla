@@ -55,6 +55,7 @@ Latest news from the developer blog
 - (Latest release) [Download](https://github.com/mirinsoft/spydish/releases)
 
 ## Community package
+### For advanced users only!
 
 The community package for Spydish adds support for several advanced features, e.g.
 - Removal of specific pre-installed apps
