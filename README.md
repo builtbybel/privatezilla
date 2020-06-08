@@ -59,10 +59,11 @@ Latest news from the developer blog
 
 The community package for Spydish adds support for several advanced scripting features based upon PowerShell, e.g.
 - Removal of specific pre-installed apps
-- Uninstall of One-Drive
-- Removal of Windows Defender
-- Blocking telemetry via firewall and host files
-- Support for all-in-one PowerShell debloating script [Windows10Debloater.ps1](https://github.com/Sycnex/Windows10Debloater)
+- Uninstall of One-Drive 
+- Unping Startmenu tiles 
+- Removal of Windows Defender (NOT recommended! I can highly recommend using Windows Defender on consumer versions of Windows 10)
+- Blocking telemetry via firewall and host files. Rule are provided by [crazy-max/WindowsSpyBlocker](https://github.com/crazy-max/WindowsSpyBlocker)
+- Support for all-in-one PowerShell debloating script [Windows10Debloater.ps1](https://github.com/Sycnex/Windows10Debloater) 
 - New automation templates					  
 
 All objects (templates and scripts) included can be viewed [here](https://github.com/mirinsoft/spydish/tree/master/scripts)
