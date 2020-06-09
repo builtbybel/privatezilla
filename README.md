@@ -61,6 +61,7 @@ The community package for Spydish adds support for several advanced scripting fe
 - Removal of specific pre-installed apps
 - Uninstall of One-Drive 
 - Unping Startmenu tiles 
+- Disable telemetry of third-party apps (E.g. CCleaner, Firefox, Dropbox, Microsoft Office)
 - Removal of Windows Defender (NOT recommended! I can highly recommend using Windows Defender on consumer versions of Windows 10)
 - Blocking telemetry via firewall and host files. Rules are provided by [crazy-max/WindowsSpyBlocker](https://github.com/crazy-max/WindowsSpyBlocker)
 - Support for all-in-one PowerShell debloating script [Windows10Debloater.ps1](https://github.com/Sycnex/Windows10Debloater) 
