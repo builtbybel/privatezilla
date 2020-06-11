@@ -47,7 +47,7 @@ Latest news from the developer blog
 
 ### System Requirements
 
-- Windows 10 (supports 1803 - 2004)
+- Windows 10 (supports 1809 - 2004)
 - .NET Framework 4.5
 
 ## Download
