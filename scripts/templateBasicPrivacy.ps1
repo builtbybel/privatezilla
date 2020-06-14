@@ -10,7 +10,7 @@ New-ItemProperty -Path "HKLM:\SYSTEM\ControlSet001\Services\DiagTrack" -Name "St
 Stop-Service -Name DiagTrack
 Set-Service -Name DiagTrack -StartupType Disabled
 # Stop and Disable dmwappushservice Service
-New-ItemProperty -Path "HKLM:\SYSTEM\ControlSet001\Services\dmwappushsvc" -Name "Start" -Type DWord -Value 4 -Force
+New-ItemProperty -Path "HKLM:\SYSTEM\ControlSet001\Services\dmwappushservice" -Name "Start" -Type DWord -Value 4 -Force
 Stop-Service -Name dmwappushservice
 Set-Service -Name dmwappushservice -StartupType Disabled
 
