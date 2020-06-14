@@ -7,7 +7,7 @@ New-ItemProperty -Path "HKLM:\SYSTEM\ControlSet001\Services\DiagTrack" -Name "St
 Start-Service -Name DiagTrack
 Set-Service -Name DiagTrack -StartupType Auto
 # Start and Enable dmwappushservice Service
-New-ItemProperty -Path "HKLM:\SYSTEM\ControlSet001\Services\dmwappushsvc" -Name "Start" -Type DWord -Value 2 -Force
+New-ItemProperty -Path "HKLM:\SYSTEM\ControlSet001\Services\dmwappushservice" -Name "Start" -Type DWord -Value 2 -Force
 Start-Service -Name dmwappushservice
 Set-Service -Name dmwappushservice -StartupType Auto
 
