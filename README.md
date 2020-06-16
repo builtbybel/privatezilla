@@ -59,7 +59,7 @@ Latest news from the developer blog
 
 The community package for Spydish adds support for several advanced scripting features based upon PowerShell, e.g.
 - Removal of specific pre-installed apps
-- Uninstall of One-Drive 
+- Uninstall of OneDrive 
 - Unping Startmenu tiles 
 - Disable telemetry of third-party apps (E.g. CCleaner, Firefox, Dropbox, Microsoft Office)
 - Removal of Windows Defender (NOT recommended! I can highly recommend using Windows Defender on consumer versions of Windows 10)
