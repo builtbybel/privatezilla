@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.mirinsoft.com"><img src="https://github.com/mirinsoft/spydish/blob/master/assets/icon.png" alt="Spydish" width="200"></a>
+  <a href="http://www.mirinsoft.com"><img src="https://github.com/builtbybel/spydish/blob/master/assets/icon.png" alt="Spydish" width="200"></a>
   <br>
   Spydish
   <br>
@@ -10,19 +10,19 @@
 </h4>
 
 <p align="center">
-<a href="https://github.com/mirinsoft/spydish/releases/latest" target="_blank">
-<img alt="Latest GitHub release" src="https://img.shields.io/github/release/mirinsoft/spydish.svg?style=flat-square" />
+<a href="https://github.com/builtbybel/spydish/releases/latest" target="_blank">
+<img alt="Latest GitHub release" src="https://img.shields.io/github/release/builtbybel/spydish.svg?style=flat-square" />
 </a>
 	
-<a href="https://github.com/mirinsoft/spydish/releases" target="_blank">
-<img alt="Downloads on GitHub" src="https://img.shields.io/github/downloads/mirinsoft/spydish/total.svg?style=flat-square" />
+<a href="https://github.com/builtbybel/spydish/releases" target="_blank">
+<img alt="Downloads on GitHub" src="https://img.shields.io/github/downloads/builtbybel/spydish/total.svg?style=flat-square" />
 </a>
 
-<a href="https://github.com/mirinsoft/spydish/commits/master">
-<img src="https://img.shields.io/github/last-commit/mirinsoft/spydish.svg?style=flat-square&logo=github&logoColor=white"
+<a href="https://github.com/builtbybel/spydish/commits/master">
+<img src="https://img.shields.io/github/last-commit/builtbybel/spydish.svg?style=flat-square&logo=github&logoColor=white"
 alt="GitHub last commit">
-<a href="https://github.com/mirinsoft/burnbytes/issues">
-<img src="https://img.shields.io/github/issues-raw/mirinsoft/spydish.svg?style=flat-square&logo=github&logoColor=white"
+<a href="https://github.com/builtbybel/burnbytes/issues">
+<img src="https://img.shields.io/github/issues-raw/builtbybel/spydish.svg?style=flat-square&logo=github&logoColor=white"
 alt="GitHub issues">   
   
 </p>
@@ -35,7 +35,7 @@ alt="GitHub issues">
   <a href="#license">License</a>
 </p>
 
-![intro](https://github.com/mirinsoft/spydish/blob/master/assets/intro.gif)
+![intro](https://github.com/builtbybel/spydish/blob/master/assets/intro.gif)
 
 ## About
 
@@ -52,7 +52,7 @@ Latest news from the developer blog
 
 ## Download
 
-- (Latest release) [Download](https://github.com/mirinsoft/spydish/releases)
+- (Latest release) [Download](https://github.com/builtbybel/spydish/releases)
 
 ## Community package
 ### For advanced users only!
@@ -67,16 +67,16 @@ The community package for Spydish adds support for several advanced scripting fe
 - Support for all-in-one PowerShell debloating script [Windows10Debloater.ps1](https://github.com/Sycnex/Windows10Debloater) 
 - New automation templates					  
 
-All objects (templates and scripts) included can be viewed [here](https://github.com/mirinsoft/spydish/tree/master/scripts)
+All objects (templates and scripts) included can be viewed [here](https://github.com/builtbybel/spydish/tree/master/scripts)
 
 ### How-to Install
-* **[Download](https://github.com/mirinsoft/spydish/blob/master/scripts/packages.zip?raw=true)** the latest `packages.zip` file.
+* **[Download](https://github.com/builtbybel/spydish/blob/master/scripts/packages.zip?raw=true)** the latest `packages.zip` file.
 * **Extract the package** to Spydish installation directory
 * **Restart Spydish**
 
 ### Intro of community package after Installing
 
-![community-package](https://github.com/mirinsoft/spydish/blob/master/assets/community-pkg.gif)
+![community-package](https://github.com/builtbybel/spydish/blob/master/assets/community-pkg.gif)
 
 ## Credits
 
@@ -89,5 +89,5 @@ All objects (templates and scripts) included can be viewed [here](https://github
 ---
 
 > [mirinsoft.com](https://www.mirinsoft.com) &nbsp;&middot;&nbsp;
-> GitHub [@mirinsoft](https://github.com/mirinsoft) &nbsp;&middot;&nbsp;
+> GitHub [@mirinsoft](https://github.com/builtbybel) &nbsp;&middot;&nbsp;
 > Twitter [@mirinsoft](https://twitter.com/mirinsoft)
