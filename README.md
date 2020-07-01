@@ -39,7 +39,7 @@ alt="GitHub issues">
 
 ## About
 
-Spydish integrates the most critical Windows 10 privacy policies and allows you to quickly perform a privacy check against these policies. Active policies are marked with the status "Configured" as in the Group Policy Editor and indicates that your privacy is protected. The inactive ones are declared as "Not configured". All available policies (currently 50) can be enabled as well as disabled.
+Spydish integrates the most critical Windows 10 privacy policies and allows you to quickly perform a privacy check against these policies. Active policies are marked with the status "Configured" as in the Group Policy Editor and indicates that your privacy is protected. The inactive ones are declared as "Not configured". All available policies (currently 60) can be enabled as well as disabled.
 
 Latest news from the developer blog
 - [07 June 2020: Stable release of new Spydish app is out](https://www.mirinsoft.com/blog/19-apps/34-stable-release-of-new-spydish-app-is-out)
