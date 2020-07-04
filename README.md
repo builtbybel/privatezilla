@@ -48,7 +48,7 @@ Latest news from the developer blog
 Recommendations on Media
 - [July 01, 2020 on Lifehacker: How to Block Windows 10 Updates for As Long As You Want](https://lifehacker.com/how-to-block-windows-10-updates-for-as-long-as-you-want-1844232973)
 - [June 20, 2020 on Deskmodder (leading german blog): Schnelle Datenschutzprüfung und Einstellungen für Windows 10 vornehmen von Mirinsoft](https://www.deskmodder.de/blog/2020/06/20/spydish-schnelle-datenschutzpruefung-und-einstellungen-fuer-windows-10-vornehmen-von-mirinsoft/)
-- [June 03, 2020 on BetaNews: How to boost your privacy and remove unwanted features from Windows 10](https://betanews.com/2020/06/03/boost-windows-10-privacy/)
+- [June 03, 2020 on betanews: How to boost your privacy and remove unwanted features from Windows 10](https://betanews.com/2020/06/03/boost-windows-10-privacy/)
 - [June 02, 2020 on gHacks: Quickly check Windows 10 Group Policy privacy settings ](https://www.ghacks.net/2020/06/02/spydish-quickly-check-windows-10-group-policy-privacy-settings/)
 
 ### System Requirements
