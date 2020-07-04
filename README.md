@@ -52,7 +52,8 @@ Latest news from the developer blog
 
 ## Download
 
-- (Latest release) [Download](https://github.com/builtbybel/spydish/releases)
+- (Official site) [Download](https://www.builtbybel.com/spydish)
+- (GitHub) [Download](https://github.com/builtbybel/spydish/releases)
 
 ## Community package
 ### For advanced users only!
