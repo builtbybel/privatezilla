@@ -85,8 +85,8 @@ All objects (templates and scripts) included can be viewed [here](https://github
 
 ## License
 
-- Freeware (private)
-- Donationware (commercial)
+- Free for everyone enjoying Windows 10. You can [buy me a coffee or donut, some banana, a shirt, car, the stars or whatever you want here](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donate@mirinsoft.com&lc=US&item_name=%20Mirinsoft&no_note=0&cn=&currency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted)
+
 ---
 
 > [mirinsoft.com](https://www.mirinsoft.com) &nbsp;&middot;&nbsp;
