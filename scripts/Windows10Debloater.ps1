@@ -1,9 +1,3 @@
-### This is a script with interactive prompts which will remove unnecessary and sponsered Windows 10 apps including their background tasks in Registry. ###
-###- This does NOT remove essential system services/software/etc such as Cortana etc. ###
-###- Next to this it will protect your privacy and turn off Data collection via AllowTelemetry registry keys. ###
-###- It will unpin live tiles, disable Cortana, Windows Feedback experience, Web search in start menu, Wi-fi Sense, location tracking and other unnecessery scheduled tasks. Note: The most changes can also be reverted.###
-### Author of this script: https://github.com/Sycnex/Windows10Debloater
-
 #This function finds any AppX/AppXProvisioned package and uninstalls it, except for Freshpaint, Windows Calculator, Windows Store, and Windows Photos.
 #Also, to note - This does NOT remove essential system services/software/etc such as .NET framework installations, Cortana, Edge, etc.
 
