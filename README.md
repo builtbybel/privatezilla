@@ -41,8 +41,8 @@ alt="GitHub issues">
 Spydish integrates the most critical Windows 10 privacy policies and allows you to quickly perform a privacy check against these policies. Active policies are marked with the status "Configured" as in the Group Policy Editor and indicates that your privacy is protected. The inactive ones are declared as "Not configured". All available policies (currently 60) can be enabled as well as disabled.
 
 Latest news from the developer blog
-- [June 07, 2020: Stable release of new Spydish app is out](https://www.mirinsoft.com/blog/19-apps/34-stable-release-of-new-spydish-app-is-out)
-- [May 31, 2020: Ready for Windows 10, version 2004!? The new Spydish app can help!](https://www.mirinsoft.com/blog/19-apps/33-check-your-privacy-state-with-spydish)
+- [June 07, 2020: Stable release of new Spydish app is out](https://www.builtbybel.com/blog/19-apps/34-stable-release-of-new-spydish-app-is-out)
+- [May 31, 2020: Ready for Windows 10, version 2004!? The new Spydish app can help!](https://www.builtbybel.com/blog/19-apps/33-check-your-privacy-state-with-spydish)
 
 ### System Requirements
 
@@ -84,10 +84,10 @@ All objects (templates and scripts) included can be viewed [here](https://github
 
 ## License
 
-- Free for everyone enjoying Windows 10. You can [buy me a coffee or donut, some banana, a shirt, Taycan or Tesla, the stars or whatever you want here](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donate@mirinsoft.com&lc=US&item_name=%20Mirinsoft&no_note=0&cn=&currency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted)
+- Free for everyone enjoying Windows 10. You can [buy me a coffee or donut, some banana, a shirt, Taycan or Tesla, the stars or whatever you want here](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donate@builtbybel.com&lc=US&item_name=%20Builtbybel&no_note=0&cn=&currency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted)
 
 ---
 
-> [mirinsoft.com](https://www.mirinsoft.com) &nbsp;&middot;&nbsp;
+> [builtbybel](https://www.builtbybel.com) &nbsp;&middot;&nbsp;
 > GitHub [@builtbybel](https://github.com/builtbybel) &nbsp;&middot;&nbsp;
 > Twitter [@builtbybel](https://twitter.com/builtbybel)
