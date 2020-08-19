@@ -1,4 +1,3 @@
-
 <h1 align="center">
   <br>
   <a href="http://www.mirinsoft.com"><img src="https://github.com/builtbybel/spydish/blob/master/assets/icon.png" alt="Spydish" width="200"></a>
