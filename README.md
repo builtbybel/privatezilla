@@ -1,27 +1,27 @@
 <h1 align="center">
   <br>
-  <a href="http://www.mirinsoft.com"><img src="https://github.com/builtbybel/spydish/blob/master/assets/icon.png" alt="Spydish" width="200"></a>
+  <a href="http://www.mirinsoft.com"><img src="https://github.com/builtbybel/privatezilla/blob/master/assets/icon.png" alt="Privatezilla" width="200"></a>
   <br>
-  Spydish
+  Privatezilla
   <br>
 </h1>
-<h4 align="center">The Spydish app is the simplest way to perform a quick privacy and security check of your Windows 10 copy.
+<h4 align="center">Privatezilla is the simplest way to perform a quick privacy and security check of your Windows 10 copy.
 </h4>
 
 <p align="center">
-<a href="https://github.com/builtbybel/spydish/releases/latest" target="_blank">
-<img alt="Latest GitHub release" src="https://img.shields.io/github/release/builtbybel/spydish.svg?style=flat-square" />
+<a href="https://github.com/builtbybel/privatezilla/releases/latest" target="_blank">
+<img alt="Latest GitHub release" src="https://img.shields.io/github/release/builtbybel/privatezilla.svg?style=flat-square" />
 </a>
 	
-<a href="https://github.com/builtbybel/spydish/releases" target="_blank">
-<img alt="Downloads on GitHub" src="https://img.shields.io/github/downloads/builtbybel/spydish/total.svg?style=flat-square" />
+<a href="https://github.com/builtbybel/privatezilla/releases" target="_blank">
+<img alt="Downloads on GitHub" src="https://img.shields.io/github/downloads/builtbybel/privatezilla/total.svg?style=flat-square" />
 </a>
 
-<a href="https://github.com/builtbybel/spydish/commits/master">
-<img src="https://img.shields.io/github/last-commit/builtbybel/spydish.svg?style=flat-square&logo=github&logoColor=white"
+<a href="https://github.com/builtbybel/privatezilla/commits/master">
+<img src="https://img.shields.io/github/last-commit/builtbybel/privatezilla.svg?style=flat-square&logo=github&logoColor=white"
 alt="GitHub last commit">
 <a href="https://github.com/builtbybel/burnbytes/issues">
-<img src="https://img.shields.io/github/issues-raw/builtbybel/spydish.svg?style=flat-square&logo=github&logoColor=white"
+<img src="https://img.shields.io/github/issues-raw/builtbybel/privatezilla.svg?style=flat-square&logo=github&logoColor=white"
 alt="GitHub issues">   
   
 </p>
@@ -34,15 +34,11 @@ alt="GitHub issues">
   <a href="#license">License</a>
 </p>
 
-![intro](https://github.com/builtbybel/spydish/blob/master/assets/intro.gif)
+![intro](https://github.com/builtbybel/privatezilla/blob/master/assets/intro.gif)
 
 ## About
 
-Spydish integrates the most critical Windows 10 privacy policies and allows you to quickly perform a privacy check against these policies. Active policies are marked with the status "Configured" as in the Group Policy Editor and indicates that your privacy is protected. The inactive ones are declared as "Not configured". All available policies (currently 60) can be enabled as well as disabled.
-
-Latest news from the developer blog
-- [June 07, 2020: Stable release of new Spydish app is out](https://www.builtbybel.com/blog/19-apps/34-stable-release-of-new-spydish-app-is-out)
-- [May 31, 2020: Ready for Windows 10, version 2004!? The new Spydish app can help!](https://www.builtbybel.com/blog/19-apps/33-check-your-privacy-state-with-spydish)
+Privatezilla integrates the most critical Windows 10 privacy policies and allows you to quickly perform a privacy check against these policies. Active policies are marked with the status "Configured" as in the Group Policy Editor and indicates that your privacy is protected. The inactive ones are declared as "Not configured". All available policies (currently 60) can be enabled as well as disabled.
 
 ### System Requirements
 
@@ -51,13 +47,12 @@ Latest news from the developer blog
 
 ## Download
 
-- (Official site) [Download](https://www.builtbybel.com/spydish)
-- (GitHub) [Download](https://github.com/builtbybel/spydish/releases)
+- (GitHub) [Download](https://github.com/builtbybel/privatezilla/releases)
 
 ## Community package
 ### For advanced users only!
 
-The community package for Spydish adds support for several advanced scripting features based upon PowerShell, e.g.
+The community package for Privatezilla adds support for several advanced scripting features based upon PowerShell, e.g.
 - Removal of specific pre-installed apps
 - Uninstall of OneDrive 
 - Unping Startmenu tiles 
@@ -67,20 +62,26 @@ The community package for Spydish adds support for several advanced scripting fe
 - Support for all-in-one PowerShell debloating script [Windows10Debloater.ps1](https://github.com/Sycnex/Windows10Debloater) 
 - New automation templates					  
 
-All objects (templates and scripts) included can be viewed [here](https://github.com/builtbybel/spydish/tree/master/scripts)
+All objects (templates and scripts) included can be viewed [here](https://github.com/builtbybel/privatezilla/tree/master/scripts)
 
 ### How-to Install
-* **[Download](https://github.com/builtbybel/spydish/blob/master/scripts/packages.zip?raw=true)** the latest `packages.zip` file.
-* **Extract the package** to Spydish installation directory
-* **Restart Spydish**
+* **[Download](https://github.com/builtbybel/privatezilla/blob/master/scripts/packages.zip?raw=true)** the latest `packages.zip` file.
+* **Extract the package** to Privatezilla installation directory
+* **Restart Privatezilla**
 
 ### Intro of community package after Installing
 
-![community-package](https://github.com/builtbybel/spydish/blob/master/assets/community-pkg.gif)
+![community-package](https://github.com/builtbybel/privatezilla/blob/master/assets/community-pkg.gif)
 
 ## Credits
 
-- [Icon by FFra](https://www.deviantart.com/ffra/art/MAXIMAL-Icons-Updated-387287801)
+This project is partly based upon 
+
+- https://github.com/t-richards/chemo
+
+This software uses the following packages:
+
+- [Icon by bokehlicia](https://iconarchive.com/show/captiva-icons-by-bokehlicia/preferences-system-icon.html)
 
 ## License
 
