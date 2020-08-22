@@ -75,7 +75,7 @@ All objects (templates and scripts) included can be viewed [here](https://github
 
 ## Credits
 
-This project is partly based upon 
+Since release 0.30 this project is partly based upon 
 
 - https://github.com/t-richards/chemo
 
