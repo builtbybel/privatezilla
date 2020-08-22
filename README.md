@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="http://www.mirinsoft.com"><img src="https://github.com/builtbybel/privatezilla/blob/master/assets/icon.png" alt="Privatezilla" width="200"></a>
+  <a href="http://www.builtbybel.com"><img src="https://github.com/builtbybel/privatezilla/blob/master/src/Privatezilla/icon.ico" alt="Privatezilla" width="200"></a>
   <br>
   Privatezilla
   <br>
