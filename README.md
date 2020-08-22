@@ -31,7 +31,7 @@ alt="GitHub issues">
   <a href="#download">Download</a> •
   <a href="#community-package">Community package</a> •
   <a href="#credits">Credits</a> •
-  <a href="#license">License</a>
+  <a href="#support">Support</a>
 </p>
 
 ![intro](https://github.com/builtbybel/privatezilla/blob/master/assets/intro.gif)
@@ -84,6 +84,9 @@ More infos [here](https://www.builtbybel.com/blog/12-company-announcements/39-sp
 This software uses the following packages:
 
 - [Icon by bokehlicia](https://iconarchive.com/show/captiva-icons-by-bokehlicia/preferences-system-icon.html)
+
+## Support
+If you like the tool please consider supporting me via PayPal.
 
 You can [buy me a coffee or donut, some banana, a shirt, Taycan or Tesla, the stars or whatever you want here](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donate@builtbybel.com&lc=US&item_name=%20Builtbybel&no_note=0&cn=&currency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted)
 
