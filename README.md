@@ -78,6 +78,7 @@ All objects (templates and scripts) included can be viewed [here](https://github
 Since release 0.30 this project is partly based upon 
 
 - https://github.com/t-richards/chemo
+More infos [here](https://www.builtbybel.com/blog/12-company-announcements/39-spydish-becomes-privatezilla-open-source)
 
 This software uses the following packages:
 
