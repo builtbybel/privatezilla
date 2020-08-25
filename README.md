@@ -48,6 +48,7 @@ Privatezilla integrates the most critical Windows 10 privacy settings and allows
 ## Download
 
 - (GitHub) [Download](https://github.com/builtbybel/privatezilla/releases)
+- (Mirror on my sitr) [Download](https://www.builtbybel.com/privatezilla)
 
 ## Community package
 ### For advanced users only!
