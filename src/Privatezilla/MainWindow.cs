@@ -55,12 +55,53 @@ namespace Privatezilla
         public Version CurrentVersion = new Version(Application.ProductVersion);
         public Version LatestVersion;
 
+        private void CheckRelease_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                WebRequest hreq = WebRequest.Create(_releaseURL);
+                hreq.Timeout = 10000;
+                hreq.Headers.Set("Cache-Control", "no-cache, no-store, must-revalidate");
+
+                WebResponse hres = hreq.GetResponse();
+                StreamReader sr = new StreamReader(hres.GetResponseStream());
+
+                LatestVersion = new Version(sr.ReadToEnd().Trim());
+
+                // Done and dispose!
+                sr.Dispose();
+                hres.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error); // Update check failed!
+            }
+
+            var equals = LatestVersion.CompareTo(CurrentVersion);
+
+            if (equals == 0)
+            {
+                MessageBox.Show(_releaseUpToDate, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information); // Up-to-date
+            }
+            else if (equals < 0)
+            {
+                MessageBox.Show(_releaseUnofficial, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Warning); // Unofficial
+            }
+            else // New release available!
+            {
+                if (MessageBox.Show("There is a new version available #" + LatestVersion + "\nYour are using version #" + CurrentVersion + "\n\nDo you want to open the @github/releases page?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) // New release available!
+                {
+                    Process.Start("https://github.com/builtbybel/privatezilla/releases/tag/" + LatestVersion);
+                }
+            }
+        }
+
         public MainWindow()
         {
             InitializeComponent();
 
             // Initilize settings
-            InitializeGPO();
+            InitializeSettings();
 
             // Check if community package is installed
             CommunityPackageAvailable();
@@ -69,7 +110,7 @@ namespace Privatezilla
             LblMainMenu.Text = "\ue700";    // Hamburger menu
         }
 
-        public void InitializeGPO()
+        public void InitializeSettings()
         {
             TvwSettings.Nodes.Clear();
 
@@ -454,47 +495,6 @@ namespace Privatezilla
             this.MainMenu.Show(Cursor.Position.X, Cursor.Position.Y);
         }
 
-        private void CheckRelease_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                WebRequest hreq = WebRequest.Create(_releaseURL);
-                hreq.Timeout = 10000;
-                hreq.Headers.Set("Cache-Control", "no-cache, no-store, must-revalidate");
-
-                WebResponse hres = hreq.GetResponse();
-                StreamReader sr = new StreamReader(hres.GetResponseStream());
-
-                LatestVersion = new Version(sr.ReadToEnd().Trim());
-
-                // Done and dispose!
-                sr.Dispose();
-                hres.Dispose();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error); // Update check failed!
-            }
-
-            var equals = LatestVersion.CompareTo(CurrentVersion);
-
-            if (equals == 0)
-            {
-                MessageBox.Show(_releaseUpToDate, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information); // Up-to-date
-            }
-            else if (equals < 0)
-            {
-                MessageBox.Show(_releaseUnofficial, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Warning); // Unofficial
-            }
-            else // New release available!
-            {
-                if (MessageBox.Show("There is a new version available #" + LatestVersion + "\nYour are using version #" + CurrentVersion + "\n\nDo you want to open the @github/releases page?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) // New release available!
-                {
-                    Process.Start("https://github.com/builtbybel/privatezilla/releases/tag/" + LatestVersion);
-                }
-            }
-        }
-
         private void Help_Click(object sender, EventArgs e)
         {
             MessageBox.Show(_helpApp, Help.Text, MessageBoxButtons.OK, MessageBoxIcon.Question);
@@ -507,9 +507,14 @@ namespace Privatezilla
         {
             // Switch to More
             PnlPS.Visible = true;
+            BtnDoPS.Visible = true;
+            ChkCodePS.Visible = true;
             LstPS.Visible = true;
 
             PnlSettings.Visible = false;
+            BtnSettingsAnalyze.Visible = false;
+            BtnSettingsUndo.Visible = false;
+            BtnSettingsDo.Visible = false;
             TvwSettings.Visible = false;
 
             // Clear list
@@ -544,9 +549,14 @@ namespace Privatezilla
         {
             // Switch to Setting
             PnlSettings.Visible = true;
+            BtnSettingsAnalyze.Visible = true;
+            BtnSettingsUndo.Visible = true;
+            BtnSettingsDo.Visible = true;
             TvwSettings.Visible = true;
 
             PnlPS.Visible = false;
+            BtnDoPS.Visible = false;
+            ChkCodePS.Visible = false;
             LstPS.Visible = false;
         }
 

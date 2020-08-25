@@ -43,33 +43,35 @@
             this.LstPS = new System.Windows.Forms.CheckedListBox();
             this.PnlSettings = new System.Windows.Forms.Panel();
             this.PicOpenGitHubPage = new System.Windows.Forms.PictureBox();
-            this.BtnSettingsUndo = new System.Windows.Forms.Button();
+            this.PBar = new System.Windows.Forms.ProgressBar();
+            this.LblStatus = new System.Windows.Forms.Label();
             this.LvwStatus = new System.Windows.Forms.ListView();
             this.Setting = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.State = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.PBar = new System.Windows.Forms.ProgressBar();
+            this.BtnSettingsUndo = new System.Windows.Forms.Button();
             this.BtnSettingsDo = new System.Windows.Forms.Button();
             this.BtnSettingsAnalyze = new System.Windows.Forms.Button();
-            this.LblStatus = new System.Windows.Forms.Label();
             this.PnlPS = new System.Windows.Forms.Panel();
             this.BtnMenuPS = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.ChkCodePS = new System.Windows.Forms.CheckBox();
-            this.BtnDoPS = new System.Windows.Forms.Button();
             this.TxtPSInfo = new System.Windows.Forms.TextBox();
-            this.TxtConsolePS = new System.Windows.Forms.TextBox();
             this.TxtOutputPS = new System.Windows.Forms.TextBox();
+            this.TxtConsolePS = new System.Windows.Forms.TextBox();
             this.PSMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.PSImport = new System.Windows.Forms.ToolStripMenuItem();
             this.PSSaveAs = new System.Windows.Forms.ToolStripMenuItem();
             this.PSMarketplace = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.PnlSettingsBottom = new System.Windows.Forms.Panel();
+            this.ChkCodePS = new System.Windows.Forms.CheckBox();
+            this.BtnDoPS = new System.Windows.Forms.Button();
             this.MainMenu.SuspendLayout();
             this.PnlNav.SuspendLayout();
             this.PnlSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicOpenGitHubPage)).BeginInit();
             this.PnlPS.SuspendLayout();
             this.PSMenu.SuspendLayout();
+            this.PnlSettingsBottom.SuspendLayout();
             this.SuspendLayout();
             // 
             // TvwSettings
@@ -86,7 +88,7 @@
             this.TvwSettings.ShowLines = false;
             this.TvwSettings.ShowNodeToolTips = true;
             this.TvwSettings.ShowPlusMinus = false;
-            this.TvwSettings.Size = new System.Drawing.Size(355, 749);
+            this.TvwSettings.Size = new System.Drawing.Size(355, 746);
             this.TvwSettings.TabIndex = 18;
             this.TvwSettings.TabStop = false;
             this.TvwSettings.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.TvwSetting_AfterCheck);
@@ -157,10 +159,10 @@
             // PnlNav
             // 
             this.PnlNav.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PnlNav.Controls.Add(this.TvwSettings);
             this.PnlNav.Controls.Add(this.LblPS);
             this.PnlNav.Controls.Add(this.LblSettings);
             this.PnlNav.Controls.Add(this.LblMainMenu);
-            this.PnlNav.Controls.Add(this.TvwSettings);
             this.PnlNav.Controls.Add(this.LstPS);
             this.PnlNav.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnlNav.Location = new System.Drawing.Point(0, 0);
@@ -217,7 +219,7 @@
             this.LstPS.FormattingEnabled = true;
             this.LstPS.Location = new System.Drawing.Point(16, 88);
             this.LstPS.Name = "LstPS";
-            this.LstPS.Size = new System.Drawing.Size(351, 700);
+            this.LstPS.Size = new System.Drawing.Size(351, 750);
             this.LstPS.Sorted = true;
             this.LstPS.TabIndex = 112;
             this.LstPS.ThreeDCheckBoxes = true;
@@ -230,15 +232,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PnlSettings.Controls.Add(this.PicOpenGitHubPage);
-            this.PnlSettings.Controls.Add(this.BtnSettingsUndo);
-            this.PnlSettings.Controls.Add(this.LvwStatus);
             this.PnlSettings.Controls.Add(this.PBar);
-            this.PnlSettings.Controls.Add(this.BtnSettingsDo);
-            this.PnlSettings.Controls.Add(this.BtnSettingsAnalyze);
             this.PnlSettings.Controls.Add(this.LblStatus);
+            this.PnlSettings.Controls.Add(this.LvwStatus);
             this.PnlSettings.Location = new System.Drawing.Point(366, 0);
             this.PnlSettings.Name = "PnlSettings";
-            this.PnlSettings.Size = new System.Drawing.Size(716, 837);
+            this.PnlSettings.Size = new System.Drawing.Size(716, 773);
             this.PnlSettings.TabIndex = 113;
             // 
             // PicOpenGitHubPage
@@ -251,24 +250,31 @@
             this.PicOpenGitHubPage.Size = new System.Drawing.Size(24, 24);
             this.PicOpenGitHubPage.TabIndex = 32;
             this.PicOpenGitHubPage.TabStop = false;
-            this.ToolTip.SetToolTip(this.PicOpenGitHubPage, "github/privatezilla");
+            this.ToolTip.SetToolTip(this.PicOpenGitHubPage, "I\'m open on github/privatezilla");
             this.PicOpenGitHubPage.Click += new System.EventHandler(this.PicOpenGitHubPage_Click);
             // 
-            // BtnSettingsUndo
+            // PBar
             // 
-            this.BtnSettingsUndo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnSettingsUndo.BackColor = System.Drawing.Color.Gainsboro;
-            this.BtnSettingsUndo.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.BtnSettingsUndo.FlatAppearance.BorderSize = 0;
-            this.BtnSettingsUndo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSettingsUndo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSettingsUndo.Location = new System.Drawing.Point(298, 794);
-            this.BtnSettingsUndo.Name = "BtnSettingsUndo";
-            this.BtnSettingsUndo.Size = new System.Drawing.Size(196, 32);
-            this.BtnSettingsUndo.TabIndex = 30;
-            this.BtnSettingsUndo.Text = "Revert selected";
-            this.BtnSettingsUndo.UseVisualStyleBackColor = false;
-            this.BtnSettingsUndo.Click += new System.EventHandler(this.BtnSettingsUndo_Click);
+            this.PBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PBar.Location = new System.Drawing.Point(12, 41);
+            this.PBar.Name = "PBar";
+            this.PBar.Size = new System.Drawing.Size(814, 5);
+            this.PBar.TabIndex = 27;
+            this.PBar.Visible = false;
+            // 
+            // LblStatus
+            // 
+            this.LblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LblStatus.AutoEllipsis = true;
+            this.LblStatus.BackColor = System.Drawing.Color.White;
+            this.LblStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblStatus.Location = new System.Drawing.Point(9, 7);
+            this.LblStatus.Name = "LblStatus";
+            this.LblStatus.Size = new System.Drawing.Size(704, 40);
+            this.LblStatus.TabIndex = 29;
+            this.LblStatus.Text = "Press Analyze to check for configured settings.";
             // 
             // LvwStatus
             // 
@@ -286,7 +292,7 @@
             this.LvwStatus.HideSelection = false;
             this.LvwStatus.Location = new System.Drawing.Point(9, 50);
             this.LvwStatus.Name = "LvwStatus";
-            this.LvwStatus.Size = new System.Drawing.Size(704, 723);
+            this.LvwStatus.Size = new System.Drawing.Size(704, 720);
             this.LvwStatus.TabIndex = 31;
             this.LvwStatus.TileSize = new System.Drawing.Size(1, 1);
             this.LvwStatus.UseCompatibleStateImageBehavior = false;
@@ -303,15 +309,21 @@
             this.State.Text = "State";
             this.State.Width = 150;
             // 
-            // PBar
+            // BtnSettingsUndo
             // 
-            this.PBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PBar.Location = new System.Drawing.Point(12, 41);
-            this.PBar.Name = "PBar";
-            this.PBar.Size = new System.Drawing.Size(814, 5);
-            this.PBar.TabIndex = 27;
-            this.PBar.Visible = false;
+            this.BtnSettingsUndo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnSettingsUndo.BackColor = System.Drawing.Color.Gainsboro;
+            this.BtnSettingsUndo.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.BtnSettingsUndo.FlatAppearance.BorderSize = 0;
+            this.BtnSettingsUndo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSettingsUndo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSettingsUndo.Location = new System.Drawing.Point(297, 14);
+            this.BtnSettingsUndo.Name = "BtnSettingsUndo";
+            this.BtnSettingsUndo.Size = new System.Drawing.Size(196, 32);
+            this.BtnSettingsUndo.TabIndex = 30;
+            this.BtnSettingsUndo.Text = "Revert selected";
+            this.BtnSettingsUndo.UseVisualStyleBackColor = false;
+            this.BtnSettingsUndo.Click += new System.EventHandler(this.BtnSettingsUndo_Click);
             // 
             // BtnSettingsDo
             // 
@@ -321,7 +333,7 @@
             this.BtnSettingsDo.FlatAppearance.BorderSize = 0;
             this.BtnSettingsDo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSettingsDo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSettingsDo.Location = new System.Drawing.Point(509, 794);
+            this.BtnSettingsDo.Location = new System.Drawing.Point(508, 14);
             this.BtnSettingsDo.Name = "BtnSettingsDo";
             this.BtnSettingsDo.Size = new System.Drawing.Size(196, 32);
             this.BtnSettingsDo.TabIndex = 26;
@@ -337,26 +349,13 @@
             this.BtnSettingsAnalyze.FlatAppearance.BorderSize = 0;
             this.BtnSettingsAnalyze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSettingsAnalyze.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSettingsAnalyze.Location = new System.Drawing.Point(13, 794);
+            this.BtnSettingsAnalyze.Location = new System.Drawing.Point(12, 14);
             this.BtnSettingsAnalyze.Name = "BtnSettingsAnalyze";
             this.BtnSettingsAnalyze.Size = new System.Drawing.Size(196, 32);
             this.BtnSettingsAnalyze.TabIndex = 28;
             this.BtnSettingsAnalyze.Text = "Analyze";
             this.BtnSettingsAnalyze.UseVisualStyleBackColor = false;
             this.BtnSettingsAnalyze.Click += new System.EventHandler(this.BtnSettingsAnalyze_Click);
-            // 
-            // LblStatus
-            // 
-            this.LblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblStatus.AutoEllipsis = true;
-            this.LblStatus.BackColor = System.Drawing.Color.White;
-            this.LblStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblStatus.Location = new System.Drawing.Point(9, 7);
-            this.LblStatus.Name = "LblStatus";
-            this.LblStatus.Size = new System.Drawing.Size(704, 40);
-            this.LblStatus.TabIndex = 29;
-            this.LblStatus.Text = "Press Analyze to check for configured settings.";
             // 
             // PnlPS
             // 
@@ -366,14 +365,12 @@
             this.PnlPS.BackColor = System.Drawing.Color.White;
             this.PnlPS.Controls.Add(this.BtnMenuPS);
             this.PnlPS.Controls.Add(this.label1);
-            this.PnlPS.Controls.Add(this.ChkCodePS);
-            this.PnlPS.Controls.Add(this.BtnDoPS);
             this.PnlPS.Controls.Add(this.TxtPSInfo);
-            this.PnlPS.Controls.Add(this.TxtConsolePS);
             this.PnlPS.Controls.Add(this.TxtOutputPS);
+            this.PnlPS.Controls.Add(this.TxtConsolePS);
             this.PnlPS.Location = new System.Drawing.Point(366, 0);
             this.PnlPS.Name = "PnlPS";
-            this.PnlPS.Size = new System.Drawing.Size(716, 837);
+            this.PnlPS.Size = new System.Drawing.Size(716, 773);
             this.PnlPS.TabIndex = 113;
             this.PnlPS.Visible = false;
             // 
@@ -409,42 +406,6 @@
             this.label1.Text = "Apply PowerShell Script";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // ChkCodePS
-            // 
-            this.ChkCodePS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.ChkCodePS.Appearance = System.Windows.Forms.Appearance.Button;
-            this.ChkCodePS.BackColor = System.Drawing.Color.Gainsboro;
-            this.ChkCodePS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.ChkCodePS.FlatAppearance.BorderSize = 0;
-            this.ChkCodePS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ChkCodePS.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChkCodePS.ForeColor = System.Drawing.Color.Black;
-            this.ChkCodePS.Location = new System.Drawing.Point(13, 794);
-            this.ChkCodePS.Margin = new System.Windows.Forms.Padding(2);
-            this.ChkCodePS.Name = "ChkCodePS";
-            this.ChkCodePS.Size = new System.Drawing.Size(196, 32);
-            this.ChkCodePS.TabIndex = 113;
-            this.ChkCodePS.Text = "View code";
-            this.ChkCodePS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ChkCodePS.UseVisualStyleBackColor = false;
-            this.ChkCodePS.CheckedChanged += new System.EventHandler(this.ChkCodePS_CheckedChanged);
-            // 
-            // BtnDoPS
-            // 
-            this.BtnDoPS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnDoPS.BackColor = System.Drawing.Color.Gainsboro;
-            this.BtnDoPS.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.BtnDoPS.FlatAppearance.BorderSize = 0;
-            this.BtnDoPS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDoPS.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDoPS.Location = new System.Drawing.Point(509, 794);
-            this.BtnDoPS.Name = "BtnDoPS";
-            this.BtnDoPS.Size = new System.Drawing.Size(196, 32);
-            this.BtnDoPS.TabIndex = 112;
-            this.BtnDoPS.Text = "Apply selected";
-            this.BtnDoPS.UseVisualStyleBackColor = false;
-            this.BtnDoPS.Click += new System.EventHandler(this.BtnDoPS_Click);
-            // 
             // TxtPSInfo
             // 
             this.TxtPSInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -457,9 +418,27 @@
             this.TxtPSInfo.Multiline = true;
             this.TxtPSInfo.Name = "TxtPSInfo";
             this.TxtPSInfo.ReadOnly = true;
-            this.TxtPSInfo.Size = new System.Drawing.Size(238, 778);
+            this.TxtPSInfo.Size = new System.Drawing.Size(238, 714);
             this.TxtPSInfo.TabIndex = 110;
             this.TxtPSInfo.Text = resources.GetString("TxtPSInfo.Text");
+            // 
+            // TxtOutputPS
+            // 
+            this.TxtOutputPS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtOutputPS.BackColor = System.Drawing.Color.White;
+            this.TxtOutputPS.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtOutputPS.Font = new System.Drawing.Font("Consolas", 9F);
+            this.TxtOutputPS.ForeColor = System.Drawing.Color.Black;
+            this.TxtOutputPS.Location = new System.Drawing.Point(242, 48);
+            this.TxtOutputPS.Multiline = true;
+            this.TxtOutputPS.Name = "TxtOutputPS";
+            this.TxtOutputPS.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.TxtOutputPS.Size = new System.Drawing.Size(474, 722);
+            this.TxtOutputPS.TabIndex = 10;
+            this.TxtOutputPS.Text = "PS";
+            this.TxtOutputPS.WordWrap = false;
             // 
             // TxtConsolePS
             // 
@@ -476,28 +455,10 @@
             this.TxtConsolePS.Multiline = true;
             this.TxtConsolePS.Name = "TxtConsolePS";
             this.TxtConsolePS.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.TxtConsolePS.Size = new System.Drawing.Size(474, 740);
+            this.TxtConsolePS.Size = new System.Drawing.Size(474, 722);
             this.TxtConsolePS.TabIndex = 111;
             this.TxtConsolePS.Visible = false;
             this.TxtConsolePS.WordWrap = false;
-            // 
-            // TxtOutputPS
-            // 
-            this.TxtOutputPS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtOutputPS.BackColor = System.Drawing.Color.White;
-            this.TxtOutputPS.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtOutputPS.Font = new System.Drawing.Font("Consolas", 9F);
-            this.TxtOutputPS.ForeColor = System.Drawing.Color.Black;
-            this.TxtOutputPS.Location = new System.Drawing.Point(242, 48);
-            this.TxtOutputPS.Multiline = true;
-            this.TxtOutputPS.Name = "TxtOutputPS";
-            this.TxtOutputPS.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.TxtOutputPS.Size = new System.Drawing.Size(474, 740);
-            this.TxtOutputPS.TabIndex = 10;
-            this.TxtOutputPS.Text = "PS";
-            this.TxtOutputPS.WordWrap = false;
             // 
             // PSMenu
             // 
@@ -545,12 +506,64 @@
             this.ToolTip.UseAnimation = false;
             this.ToolTip.UseFading = false;
             // 
+            // PnlSettingsBottom
+            // 
+            this.PnlSettingsBottom.Controls.Add(this.BtnSettingsUndo);
+            this.PnlSettingsBottom.Controls.Add(this.ChkCodePS);
+            this.PnlSettingsBottom.Controls.Add(this.BtnDoPS);
+            this.PnlSettingsBottom.Controls.Add(this.BtnSettingsDo);
+            this.PnlSettingsBottom.Controls.Add(this.BtnSettingsAnalyze);
+            this.PnlSettingsBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.PnlSettingsBottom.Location = new System.Drawing.Point(367, 779);
+            this.PnlSettingsBottom.Name = "PnlSettingsBottom";
+            this.PnlSettingsBottom.Size = new System.Drawing.Size(716, 58);
+            this.PnlSettingsBottom.TabIndex = 114;
+            // 
+            // ChkCodePS
+            // 
+            this.ChkCodePS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.ChkCodePS.Appearance = System.Windows.Forms.Appearance.Button;
+            this.ChkCodePS.BackColor = System.Drawing.Color.Gainsboro;
+            this.ChkCodePS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.ChkCodePS.FlatAppearance.BorderSize = 0;
+            this.ChkCodePS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ChkCodePS.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChkCodePS.ForeColor = System.Drawing.Color.Black;
+            this.ChkCodePS.Location = new System.Drawing.Point(12, 14);
+            this.ChkCodePS.Margin = new System.Windows.Forms.Padding(2);
+            this.ChkCodePS.Name = "ChkCodePS";
+            this.ChkCodePS.Size = new System.Drawing.Size(196, 32);
+            this.ChkCodePS.TabIndex = 115;
+            this.ChkCodePS.Text = "View code";
+            this.ChkCodePS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ChkCodePS.UseVisualStyleBackColor = false;
+            this.ChkCodePS.Visible = false;
+            this.ChkCodePS.CheckedChanged += new System.EventHandler(this.ChkCodePS_CheckedChanged);
+            // 
+            // BtnDoPS
+            // 
+            this.BtnDoPS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnDoPS.BackColor = System.Drawing.Color.Gainsboro;
+            this.BtnDoPS.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.BtnDoPS.FlatAppearance.BorderSize = 0;
+            this.BtnDoPS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDoPS.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDoPS.Location = new System.Drawing.Point(508, 14);
+            this.BtnDoPS.Name = "BtnDoPS";
+            this.BtnDoPS.Size = new System.Drawing.Size(196, 32);
+            this.BtnDoPS.TabIndex = 114;
+            this.BtnDoPS.Text = "Apply selected";
+            this.BtnDoPS.UseVisualStyleBackColor = false;
+            this.BtnDoPS.Visible = false;
+            this.BtnDoPS.Click += new System.EventHandler(this.BtnDoPS_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1083, 837);
+            this.Controls.Add(this.PnlSettingsBottom);
             this.Controls.Add(this.PnlNav);
             this.Controls.Add(this.PnlSettings);
             this.Controls.Add(this.PnlPS);
@@ -568,6 +581,7 @@
             this.PnlPS.ResumeLayout(false);
             this.PnlPS.PerformLayout();
             this.PSMenu.ResumeLayout(false);
+            this.PnlSettingsBottom.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -596,8 +610,6 @@
         private System.Windows.Forms.TextBox TxtPSInfo;
         private System.Windows.Forms.TextBox TxtOutputPS;
         private System.Windows.Forms.TextBox TxtConsolePS;
-        private System.Windows.Forms.CheckBox ChkCodePS;
-        private System.Windows.Forms.Button BtnDoPS;
         private System.Windows.Forms.ContextMenuStrip PSMenu;
         private System.Windows.Forms.ToolStripMenuItem PSImport;
         private System.Windows.Forms.ToolStripMenuItem PSSaveAs;
@@ -607,6 +619,9 @@
         private System.Windows.Forms.Button BtnMenuPS;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox PicOpenGitHubPage;
+        private System.Windows.Forms.Panel PnlSettingsBottom;
+        private System.Windows.Forms.Button BtnDoPS;
+        private System.Windows.Forms.CheckBox ChkCodePS;
     }
 }
 
