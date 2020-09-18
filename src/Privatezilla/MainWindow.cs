@@ -110,6 +110,8 @@ namespace Privatezilla
             PSImport.Text = Properties.Resources.PSImport;
             PSMarketplace.Text = Properties.Resources.PSMarketplace;
             PSSaveAs.Text = Properties.Resources.PSSaveAs;
+            Setting.Text = Properties.Resources.columnSetting; // Status column
+            State.Text = Properties.Resources.columnState;     // Status column
         }
 
         public MainWindow()

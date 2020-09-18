@@ -141,6 +141,12 @@
     <value>View Code</value>
     <comment>GUI</comment>
   </data>
+  <data name="columnSetting" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="columnState" xml:space="preserve">
+    <value>State</value>
+  </data>
   <data name="CommunityPkg" xml:space="preserve">
     <value>Get community package</value>
     <comment>Main menu</comment>

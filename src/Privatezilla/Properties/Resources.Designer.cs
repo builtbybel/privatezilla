@@ -115,6 +115,24 @@ namespace Privatezilla.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Setting ähnelt.
+        /// </summary>
+        internal static string columnSetting {
+            get {
+                return ResourceManager.GetString("columnSetting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die State ähnelt.
+        /// </summary>
+        internal static string columnState {
+            get {
+                return ResourceManager.GetString("columnState", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Get community package ähnelt.
         /// </summary>
         internal static string CommunityPkg {
