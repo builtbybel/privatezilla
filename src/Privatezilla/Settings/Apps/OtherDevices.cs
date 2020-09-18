@@ -10,7 +10,7 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable app access to other devices";
+            return Properties.Resources.settingsAppsOtherDevices;
         }
 
         public override string Info()

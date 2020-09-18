@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return "Disable Location tracking";
+            return Properties.Resources.settingsPrivacyDisableLocation;
         }
 
         public override string Info()
         {
-            return "Wherever you go, Windows 10 knows you're there. When Location Tracking is turned on, Windows and its apps are allowed to detect the current location of your computer or device.";
+            return Properties.Resources.settingsPrivacyDisableLocationInfo;
         }
 
         public override bool CheckSetting()

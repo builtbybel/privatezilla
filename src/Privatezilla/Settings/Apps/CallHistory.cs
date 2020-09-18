@@ -9,7 +9,7 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable app access to call history";
+            return Properties.Resources.settingsAppsCallHistory;
         }
 
         public override string Info()

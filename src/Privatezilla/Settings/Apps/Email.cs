@@ -9,7 +9,7 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable app access to email";
+            return Properties.Resources.settingsAppsEmail;
         }
 
         public override string Info()

@@ -11,12 +11,12 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return "Disable Telemetry";
+            return Properties.Resources.settingsPrivacyDisableTelemetry;
         }
 
         public override string Info()
         {
-            return "This will prevent Windows from collecting usage information and setting diagnostic data to Basic, which is the lowest level available for all consumer versions of Windows 10.\nThe services diagtrack & dmwappushservice will also be disabled.\nNOTE: Diagnostic Data must be set to Full to get preview builds from Windows-Insider-Program! ";
+            return Properties.Resources.settingsPrivacyDisableTelemetryInfo.Replace("\\n", "\n");
         }
 
         public override bool CheckSetting()

@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Security
 
         public override string ID()
         {
-            return "Disable password reveal button";
+            return Properties.Resources.settingsSecurityDisablePassword;
         }
 
         public override string Info()
         {
-            return "The password reveal button can be used to display an entered password and should be disabled with this setting.";
+            return Properties.Resources.settingsSecurityDisablePasswordInfo;
         }
 
         public override bool CheckSetting()

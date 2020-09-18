@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable apps running in background";
+            return Properties.Resources.settingsAppsBackgroundApps;
         }
 
         public override string Info()
         {
-            return "Windows 10 apps have no more permission to run in the background so they can't update their live tiles, fetch new data, and receive notifications.";
+            return Properties.Resources.settingsAppsBackgroundAppsInfo;
         }
 
         public override bool CheckSetting()

@@ -9,7 +9,7 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable app access to microphone";
+            return Properties.Resources.settingsAppsMicrophone;
         }
 
         public override string Info()

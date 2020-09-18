@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Edge
 
         public override string ID()
         {
-            return "Disable synchronization of data";
+            return Properties.Resources.settingsEdgeDisableSync;
         }
 
         public override string Info()
         {
-            return "This setting will disable synchronization of data using Microsoft sync services.";
+            return Properties.Resources.settingsEdgeDisableSyncInfo;
         }
 
         public override bool CheckSetting()

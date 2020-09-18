@@ -9,7 +9,7 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable app access to documents";
+            return Properties.Resources.settingsAppsDocuments;
         }
 
         public override string Info()

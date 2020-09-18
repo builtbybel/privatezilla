@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return "Block suggested apps in Start";
+            return Properties.Resources.settingsPrivacyBlockSuggestedApps;
         }
 
         public override string Info()
         {
-            return "This will block the Suggested Apps that occasionally appear on the Start menu.";
+            return Properties.Resources.settingsPrivacyBlockSuggestedAppsInfo;
         }
 
         public override bool CheckSetting()

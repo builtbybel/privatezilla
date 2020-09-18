@@ -17,29 +17,24 @@ namespace Privatezilla
 {
     public partial class MainWindow : Form
     {
-        private readonly string _successApply = "Applied";
-        private readonly string _failedApply = "Not applied";
-        private readonly string _successConfigure = "Configured";
-        private readonly string _failedConfigure = "Not configured";
-        private readonly string _finishApply = "Applying complete.";
-        private readonly string _finishUndo = "Reverting complete.";
-        private readonly string _finishAnalyze = "Analysis complete.";
-        private readonly string _doWait = "Please wait ...";
-        private readonly string _undoSettings = "Do you really want to revert all selected settings to Windows 10 default state?";
+        private readonly string _successApply = Properties.Resources.statusSuccessApply;
+        private readonly string _failedApply = Properties.Resources.statusFailedApply;
+        private readonly string _successConfigure = Properties.Resources.statusSuccessConfigure;
+        private readonly string _failedConfigure = Properties.Resources.statusFailedConfigure;
+        private readonly string _finishApply = Properties.Resources.statusFinishApply;
+        private readonly string _finishUndo = Properties.Resources.statusFinishUndo;
+        private readonly string _finishAnalyze = Properties.Resources.statusFinishAnalyze;
+        private readonly string _doWait = Properties.Resources.statusDoWait;
+        private readonly string _undoSettings = Properties.Resources.statusDoSettings;
 
-        private readonly string _helpApp = "Info about a setting:\nMove the cursor over a setting to view a brief explanation." +
-                                           "\r\n\nAnalyze (Button):\nDetermines which settings are enabled and configured on your system or not. NO system changes are done yet!" +
-                                           "\r\n\nApply selected (Button):\nThis will enable all selected settings." +
-                                           "\r\n\nRevert selected (Button):\nThis will restore the default Windows 10 settings." +
-                                           "\r\n\nConfigured (State):\nThis indicates your privacy is protected." +
-                                           "\r\n\nNot Configured (State):\nThis indicates that the Windows 10 settings are in place.";
+        private readonly string _helpApp = Properties.Resources.helpApp.Replace("\\r\\n", "\r\n");
 
         // Script strings (optional)
-        private readonly string _psSelect = "Please select a script.";
+        private readonly string _psSelect = Properties.Resources.msgPSSelect;
 
-        private readonly string _psInfo = "What does this template/script do?\r\n\n";
-        private readonly string _psSuccess = "has been successfully executed.";
-        private readonly string _psSave = "Please switch to code view.";
+        private readonly string _psInfo = Properties.Resources.PSInfo.Replace("\\r\\n", "\r\n");
+        private readonly string _psSuccess = Properties.Resources.msgPSSuccess;
+        private readonly string _psSave = Properties.Resources.msgPSSave;
 
         // Setting progress
         private int _progress = 0;
@@ -49,8 +44,8 @@ namespace Privatezilla
         // Update
         private readonly string _releaseURL = "https://raw.githubusercontent.com/builtbybel/privatezilla/master/latest.txt";
 
-        private readonly string _releaseUpToDate = "There are currently no updates available.";
-        private readonly string _releaseUnofficial = "You are using an unoffical version of Privatezilla.";
+        private readonly string _releaseUpToDate = Properties.Resources.releaseUpToDate;
+        private readonly string _releaseUnofficial = Properties.Resources.releaseUnofficial;
 
         public Version CurrentVersion = new Version(Application.ProductVersion);
         public Version LatestVersion;
@@ -89,11 +84,32 @@ namespace Privatezilla
             }
             else // New release available!
             {
-                if (MessageBox.Show("There is a new version available #" + LatestVersion + "\nYour are using version #" + CurrentVersion + "\n\nDo you want to open the @github/releases page?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) // New release available!
+                if (MessageBox.Show(Properties.Resources.releaseUpdateAvailable + LatestVersion + Properties.Resources.releaseUpdateYourVersion.Replace("\\r\\n", "\r\n") + CurrentVersion + Properties.Resources.releaseUpdateAvailableURL.Replace("\\r\\n", "\r\n\n"), this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) // New release available!
                 {
                     Process.Start("https://github.com/builtbybel/privatezilla/releases/tag/" + LatestVersion);
                 }
             }
+        }
+
+        public void Globalization()
+        {
+            BtnDoPS.Text = Properties.Resources.BtnDoPS;
+            BtnSettingsAnalyze.Text = Properties.Resources.BtnSettingsAnalyze;
+            BtnSettingsDo.Text = Properties.Resources.BtnSettingsDo;
+            BtnSettingsUndo.Text = Properties.Resources.BtnSettingsUndo;
+            ChkCodePS.Text = Properties.Resources.ChkCodePS;
+            LblPS.Text = Properties.Resources.LblPS;
+            LblPSHeader.Text = Properties.Resources.LblPSHeader;
+            LblSettings.Text = Properties.Resources.LblSettings;
+            LblStatus.Text = Properties.Resources.LblStatus;
+            TxtPSInfo.Text = Properties.Resources.TxtPSInfo;
+            CheckRelease.Text = Properties.Resources.CheckRelease;
+            CommunityPkg.Text = Properties.Resources.CommunityPkg;
+            Help.Text = Properties.Resources.Help;
+            Info.Text = Properties.Resources.Info;
+            PSImport.Text = Properties.Resources.PSImport;
+            PSMarketplace.Text = Properties.Resources.PSMarketplace;
+            PSSaveAs.Text = Properties.Resources.PSSaveAs;
         }
 
         public MainWindow()
@@ -108,6 +124,9 @@ namespace Privatezilla
 
             // GUI options
             LblMainMenu.Text = "\ue700";    // Hamburger menu
+
+            // GUI localization
+            Globalization();
         }
 
         public void InitializeSettings()
@@ -121,7 +140,7 @@ namespace Privatezilla
             };
 
             // Settings > Privacy
-            TreeNode privacy = new TreeNode("Privacy", new TreeNode[] {
+            TreeNode privacy = new TreeNode(Properties.Resources.rootSettingsPrivacy, new TreeNode[] {
                 new SettingNode(new Setting.Privacy.DisableTelemetry()),
                 new SettingNode(new Setting.Privacy.DisableCompTelemetry()),
                 new SettingNode(new Setting.Privacy.DisableAds()),
@@ -149,23 +168,23 @@ namespace Privatezilla
             };
 
             // Policies > Cortana
-            TreeNode cortana = new TreeNode("Cortana", new TreeNode[] {
+            TreeNode cortana = new TreeNode(Properties.Resources.rootSettingsCortana, new TreeNode[] {
                 new SettingNode(new Setting.Cortana.DisableCortana()),
                 new SettingNode(new Setting.Cortana.DisableBing()),
                 new SettingNode(new Setting.Cortana.UninstallCortana()),
             });
 
             // Settings > Bloatware
-            TreeNode bloatware = new TreeNode("Bloatware", new TreeNode[] {
+            TreeNode bloatware = new TreeNode(Properties.Resources.rootSettingsBloatware, new TreeNode[] {
                 new SettingNode(new Setting.Bloatware.RemoveUWPAll()),
                 new SettingNode(new Setting.Bloatware.RemoveUWPDefaults()),
             })
             {
-                ToolTipText = "Debloat Windows 10"
+                ToolTipText = Properties.Resources.rootSettingsBloatwareInfo
             };
 
             // Settings > App permissions
-            TreeNode apps = new TreeNode("App permissions", new TreeNode[] {
+            TreeNode apps = new TreeNode(Properties.Resources.rootSettingsApps, new TreeNode[] {
                 new SettingNode(new Setting.Apps.AppNotifications()),
                 new SettingNode(new Setting.Apps.Camera()),
                 new SettingNode(new Setting.Apps.Microphone()),
@@ -193,24 +212,24 @@ namespace Privatezilla
             });
 
             // Settings > Updates
-            TreeNode updates = new TreeNode("Updates", new TreeNode[] {
+            TreeNode updates = new TreeNode(Properties.Resources.rootSettingsUpdates, new TreeNode[] {
                 new SettingNode(new Setting.Updates.DisableUpdates()),
                 new SettingNode(new Setting.Updates.DisableUpdatesSharing()),
                 new SettingNode(new Setting.Updates.BlockMajorUpdates()),
             });
 
             // Settings > Gaming
-            TreeNode gaming = new TreeNode("Gaming", new TreeNode[] {
+            TreeNode gaming = new TreeNode(Properties.Resources.rootSettingsGaming, new TreeNode[] {
                 new SettingNode(new Setting.Gaming.DisableGameBar()),
             });
 
             // Settings > Windows Defender
-            TreeNode defender = new TreeNode("Windows Defender", new TreeNode[] {
+            TreeNode defender = new TreeNode(Properties.Resources.rootSettingsDefender, new TreeNode[] {
                 new SettingNode(new Setting.Defender.DisableSmartScreenStore()),
             });
 
             // Settings > Microsoft Edge
-            TreeNode edge = new TreeNode("Microsoft Edge", new TreeNode[] {
+            TreeNode edge = new TreeNode(Properties.Resources.rootSettingsDefender, new TreeNode[] {
                 new SettingNode(new Setting.Edge.DisableAutoFillCredits()),
                 new SettingNode(new Setting.Edge.EdgeBackground()),
                 new SettingNode(new Setting.Edge.DisableSync()),
@@ -218,7 +237,7 @@ namespace Privatezilla
             });
 
             // Settings > Security
-            TreeNode security = new TreeNode("Security", new TreeNode[] {
+            TreeNode security = new TreeNode(Properties.Resources.rootSettingsSecurity, new TreeNode[] {
                 new SettingNode(new Setting.Security.DisablePassword()),
                 new SettingNode(new Setting.Security.WindowsDRM()),
             });
@@ -247,7 +266,7 @@ namespace Privatezilla
             ToolTip tooltip = new ToolTip();
             tooltip.AutoPopDelay = 15000;
             tooltip.IsBalloon = true;
-            tooltip.SetToolTip(this.TvwSettings, "Settings");
+            tooltip.SetToolTip(this.TvwSettings, Properties.Resources.LblSettings);
         }
 
         private List<SettingNode> CollectSettingNodes()
@@ -600,7 +619,7 @@ namespace Privatezilla
                 if (LstPS.GetItemChecked(i))
                 {
                     LstPS.SelectedIndex = i;
-                    BtnDoPS.Text = "Processing";
+                    BtnDoPS.Text = Properties.Resources.statusDoPSProcessing;
                     PnlPS.Enabled = false;
 
                     //TxtOutputPS.Clear();
@@ -615,7 +634,7 @@ namespace Privatezilla
 
                         TxtOutputPS.Text = stringBuilder.ToString();
 
-                        BtnDoPS.Text = "Apply";
+                        BtnDoPS.Text = Properties.Resources.statusDoPSApply;
                         PnlPS.Enabled = true;
                     }
 
@@ -632,13 +651,13 @@ namespace Privatezilla
         {
             if (ChkCodePS.Checked == true)
             {
-                ChkCodePS.Text = "Back";
+                ChkCodePS.Text = Properties.Resources.PSBack;
                 TxtConsolePS.Visible = true;
                 TxtOutputPS.Visible = false;
             }
             else
             {
-                ChkCodePS.Text = "View code";
+                ChkCodePS.Text = Properties.Resources.PSViewCode;
                 TxtOutputPS.Visible = true;
                 TxtConsolePS.Visible = false;
             }

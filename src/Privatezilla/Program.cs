@@ -22,7 +22,7 @@ namespace Privatezilla
 
             if (Environment.OSVersion.Version.Build < 9200)
 
-                MessageBox.Show("You are running Privatezilla on a system older than Windows 10. Privatezilla is limited to Windows 10 ONLY.", "Privatezilla", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(Properties.Resources.msgAppCompatibility, "Privatezilla", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 Application.Run(new MainWindow());
 

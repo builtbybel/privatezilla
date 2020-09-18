@@ -9,7 +9,7 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable app access to motion";
+            return Properties.Resources.settingsAppsMotion;
         }
 
         public override string Info()

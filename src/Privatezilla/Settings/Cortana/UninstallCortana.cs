@@ -8,12 +8,12 @@ namespace Privatezilla.Setting.Cortana
     {
         public override string ID()
         {
-            return "Uninstall Cortana";
+            return Properties.Resources.settingsCortanaUninstallCortana;
         }
 
         public override string Info()
         {
-            return "This will uninstall the new Cortana app on Windows 10, version 2004.";
+            return Properties.Resources.settingsCortanaUninstallCortanaInfo;
         }
 
         public override bool CheckSetting()

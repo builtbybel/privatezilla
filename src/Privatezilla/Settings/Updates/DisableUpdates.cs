@@ -11,12 +11,12 @@ namespace Privatezilla.Setting.Updates
 
         public override string ID()
         {
-            return "Disable forced Windows updates";
+            return Properties.Resources.settingsUpdatesDisableUpdates;
         }
 
         public override string Info()
         {
-            return "This will notify when updates are available, and you decide when to install them.";
+            return Properties.Resources.settingsUpdatesDisableUpdatesInfo;
         }
 
         public override bool CheckSetting()

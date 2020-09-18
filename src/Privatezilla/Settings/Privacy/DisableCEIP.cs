@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return "Disable Customer Experience Program";
+            return Properties.Resources.settingsPrivacyDisableCEIP;
         }
 
         public override string Info()
         {
-            return "The Customer Experience Improvement Program (CEIP) is a feature that comes enabled by default on Windows 10, and it secretly collects and submits hardware and software usage information to Microsoft.";
+            return Properties.Resources.settingsPrivacyDisableCEIPInfo;
         }
 
         public override bool CheckSetting()

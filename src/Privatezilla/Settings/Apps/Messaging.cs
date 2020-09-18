@@ -9,7 +9,7 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable app access to messaging";
+            return Properties.Resources.settingsAppsMessaging;
         }
 
         public override string Info()

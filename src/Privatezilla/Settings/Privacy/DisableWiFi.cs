@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return "Disable Wi-Fi Sense";
+            return Properties.Resources.settingsPrivacyDisableWiFi;
         }
 
         public override string Info()
         {
-            return "You should at least stop your PC from sending your Wi-Fi password.";
+            return Properties.Resources.settingsPrivacyDisableWiFiInfo;
         }
 
         public override bool CheckSetting()

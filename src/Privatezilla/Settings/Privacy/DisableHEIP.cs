@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return "Disable Help Experience Program";
+            return Properties.Resources.settingsPrivacyDisableHEIP;
         }
 
         public override string Info()
         {
-            return "The Help Experience Improvement Program (HEIP) collects and send to Microsoft information about how you use Windows Help. This might reveal what problems you are having with your computer.";
+            return Properties.Resources.settingsPrivacyDisableHEIPInfo;
         }
 
         public override bool CheckSetting()

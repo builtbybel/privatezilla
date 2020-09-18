@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable tracking of app starts";
+            return Properties.Resources.settingsAppsTrackingApps;
         }
 
         public override string Info()
         {
-            return "This allows you to quickly have access to your list of Most used apps both in the Start menu and when you search your device.";
+            return Properties.Resources.settingsAppsTrackingAppsInfo;
         }
 
         public override bool CheckSetting()

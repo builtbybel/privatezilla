@@ -9,7 +9,7 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable app access to contacts";
+            return Properties.Resources.settingsAppsContacts;
         }
 
         public override string Info()

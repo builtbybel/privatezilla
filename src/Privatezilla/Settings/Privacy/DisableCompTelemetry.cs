@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return "Disable Compatibility Telemetry";
+            return Properties.Resources.settingsPrivacyDisableCompTelemetry;
         }
 
         public override string Info()
         {
-            return "This process is periodically collecting a variety of technical data about your computer and its performance and sending it to Microsoft for its Windows Customer Experience Improvement Program.";
+            return Properties.Resources.settingsPrivacyDisableCompTelemetryInfo;
         }
 
         public override bool CheckSetting()

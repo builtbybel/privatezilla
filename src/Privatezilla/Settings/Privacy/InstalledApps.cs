@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return "Block automatic Installation of apps";
+            return Properties.Resources.settingsPrivacyInstalledApps;
         }
 
         public override string Info()
         {
-            return "When you sign-in to a new Windows 10 profile or device for the first time, chance is that you notice several third-party applications and games listed prominently in the Start menu.\nThis setting will block automatic Installation of suggested Windows 10 apps.";
+            return Properties.Resources.settingsPrivacyInstalledAppsInfo.Replace("\\n", "\n");
         }
 
         public override bool CheckSetting()

@@ -10,12 +10,12 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return "Do not show feedback notifications";
+            return Properties.Resources.settingsPrivacyDisableFeedback;
         }
 
         public override string Info()
         {
-            return "Windows 10 may also pop up from time to time and ask for feedback.";
+            return Properties.Resources.settingsPrivacyDisableFeedbackInfo;
         }
 
         public override bool CheckSetting()

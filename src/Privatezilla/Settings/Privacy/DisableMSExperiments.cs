@@ -9,13 +9,13 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return "Disable Settings Experimentation";
+            return Properties.Resources.settingsPrivacyDisableMSExperiments;
   
         }
 
         public override string Info()
         {
-            return "In certain builds of Windows 10, users could let Microsoft experiment with the system to study user preferences or device behavior. This allows Microsoft to “conduct experiments” with the settings on your PC and should be disabled with this setting.";
+            return Properties.Resources.settingsPrivacyDisableMSExperimentsInfo;
         }
 
         public override bool CheckSetting()

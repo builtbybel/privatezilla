@@ -13,12 +13,12 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return "Prevent using handwriting data";
+            return Properties.Resources.settingsPrivacyHandwritingData;
         }
 
         public override string Info()
         {
-            return "If you don’t want Windows to know and record all unique words that you use, like names and professional jargon, just enable this setting.";
+            return Properties.Resources.settingsPrivacyHandwritingDataInfo;
         }
 
         public override bool CheckSetting()

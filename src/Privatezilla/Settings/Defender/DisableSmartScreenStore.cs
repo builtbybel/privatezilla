@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Defender
 
         public override string ID()
         {
-            return "Disable SmartScreen for Store Apps";
+            return Properties.Resources.settingsDefenderDisableSmartScreenStore;
         }
 
         public override string Info()
         {
-            return "Windows Defender SmartScreen Filter helps protect your device by checking web content (URLs) that Microsoft Store apps use.";
+            return Properties.Resources.settingsDefenderDisableSmartScreenStoreInfo;
         }
 
         public override bool CheckSetting()

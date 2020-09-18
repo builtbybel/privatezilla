@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Edge
 
         public override string ID()
         {
-            return "Disable AutoFill for credit cards";
+            return Properties.Resources.settingsEdeAutoFillCredit;
         }
 
         public override string Info()
         {
-            return "Microsoft Edge's AutoFill feature lets users auto complete credit card information in web forms using previously stored information.";
+            return Properties.Resources.settingsEdeAutoFillCreditInfo;
         }
 
         public override bool CheckSetting()

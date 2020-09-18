@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return "Prevent using diagnostic data";
+            return Properties.Resources.settingsPrivacyDiagnosticData;
         }
 
         public override string Info()
         {
-            return "This will turn off tailored experiences with relevant tips and recommendations by using your diagnostics data. Many people would call this telemetry, or even spying.";
+            return Properties.Resources.settingsPrivacyDiagnosticDataInfo;
         }
 
         public override bool CheckSetting()

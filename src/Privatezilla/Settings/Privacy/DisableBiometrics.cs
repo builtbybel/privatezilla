@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return "Disable Windows Hello Biometrics";
+            return Properties.Resources.settingsPrivacyDisableBiometrics;
         }
 
         public override string Info()
         {
-            return "Windows Hello biometrics lets you sign in to your devices, apps, online services, and networks using your face, iris, or fingerprint";
+            return Properties.Resources.settingsPrivacyDisableBiometricsInfo;
         }
 
         public override bool CheckSetting()

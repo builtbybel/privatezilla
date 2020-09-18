@@ -9,7 +9,7 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable app access to tasks";
+            return Properties.Resources.settingsAppsTasks;
         }
 
         public override string Info()

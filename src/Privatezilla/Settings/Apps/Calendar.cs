@@ -9,7 +9,7 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable app access to calendar";
+            return Properties.Resources.settingsAppsCalendar;
         }
 
         public override string Info()

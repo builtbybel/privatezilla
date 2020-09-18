@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Edge
 
         public override string ID()
         {
-            return "Prevent Edge running in background";
+            return Properties.Resources.settingsEdgeBackground;
         }
 
         public override string Info()
         {
-            return "On the new Chromium version of Microsoft Edge, extensions and other services can keep the browser running in the background even after it's closed.";
+            return Properties.Resources.settingsEdgeBackgroundInfo;
         }
 
         public override bool CheckSetting()

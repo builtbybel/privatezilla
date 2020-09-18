@@ -8,12 +8,12 @@ namespace Privatezilla.Setting.Bloatware
     {
         public override string ID()
         {
-            return "Remove all built-in apps except defaults";
+            return Properties.Resources.settingsBloatwareRemoveUWPDefaults;
         }
 
         public override string Info()
         {
-            return "This will remove all built-in apps except the following:\nMicrosoft Store\nApp Installer\nCalendar\nMail\nCalculator\nCamera\nSkype\nGroove Music\nMaps\nPaint 3D\nYour Phone\nPhotos\nSticky Notes\nWeather\nXbox";
+            return Properties.Resources.settingsBloatwareRemoveUWPDefaultsInfo.Replace("\\n", "\n");
         }
 
         public override bool CheckSetting()

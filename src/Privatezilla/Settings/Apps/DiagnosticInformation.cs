@@ -9,7 +9,7 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable app access to diagnostics";
+            return Properties.Resources.settingsAppsDiagnosticInformation;
         }
 
         public override string Info()

@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Gaming
 
         public override string ID()
         {
-            return "Disable Game Bar features";
+            return Properties.Resources.settingsGamingGameBar;
         }
 
         public override string Info()
         {
-            return "This setting will disable the Windows Game Recording and Broadcasting.";
+            return Properties.Resources.settingsGamingGameBarInfo;
         }
 
         public override bool CheckSetting()

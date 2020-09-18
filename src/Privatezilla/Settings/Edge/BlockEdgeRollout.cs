@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Edge
 
         public override string ID()
         {
-            return "Block Installation of New Microsoft Edge";
+            return Properties.Resources.settingsEdgeBlockEdgeRollout;
         }
 
         public override string Info()
         {
-            return "This will block Windows 10 Update Force Installing of the new Chromium-based Microsoft Edge web browser if it's not installed already on the device.";
+            return Properties.Resources.settingsEdgeBlockEdgeRolloutInfo;
         }
 
         public override bool CheckSetting()

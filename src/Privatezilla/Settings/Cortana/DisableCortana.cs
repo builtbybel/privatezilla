@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Cortana
 
         public override string ID()
         {
-            return "Disable Cortana";
+            return Properties.Resources.settingsCortanaDisableCortana;
         }
 
         public override string Info()
         {
-            return "Cortana is Microsoft's virtual assistant that comes integrated into Windows 10.\nThis setting will disable Cortana permanently and prevent it from recording and storing your search habits and history.";
+            return Properties.Resources.settingsCortanaDisableCortanaInfo.Replace("\\n", "\n");
         }
 
         public override bool CheckSetting()

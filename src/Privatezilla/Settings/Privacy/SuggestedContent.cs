@@ -11,12 +11,12 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return "Block suggested content in Settings app";
+            return Properties.Resources.settingsPrivacySuggestedContent;
         }
 
         public override string Info()
         {
-            return "To help new Windows 10 users to learn new features of Windows 10, Microsoft has started showing suggested content via a huge banner in Windows 10 Setting Apps. ";
+            return Properties.Resources.settingsPrivacySuggestedContentInfo;
         }
 
         public override bool CheckSetting()

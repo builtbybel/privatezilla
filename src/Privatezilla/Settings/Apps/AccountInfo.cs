@@ -9,7 +9,7 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable app access to account info";
+            return Properties.Resources.settingsAppsAccountInfo;
         }
 
         public override string Info()

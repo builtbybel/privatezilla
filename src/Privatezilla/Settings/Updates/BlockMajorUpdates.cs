@@ -10,12 +10,12 @@ namespace Privatezilla.Setting.Updates
 
         public override string ID()
         {
-            return "Block major Windows updates";
+            return Properties.Resources.settingsUpdatesBlockMajorUpdates;
         }
 
         public override string Info()
         {
-            return "This setting called \"TargetReleaseVersionInfo\" prevents Windows 10 feature updates from being installed until the specified version reaches the end of support.\nIt will specify your currently used Windows 10 version as the target release version of Windows 10 that you wish the system to be on (supports only Pro and enterprise versions).";
+            return Properties.Resources.settingsUpdatesBlockMajorUpdatesInfo.Replace("\\n", "\n");
         }
 
         public override bool CheckSetting()

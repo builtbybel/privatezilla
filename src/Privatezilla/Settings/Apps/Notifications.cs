@@ -9,7 +9,7 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable app access to notifications";
+            return Properties.Resources.settingsAppsNotification;
         }
 
         public override string Info()

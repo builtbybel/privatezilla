@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable app access to file system";
+            return Properties.Resources.settingsAppsFileSystem;
         }
 
         public override string Info()
         {
-            return "This setting will disable app access to file system. Some apps may be restricted in their function or may no longer work at all.";
+            return Properties.Resources.settingsAppsFileSystemInfo;
         }
 
         public override bool CheckSetting()

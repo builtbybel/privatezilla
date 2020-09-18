@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable app access to cellular data";
+            return Properties.Resources.settingsAppsCellularData;
         }
 
         public override string Info()
         {
-            return "Some Windows 10 devices have a SIM card and/or eSIM in them that lets you connect to a cellular data network (aka: LTE or Broadband), so you can get online in more places by using a cellular signal.\nIf you do not want any apps to be allowed to use cellular data, you can disable it with this setting.";
+            return Properties.Resources.settingsAppsCellularDataInfo.Replace("\\n", "\n");
         }
 
         public override bool CheckSetting()

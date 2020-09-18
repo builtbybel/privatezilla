@@ -10,12 +10,12 @@ namespace Privatezilla.Setting.Cortana
 
         public override string ID()
         {
-            return "Disable Bing in Windows Search";
+            return Properties.Resources.settingsCortanaDisableBing;
         }
 
         public override string Info()
         {
-            return "Windows 10, by default, sends everything you search for in the Start Menu to their servers to give you results from Bing search.";
+            return Properties.Resources.settingsCortanaDisableBingInfo;
         }
 
         public override bool CheckSetting()

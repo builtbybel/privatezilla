@@ -12,12 +12,12 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return "Disable Windows Tips";
+            return Properties.Resources.settingsPrivacyDisableTips;
         }
 
         public override string Info()
         {
-            return "You will no longer see Windows Tips, e.g. Spotlight and Consumer Features, Feedback Notifications etc.";
+            return Properties.Resources.settingsPrivacyDisableTipsInfo;
         }
 
         public override bool CheckSetting()

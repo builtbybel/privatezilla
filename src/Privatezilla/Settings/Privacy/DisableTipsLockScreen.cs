@@ -11,13 +11,13 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return "Disable Ads and Links on Lock Screen";
+            return Properties.Resources.settingsPrivacyDisableTipsLockScreen;
 
         }
 
         public override string Info()
         {
-            return "This setting will set your lock screen background options to a picture and turn off tips, fun facts and tricks from Microsoft.";
+            return Properties.Resources.settingsPrivacyDisableTipsLockScreenInfo;
         }
 
         public override bool CheckSetting()

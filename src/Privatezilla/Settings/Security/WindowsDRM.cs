@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Security
 
         public override string ID()
         {
-            return "Disable DRM in Windows Media Player";
+            return Properties.Resources.settingsSecurityWindowsDRM;
         }
 
         public override string Info()
         {
-            return "If the Windows Media Digital Rights Management should not get access to the Internet (or intranet) for license acquisition and security upgrades, you can prevent it with this setting.";
+            return Properties.Resources.settingsSecurityWindowsDRMInfo;
         }
 
         public override bool CheckSetting()

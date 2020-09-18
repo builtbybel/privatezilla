@@ -9,7 +9,7 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable app access to radios";
+            return Properties.Resources.settingsAppsRadios;
         }
 
         public override string Info()

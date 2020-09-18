@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Updates
 
         public override string ID()
         {
-            return "Disable Windows updates sharing";
+            return Properties.Resources.settingsUpdatesUpdateSharing;
         }
 
         public override string Info()
         {
-            return "Windows 10 lets you download updates from several sources to speed up the process of updating the operating system. This will disable sharing your files by others and exposing your IP address to random computers.";
+            return Properties.Resources.settingsUpdatesUpdateSharingInfo;
         }
 
         public override bool CheckSetting()

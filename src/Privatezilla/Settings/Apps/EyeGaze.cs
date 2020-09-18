@@ -9,12 +9,12 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return "Disable app access to eye tracking";
+            return Properties.Resources.settingsAppsEyeGaze;
         }
 
         public override string Info()
         {
-            return "Disable app access to eye-gaze-based interaction";
+            return Properties.Resources.settingsAppsEyeGazeInfo;
         }
 
         public override bool CheckSetting()
