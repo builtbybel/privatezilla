@@ -168,6 +168,20 @@
     <value>Info</value>
     <comment>Main menu</comment>
   </data>
+  <data name="infoApp" xml:space="preserve">
+    <value>
+The open source Windows 10 privacy settings app.
+
+This is in no way related to Microsoft and a completely independent project.
+
+All infos and credits about this project on
+\tgithub.com/builtbybel/privatezilla
+
+You can also follow me on
+\ttwitter.com/builtbybel
+
+(C#) 2020, Builtbybel</value>
+  </data>
   <data name="LblPS" xml:space="preserve">
     <value>Scripts</value>
     <comment>GUI</comment>

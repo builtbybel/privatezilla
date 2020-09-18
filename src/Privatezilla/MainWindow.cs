@@ -36,6 +36,9 @@ namespace Privatezilla
         private readonly string _psSuccess = Properties.Resources.msgPSSuccess;
         private readonly string _psSave = Properties.Resources.msgPSSave;
 
+        private readonly string _infoApp = "Privatezilla" + "\nVersion " + Program.GetCurrentVersionTostring() + " (Phoenix)\r\n" +
+                                            Properties.Resources.infoApp.Replace("\\t", "\t");
+
         // Setting progress
         private int _progress = 0;
 
@@ -501,14 +504,7 @@ namespace Privatezilla
 
         private void Info_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Privatezilla" + "\nVersion " + Program.GetCurrentVersionTostring() + " (Phoenix)" +
-           "\n\nThe open source Windows 10 privacy settings app.\n\nThis is in no way related to Microsoft and a completely independent project.\r\n\n" +
-           "All infos and credits about this project on\n" +
-           "\tgithub.com/builtbybel/privatezilla\r\n\n" +
-           "You can also follow me on\n" +
-           "\ttwitter.com/builtbybel\r\n\n" +
-           "(C#) 2020, Builtbybel",
-           "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(_infoApp, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void LblMainMenu_Click(object sender, EventArgs e)

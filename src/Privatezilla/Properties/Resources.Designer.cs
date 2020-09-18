@@ -173,6 +173,26 @@ namespace Privatezilla.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die 
+        ///The open source Windows 10 privacy settings app.
+        ///
+        ///This is in no way related to Microsoft and a completely independent project.
+        ///
+        ///All infos and credits about this project on
+        ///\tgithub.com/builtbybel/privatezilla
+        ///
+        ///You can also follow me on
+        ///\ttwitter.com/builtbybel
+        ///
+        ///(C#) 2020, Builtbybel ähnelt.
+        /// </summary>
+        internal static string infoApp {
+            get {
+                return ResourceManager.GetString("infoApp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Scripts ähnelt.
         /// </summary>
         internal static string LblPS {
