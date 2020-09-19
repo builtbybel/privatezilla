@@ -1399,15 +1399,6 @@ namespace Privatezilla.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Do you really want to revert all selected settings to Windows 10 default state?&quot; ähnelt.
-        /// </summary>
-        internal static string statusDoSettings {
-            get {
-                return ResourceManager.GetString("statusDoSettings", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Please wait ... ähnelt.
         /// </summary>
         internal static string statusDoWait {
@@ -1476,6 +1467,15 @@ namespace Privatezilla.Properties {
         internal static string statusSuccessConfigure {
             get {
                 return ResourceManager.GetString("statusSuccessConfigure", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Do you really want to revert all selected settings to Windows 10 default state?&quot; ähnelt.
+        /// </summary>
+        internal static string statusUndoSettings {
+            get {
+                return ResourceManager.GetString("statusUndoSettings", resourceCulture);
             }
         }
         

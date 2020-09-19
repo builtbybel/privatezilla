@@ -42,7 +42,7 @@
             this.LblSettings = new System.Windows.Forms.LinkLabel();
             this.LstPS = new System.Windows.Forms.CheckedListBox();
             this.PnlSettings = new System.Windows.Forms.Panel();
-            this.PicOpenGitHubPage = new System.Windows.Forms.PictureBox();
+            this.assetOpenGitHub = new System.Windows.Forms.PictureBox();
             this.PBar = new System.Windows.Forms.ProgressBar();
             this.LvwStatus = new System.Windows.Forms.ListView();
             this.Setting = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -68,7 +68,7 @@
             this.MainMenu.SuspendLayout();
             this.PnlNav.SuspendLayout();
             this.PnlSettings.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PicOpenGitHubPage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assetOpenGitHub)).BeginInit();
             this.PnlPS.SuspendLayout();
             this.PSMenu.SuspendLayout();
             this.PnlSettingsBottom.SuspendLayout();
@@ -186,20 +186,20 @@
             // PnlSettings
             // 
             resources.ApplyResources(this.PnlSettings, "PnlSettings");
-            this.PnlSettings.Controls.Add(this.PicOpenGitHubPage);
+            this.PnlSettings.Controls.Add(this.assetOpenGitHub);
             this.PnlSettings.Controls.Add(this.PBar);
             this.PnlSettings.Controls.Add(this.LvwStatus);
             this.PnlSettings.Controls.Add(this.LblStatus);
             this.PnlSettings.Name = "PnlSettings";
             // 
-            // PicOpenGitHubPage
+            // assetOpenGitHub
             // 
-            resources.ApplyResources(this.PicOpenGitHubPage, "PicOpenGitHubPage");
-            this.PicOpenGitHubPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PicOpenGitHubPage.Name = "PicOpenGitHubPage";
-            this.PicOpenGitHubPage.TabStop = false;
-            this.ToolTip.SetToolTip(this.PicOpenGitHubPage, resources.GetString("PicOpenGitHubPage.ToolTip"));
-            this.PicOpenGitHubPage.Click += new System.EventHandler(this.PicOpenGitHubPage_Click);
+            resources.ApplyResources(this.assetOpenGitHub, "assetOpenGitHub");
+            this.assetOpenGitHub.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.assetOpenGitHub.Name = "assetOpenGitHub";
+            this.assetOpenGitHub.TabStop = false;
+            this.ToolTip.SetToolTip(this.assetOpenGitHub, resources.GetString("assetOpenGitHub.ToolTip"));
+            this.assetOpenGitHub.Click += new System.EventHandler(this.assetOpenGitHubPage_Click);
             // 
             // PBar
             // 
@@ -408,7 +408,7 @@
             this.PnlNav.ResumeLayout(false);
             this.PnlNav.PerformLayout();
             this.PnlSettings.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PicOpenGitHubPage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assetOpenGitHub)).EndInit();
             this.PnlPS.ResumeLayout(false);
             this.PnlPS.PerformLayout();
             this.PSMenu.ResumeLayout(false);
@@ -449,7 +449,7 @@
         private System.Windows.Forms.ToolTip ToolTip;
         private System.Windows.Forms.Button BtnMenuPS;
         private System.Windows.Forms.Label LblPSHeader;
-        private System.Windows.Forms.PictureBox PicOpenGitHubPage;
+        private System.Windows.Forms.PictureBox assetOpenGitHub;
         private System.Windows.Forms.Panel PnlSettingsBottom;
         private System.Windows.Forms.Button BtnDoPS;
         private System.Windows.Forms.CheckBox ChkCodePS;

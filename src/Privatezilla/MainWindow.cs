@@ -25,7 +25,7 @@ namespace Privatezilla
         private readonly string _finishUndo = Properties.Resources.statusFinishUndo;
         private readonly string _finishAnalyze = Properties.Resources.statusFinishAnalyze;
         private readonly string _doWait = Properties.Resources.statusDoWait;
-        private readonly string _undoSettings = Properties.Resources.statusDoSettings;
+        private readonly string _undoSettings = Properties.Resources.statusUndoSettings;
 
         private readonly string _helpApp = Properties.Resources.helpApp.Replace("\\r\\n", "\r\n");
 
@@ -114,7 +114,7 @@ namespace Privatezilla
             PSMarketplace.Text = Properties.Resources.PSMarketplace;
             PSSaveAs.Text = Properties.Resources.PSSaveAs;
             Setting.Text = Properties.Resources.columnSetting; // Status column
-            State.Text = Properties.Resources.columnState;     // Status column
+            State.Text = Properties.Resources.columnState;     // State column
         }
 
         public MainWindow()
@@ -770,7 +770,7 @@ namespace Privatezilla
             this.PSMenu.Show(Cursor.Position.X, Cursor.Position.Y);
         }
 
-        private void PicOpenGitHubPage_Click(object sender, EventArgs e)
+        private void assetOpenGitHubPage_Click(object sender, EventArgs e)
         {
             Process.Start("https://github.com/builtbybel/privatezilla");
         }
