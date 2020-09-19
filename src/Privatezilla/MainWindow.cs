@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization; // Localization
 using System.IO;
 using System.Linq;
 using System.Management.Automation;
 using System.Net;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading;     // Localization
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,7 +19,6 @@ namespace Privatezilla
 {
     public partial class MainWindow : Form
     {
-
         // Setting progress
         private int _progress = 0;
 
@@ -95,6 +96,8 @@ namespace Privatezilla
 
         public MainWindow()
         {
+            // Uncomment lower line and add lang code to run localization test
+            // Thread.CurrentThread.CurrentUICulture = new CultureInfo("de");  
 
             InitializeComponent();
 
@@ -109,8 +112,6 @@ namespace Privatezilla
 
             // GUI localization
             Globalization();
-
-
         }
 
         public void InitializeSettings()
