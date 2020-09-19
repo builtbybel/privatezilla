@@ -718,7 +718,7 @@ You can also follow me on
     <value>Configured</value>
   </data>
   <data name="statusUndoSettings" xml:space="preserve">
-    <value>Do you really want to revert all selected settings to Windows 10 default state?"</value>
+    <value>Do you really want to revert all selected settings to Windows 10 default state?</value>
   </data>
   <data name="TxtPSInfo" xml:space="preserve">
     <value>Welcome to the Modern Policy Editor, which allows you to apply group policies and custom settings in the form of PowerShell scripts and templates (bundled scripts).

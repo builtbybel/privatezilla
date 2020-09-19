@@ -1471,7 +1471,7 @@ namespace Privatezilla.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Do you really want to revert all selected settings to Windows 10 default state?&quot; ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Do you really want to revert all selected settings to Windows 10 default state? ähnelt.
         /// </summary>
         internal static string statusUndoSettings {
             get {
