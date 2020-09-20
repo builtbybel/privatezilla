@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization; // Localization
 using System.IO;
 using System.Linq;
 using System.Management.Automation;
 using System.Net;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading;     // Localization
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,28 +19,6 @@ namespace Privatezilla
 {
     public partial class MainWindow : Form
     {
-        private readonly string _successApply = Properties.Resources.statusSuccessApply;
-        private readonly string _failedApply = Properties.Resources.statusFailedApply;
-        private readonly string _successConfigure = Properties.Resources.statusSuccessConfigure;
-        private readonly string _failedConfigure = Properties.Resources.statusFailedConfigure;
-        private readonly string _finishApply = Properties.Resources.statusFinishApply;
-        private readonly string _finishUndo = Properties.Resources.statusFinishUndo;
-        private readonly string _finishAnalyze = Properties.Resources.statusFinishAnalyze;
-        private readonly string _doWait = Properties.Resources.statusDoWait;
-        private readonly string _undoSettings = Properties.Resources.statusDoSettings;
-
-        private readonly string _helpApp = Properties.Resources.helpApp.Replace("\\r\\n", "\r\n");
-
-        // Script strings (optional)
-        private readonly string _psSelect = Properties.Resources.msgPSSelect;
-
-        private readonly string _psInfo = Properties.Resources.PSInfo.Replace("\\r\\n", "\r\n");
-        private readonly string _psSuccess = Properties.Resources.msgPSSuccess;
-        private readonly string _psSave = Properties.Resources.msgPSSave;
-
-        private readonly string _infoApp = "Privatezilla" + "\nVersion " + Program.GetCurrentVersionTostring() + " (Phoenix)\r\n" +
-                                            Properties.Resources.infoApp.Replace("\\t", "\t");
-
         // Setting progress
         private int _progress = 0;
 
@@ -46,9 +26,6 @@ namespace Privatezilla
 
         // Update
         private readonly string _releaseURL = "https://raw.githubusercontent.com/builtbybel/privatezilla/master/latest.txt";
-
-        private readonly string _releaseUpToDate = Properties.Resources.releaseUpToDate;
-        private readonly string _releaseUnofficial = Properties.Resources.releaseUnofficial;
 
         public Version CurrentVersion = new Version(Application.ProductVersion);
         public Version LatestVersion;
@@ -79,11 +56,11 @@ namespace Privatezilla
 
             if (equals == 0)
             {
-                MessageBox.Show(_releaseUpToDate, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information); // Up-to-date
+                MessageBox.Show(Properties.Resources.releaseUpToDate, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information); // Up-to-date
             }
             else if (equals < 0)
             {
-                MessageBox.Show(_releaseUnofficial, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Warning); // Unofficial
+                MessageBox.Show(Properties.Resources.releaseUnofficial, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Warning); // Unofficial
             }
             else // New release available!
             {
@@ -114,11 +91,14 @@ namespace Privatezilla
             PSMarketplace.Text = Properties.Resources.PSMarketplace;
             PSSaveAs.Text = Properties.Resources.PSSaveAs;
             Setting.Text = Properties.Resources.columnSetting; // Status column
-            State.Text = Properties.Resources.columnState;     // Status column
+            State.Text = Properties.Resources.columnState;     // State column
         }
 
         public MainWindow()
         {
+            // Uncomment lower line and add lang code to run localization test
+            // Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");  
+
             InitializeComponent();
 
             // Initilize settings
@@ -234,7 +214,7 @@ namespace Privatezilla
             });
 
             // Settings > Microsoft Edge
-            TreeNode edge = new TreeNode(Properties.Resources.rootSettingsDefender, new TreeNode[] {
+            TreeNode edge = new TreeNode(Properties.Resources.rootSettingsEdge, new TreeNode[] {
                 new SettingNode(new Setting.Edge.DisableAutoFillCredits()),
                 new SettingNode(new Setting.Edge.EdgeBackground()),
                 new SettingNode(new Setting.Edge.DisableSync()),
@@ -357,7 +337,7 @@ namespace Privatezilla
         private async void BtnSettingsAnalyze_Click(object sender, EventArgs e)
         {
             Reset();
-            LblStatus.Text = _doWait;
+            LblStatus.Text = Properties.Resources.statusDoWait;
             BtnSettingsAnalyze.Enabled = false;
 
             LvwStatus.BeginUpdate();
@@ -374,12 +354,12 @@ namespace Privatezilla
 
                 if (shouldPerform)
                 {
-                    state.SubItems.Add(_failedConfigure);
+                    state.SubItems.Add(Properties.Resources.statusFailedConfigure); // Not configured
                     state.BackColor = Color.LavenderBlush;
                 }
                 else
                 {
-                    state.SubItems.Add(_successConfigure);
+                    state.SubItems.Add(Properties.Resources.statusSuccessConfigure); // Configured
                     state.BackColor = Color.Honeydew;
                 }
 
@@ -391,7 +371,7 @@ namespace Privatezilla
             DoProgress(100);
 
             // Summary
-            LblStatus.Text = _finishAnalyze;
+            LblStatus.Text = Properties.Resources.statusFinishAnalyze;
             BtnSettingsAnalyze.Enabled = true;
             LvwStatus.EndUpdate();
 
@@ -410,7 +390,7 @@ namespace Privatezilla
             foreach (SettingNode node in treeNodes)
             {
                 // Add status info
-                LblStatus.Text = _doWait + " (" + node.Text + ")";
+                LblStatus.Text = Properties.Resources.statusDoWait + " (" + node.Text + ")";
 
                 var setting = node.Setting;
                 ConfiguredTaskAwaitable<bool> performTask = Task<bool>.Factory.StartNew(() => setting.DoSetting()).ConfigureAwait(true);
@@ -420,12 +400,12 @@ namespace Privatezilla
                 var listItem = new ListViewItem(setting.ID());
                 if (result)
                 {
-                    listItem.SubItems.Add(_successApply);
+                    listItem.SubItems.Add(Properties.Resources.statusSuccessApply); // Applied
                     listItem.BackColor = Color.Honeydew;
                 }
                 else
                 {
-                    listItem.SubItems.Add(_failedApply);
+                    listItem.SubItems.Add(Properties.Resources.statusFailedApply); // Not applied
                     listItem.BackColor = Color.LavenderBlush;
                 }
 
@@ -435,7 +415,7 @@ namespace Privatezilla
 
             DoProgress(100);
 
-            LblStatus.Text = _finishApply;
+            LblStatus.Text = Properties.Resources.statusFinishApply;
             BtnSettingsDo.Enabled = true;
             LvwStatus.EndUpdate();
 
@@ -447,7 +427,7 @@ namespace Privatezilla
         /// </summary>
         private async void UndoSettings(List<SettingNode> treeNodes)
         {
-            LblStatus.Text = _doWait;
+            LblStatus.Text = Properties.Resources.statusDoWait;
             BtnSettingsUndo.Enabled = false;
             LvwStatus.BeginUpdate();
 
@@ -461,12 +441,12 @@ namespace Privatezilla
                 var listItem = new ListViewItem(setting.ID());
                 if (result)
                 {
-                    listItem.SubItems.Add(_successApply);
+                    listItem.SubItems.Add(Properties.Resources.statusSuccessApply); // Applied
                     listItem.BackColor = Color.Honeydew;
                 }
                 else
                 {
-                    listItem.SubItems.Add(_failedApply);
+                    listItem.SubItems.Add(Properties.Resources.statusFailedApply); // Not applied
                     listItem.BackColor = Color.LavenderBlush;
                 }
 
@@ -476,7 +456,7 @@ namespace Privatezilla
 
             DoProgress(100);
 
-            LblStatus.Text = _finishUndo;
+            LblStatus.Text = Properties.Resources.statusFinishUndo;
             BtnSettingsUndo.Enabled = true;
             LvwStatus.EndUpdate();
 
@@ -493,7 +473,7 @@ namespace Privatezilla
 
         private void BtnSettingsUndo_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show(_undoSettings, this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            if (MessageBox.Show(Properties.Resources.statusUndoSettings, this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 Reset();
 
@@ -504,7 +484,8 @@ namespace Privatezilla
 
         private void Info_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(_infoApp, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Privatezilla" + "\nVersion " + Program.GetCurrentVersionTostring() + " (Phoenix)\r\n" +
+                                            Properties.Resources.infoApp.Replace("\\t", "\t"), "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void LblMainMenu_Click(object sender, EventArgs e)
@@ -514,7 +495,7 @@ namespace Privatezilla
 
         private void Help_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(_helpApp, Help.Text, MessageBoxButtons.OK, MessageBoxIcon.Question);
+            MessageBox.Show(Properties.Resources.helpApp.Replace("\\r\\n", "\r\n"), Help.Text, MessageBoxButtons.OK, MessageBoxIcon.Question);
         }
 
         /// <summary>
@@ -596,7 +577,7 @@ namespace Privatezilla
                     TxtConsolePS.Text = content.ToString();
 
                     // View Info
-                    TxtPSInfo.Text = _psInfo + string.Join(Environment.NewLine, System.IO.File.ReadAllLines(psdir).Where(s => s.StartsWith("###")).Select(s => s.Substring(3).Replace("###", "\r\n\n")));
+                    TxtPSInfo.Text = Properties.Resources.PSInfo.Replace("\\r\\n", "\r\n") + string.Join(Environment.NewLine, System.IO.File.ReadAllLines(psdir).Where(s => s.StartsWith("###")).Select(s => s.Substring(3).Replace("###", "\r\n\n")));
                 }
             }
             catch { }
@@ -609,7 +590,7 @@ namespace Privatezilla
         {
             if (LstPS.CheckedItems.Count == 0)
             {
-                MessageBox.Show(_psSelect, BtnDoPS.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(Properties.Resources.msgPSSelect, BtnDoPS.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
             for (int i = 0; i < LstPS.Items.Count; i++)
@@ -637,7 +618,7 @@ namespace Privatezilla
                     }
 
                     // Done!
-                    MessageBox.Show("Script " + "\"" + LstPS.Text + "\" " + _psSuccess, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Script " + "\"" + LstPS.Text + "\" " + Properties.Resources.msgPSSuccess, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
@@ -702,7 +683,7 @@ namespace Privatezilla
         {
             if (ChkCodePS.Checked == false)
             {
-                MessageBox.Show(_psSave, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(Properties.Resources.msgPSSave, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -770,7 +751,7 @@ namespace Privatezilla
             this.PSMenu.Show(Cursor.Position.X, Cursor.Position.Y);
         }
 
-        private void PicOpenGitHubPage_Click(object sender, EventArgs e)
+        private void assetOpenGitHubPage_Click(object sender, EventArgs e)
         {
             Process.Start("https://github.com/builtbybel/privatezilla");
         }

@@ -249,7 +249,7 @@
     <value>MiddleLeft</value>
   </data>
   <data name="LblPS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 54</value>
+    <value>138, 54</value>
   </data>
   <data name="LblPS.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 21</value>
@@ -365,10 +365,10 @@
   <data name="PnlSettings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="PicOpenGitHubPage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="assetOpenGitHub.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="PicOpenGitHubPage.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="assetOpenGitHub.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAiJJREFUSEvd
         lU1r1FAYheMHSgUVVyIIBVvQYW5SsG66c9GFqC0qfiG69leoWXRyb6R2oRuhIH6s9AeI+/6CopaRYSY3
@@ -383,31 +383,31 @@
         1jKqDLJlDQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="PicOpenGitHubPage.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="assetOpenGitHub.Location" type="System.Drawing.Point, System.Drawing">
     <value>681, 7</value>
   </data>
-  <data name="PicOpenGitHubPage.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="assetOpenGitHub.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
   </data>
-  <data name="PicOpenGitHubPage.TabIndex" type="System.Int32, mscorlib">
+  <data name="assetOpenGitHub.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
   <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>229, 19</value>
   </metadata>
-  <data name="PicOpenGitHubPage.ToolTip" xml:space="preserve">
-    <value>I'm open on github/privatezilla</value>
+  <data name="assetOpenGitHub.ToolTip" xml:space="preserve">
+    <value>Open @github.com/builtbybel/privatezilla</value>
   </data>
-  <data name="&gt;&gt;PicOpenGitHubPage.Name" xml:space="preserve">
-    <value>PicOpenGitHubPage</value>
+  <data name="&gt;&gt;assetOpenGitHub.Name" xml:space="preserve">
+    <value>assetOpenGitHub</value>
   </data>
-  <data name="&gt;&gt;PicOpenGitHubPage.Type" xml:space="preserve">
+  <data name="&gt;&gt;assetOpenGitHub.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PicOpenGitHubPage.Parent" xml:space="preserve">
+  <data name="&gt;&gt;assetOpenGitHub.Parent" xml:space="preserve">
     <value>PnlSettings</value>
   </data>
-  <data name="&gt;&gt;PicOpenGitHubPage.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;assetOpenGitHub.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="PBar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
