@@ -97,7 +97,7 @@ namespace Privatezilla
         public MainWindow()
         {
             // Uncomment lower line and add lang code to run localization test
-            // Thread.CurrentThread.CurrentUICulture = new CultureInfo("de");  
+            // Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");  
 
             InitializeComponent();
 
@@ -214,7 +214,7 @@ namespace Privatezilla
             });
 
             // Settings > Microsoft Edge
-            TreeNode edge = new TreeNode(Properties.Resources.rootSettingsDefender, new TreeNode[] {
+            TreeNode edge = new TreeNode(Properties.Resources.rootSettingsEdge, new TreeNode[] {
                 new SettingNode(new Setting.Edge.DisableAutoFillCredits()),
                 new SettingNode(new Setting.Edge.EdgeBackground()),
                 new SettingNode(new Setting.Edge.DisableSync()),
@@ -354,12 +354,12 @@ namespace Privatezilla
 
                 if (shouldPerform)
                 {
-                    state.SubItems.Add(Properties.Resources.statusFailedConfigure);
+                    state.SubItems.Add(Properties.Resources.statusFailedConfigure); // Not configured
                     state.BackColor = Color.LavenderBlush;
                 }
                 else
                 {
-                    state.SubItems.Add(Properties.Resources.statusSuccessConfigure);
+                    state.SubItems.Add(Properties.Resources.statusSuccessConfigure); // Configured
                     state.BackColor = Color.Honeydew;
                 }
 
@@ -400,12 +400,12 @@ namespace Privatezilla
                 var listItem = new ListViewItem(setting.ID());
                 if (result)
                 {
-                    listItem.SubItems.Add(Properties.Resources.statusSuccessApply);
+                    listItem.SubItems.Add(Properties.Resources.statusSuccessApply); // Applied
                     listItem.BackColor = Color.Honeydew;
                 }
                 else
                 {
-                    listItem.SubItems.Add(Properties.Resources.statusFailedApply);
+                    listItem.SubItems.Add(Properties.Resources.statusFailedApply); // Not applied
                     listItem.BackColor = Color.LavenderBlush;
                 }
 
@@ -441,12 +441,12 @@ namespace Privatezilla
                 var listItem = new ListViewItem(setting.ID());
                 if (result)
                 {
-                    listItem.SubItems.Add(Properties.Resources.statusSuccessApply);
+                    listItem.SubItems.Add(Properties.Resources.statusSuccessApply); // Applied
                     listItem.BackColor = Color.Honeydew;
                 }
                 else
                 {
-                    listItem.SubItems.Add(Properties.Resources.statusFailedApply);
+                    listItem.SubItems.Add(Properties.Resources.statusFailedApply); // Not applied
                     listItem.BackColor = Color.LavenderBlush;
                 }
 

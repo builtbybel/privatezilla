@@ -143,9 +143,11 @@
   </data>
   <data name="columnSetting" xml:space="preserve">
     <value>Setting</value>
+    <comment>TreeView</comment>
   </data>
   <data name="columnState" xml:space="preserve">
     <value>State</value>
+    <comment>TreeView</comment>
   </data>
   <data name="CommunityPkg" xml:space="preserve">
     <value>Get community package</value>
@@ -181,6 +183,8 @@ You can also follow me on
 \ttwitter.com/builtbybel
 
 (C#) 2020, Builtbybel</value>
+    <comment>About the app
+Add translation credits here!</comment>
   </data>
   <data name="LblPS" xml:space="preserve">
     <value>Scripts</value>
@@ -203,15 +207,19 @@ You can also follow me on
   </data>
   <data name="msgPSSave" xml:space="preserve">
     <value>Please switch to code view.</value>
+    <comment>Scripts (optional)</comment>
   </data>
   <data name="msgPSSelect" xml:space="preserve">
     <value>Please select a script.</value>
+    <comment>Scripts (optional)</comment>
   </data>
   <data name="msgPSSuccess" xml:space="preserve">
     <value>has been successfully executed</value>
+    <comment>Scripts (optional)</comment>
   </data>
   <data name="PSBack" xml:space="preserve">
     <value>Back</value>
+    <comment>GUI</comment>
   </data>
   <data name="PSImport" xml:space="preserve">
     <value>Import script</value>
@@ -219,6 +227,7 @@ You can also follow me on
   </data>
   <data name="PSInfo" xml:space="preserve">
     <value>What does this template/script do?\r\n</value>
+    <comment>Scripting menu</comment>
   </data>
   <data name="PSMarketplace" xml:space="preserve">
     <value>Visit Marketplace</value>
@@ -230,6 +239,7 @@ You can also follow me on
   </data>
   <data name="PSViewCode" xml:space="preserve">
     <value>View code</value>
+    <comment>GUI</comment>
   </data>
   <data name="releaseUnofficial" xml:space="preserve">
     <value>You are using an unoffical version of Privatezilla.</value>
@@ -728,6 +738,6 @@ Select a script to view it's description.
 To check the code for vulnerabilities click on "View code".
 
 To obtain new objects (templates, scripts etc.) visit the Marketplace in the upper right menu. Privatezilla uses the Marketplace of the app "SharpApp". Since this app is from the same developer and the scripting is based upon Powershell, they are also compatible with each other.</value>
-    <comment>GUI</comment>
+    <comment>GUI </comment>
   </data>
 </root>
