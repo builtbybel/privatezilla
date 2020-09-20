@@ -97,7 +97,7 @@ namespace Privatezilla
         public MainWindow()
         {
             // Uncomment lower line and add lang code to run localization test
-            // Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");  
+           // Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");  
 
             InitializeComponent();
 
@@ -675,10 +675,9 @@ namespace Privatezilla
         }
 
         /// <summary>
-        /// Save opened PowerShell script files as new preset script files
+        /// Save PowerShell script files as new preset script files
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+
         private void PSSaveAs_Click(object sender, EventArgs e)
         {
             if (ChkCodePS.Checked == false)
