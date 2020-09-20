@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -59,46 +59,46 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -169,18 +169,22 @@
     <comment>Main menu</comment>
   </data>
   <data name="infoApp" xml:space="preserve">
-    <value>
-开源的 Windows 10 隐私设置工具
+    <value>开源的 Windows 10 隐私设置工具
 
 这是一个完全独立与微软毫不相干的项目
 
 此项目的所有信息和信用在
 \tgithub.om/buildbybel/privatezilla
 
+☆━━━━━━━━━━━━━━━☆
+翻译人员: 作者: 涛锅 邮箱: duzhe163908@gmail.com 简体中文
+☆━━━━━━━━━━━━━━━☆
+
 您也可以在推特上关注我
 \ttwitter.com/buildbybel
 
 (C#) 2020, Builtbybel</value>
+    <comment>infoApp</comment>
   </data>
   <data name="LblPS" xml:space="preserve">
     <value>脚本</value>
@@ -591,6 +595,9 @@
   <data name="statusDoPSProcessing" xml:space="preserve">
     <value>处理中</value>
   </data>
+  <data name="statusDoSettings" xml:space="preserve">
+    <value>您真的想要将所有选定的设置还原到 Windows 10 默认状态吗？</value>
+  </data>
   <data name="statusDoWait" xml:space="preserve">
     <value>请稍候...</value>
   </data>
@@ -614,9 +621,6 @@
   </data>
   <data name="statusSuccessConfigure" xml:space="preserve">
     <value>已配置</value>
-  </data>
-  <data name="statusUndoSettings" xml:space="preserve">
-    <value>您真的想要将所有选定的设置还原到 Windows 10 默认状态吗？</value>
   </data>
   <data name="TxtPSInfo" xml:space="preserve">
     <value>欢迎使用现代政策编辑器，它将允许您以 PowerShell 脚本和模板(捆绑脚本)的形式应用组策略和自定义设置
