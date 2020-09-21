@@ -54,9 +54,8 @@
             this.PnlPS = new System.Windows.Forms.Panel();
             this.BtnMenuPS = new System.Windows.Forms.Button();
             this.TxtPSInfo = new System.Windows.Forms.TextBox();
-            this.TxtOutputPS = new System.Windows.Forms.TextBox();
-            this.TxtConsolePS = new System.Windows.Forms.TextBox();
             this.LblPSHeader = new System.Windows.Forms.Label();
+            this.TxtConsolePS = new System.Windows.Forms.TextBox();
             this.PSMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.PSImport = new System.Windows.Forms.ToolStripMenuItem();
             this.PSSaveAs = new System.Windows.Forms.ToolStripMenuItem();
@@ -139,10 +138,10 @@
             // PnlNav
             // 
             this.PnlNav.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PnlNav.Controls.Add(this.TvwSettings);
             this.PnlNav.Controls.Add(this.LblPS);
             this.PnlNav.Controls.Add(this.LblSettings);
             this.PnlNav.Controls.Add(this.LblMainMenu);
+            this.PnlNav.Controls.Add(this.TvwSettings);
             this.PnlNav.Controls.Add(this.LstPS);
             resources.ApplyResources(this.PnlNav, "PnlNav");
             this.PnlNav.Name = "PnlNav";
@@ -274,9 +273,8 @@
             this.PnlPS.BackColor = System.Drawing.Color.White;
             this.PnlPS.Controls.Add(this.BtnMenuPS);
             this.PnlPS.Controls.Add(this.TxtPSInfo);
-            this.PnlPS.Controls.Add(this.TxtOutputPS);
-            this.PnlPS.Controls.Add(this.TxtConsolePS);
             this.PnlPS.Controls.Add(this.LblPSHeader);
+            this.PnlPS.Controls.Add(this.TxtConsolePS);
             this.PnlPS.Name = "PnlPS";
             // 
             // BtnMenuPS
@@ -300,13 +298,11 @@
             this.TxtPSInfo.Name = "TxtPSInfo";
             this.TxtPSInfo.ReadOnly = true;
             // 
-            // TxtOutputPS
+            // LblPSHeader
             // 
-            resources.ApplyResources(this.TxtOutputPS, "TxtOutputPS");
-            this.TxtOutputPS.BackColor = System.Drawing.Color.White;
-            this.TxtOutputPS.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtOutputPS.ForeColor = System.Drawing.Color.Black;
-            this.TxtOutputPS.Name = "TxtOutputPS";
+            resources.ApplyResources(this.LblPSHeader, "LblPSHeader");
+            this.LblPSHeader.BackColor = System.Drawing.Color.Gainsboro;
+            this.LblPSHeader.Name = "LblPSHeader";
             // 
             // TxtConsolePS
             // 
@@ -317,12 +313,6 @@
             this.TxtConsolePS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtConsolePS.ForeColor = System.Drawing.Color.Black;
             this.TxtConsolePS.Name = "TxtConsolePS";
-            // 
-            // LblPSHeader
-            // 
-            resources.ApplyResources(this.LblPSHeader, "LblPSHeader");
-            this.LblPSHeader.BackColor = System.Drawing.Color.Gainsboro;
-            this.LblPSHeader.Name = "LblPSHeader";
             // 
             // PSMenu
             // 
@@ -364,11 +354,11 @@
             // 
             // PnlSettingsBottom
             // 
-            this.PnlSettingsBottom.Controls.Add(this.BtnSettingsAnalyze);
             this.PnlSettingsBottom.Controls.Add(this.BtnSettingsUndo);
             this.PnlSettingsBottom.Controls.Add(this.BtnSettingsDo);
-            this.PnlSettingsBottom.Controls.Add(this.ChkCodePS);
             this.PnlSettingsBottom.Controls.Add(this.BtnDoPS);
+            this.PnlSettingsBottom.Controls.Add(this.BtnSettingsAnalyze);
+            this.PnlSettingsBottom.Controls.Add(this.ChkCodePS);
             resources.ApplyResources(this.PnlSettingsBottom, "PnlSettingsBottom");
             this.PnlSettingsBottom.Name = "PnlSettingsBottom";
             // 
@@ -400,8 +390,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.PnlSettingsBottom);
             this.Controls.Add(this.PnlNav);
-            this.Controls.Add(this.PnlSettings);
             this.Controls.Add(this.PnlPS);
+            this.Controls.Add(this.PnlSettings);
             this.Name = "MainWindow";
             this.ShowIcon = false;
             this.MainMenu.ResumeLayout(false);
@@ -439,7 +429,6 @@
         private System.Windows.Forms.Button BtnSettingsAnalyze;
         private System.Windows.Forms.Panel PnlPS;
         private System.Windows.Forms.TextBox TxtPSInfo;
-        private System.Windows.Forms.TextBox TxtOutputPS;
         private System.Windows.Forms.TextBox TxtConsolePS;
         private System.Windows.Forms.ContextMenuStrip PSMenu;
         private System.Windows.Forms.ToolStripMenuItem PSImport;

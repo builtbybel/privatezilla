@@ -138,7 +138,7 @@
     <comment>Main menu</comment>
   </data>
   <data name="ChkCodePS" xml:space="preserve">
-    <value>View Code</value>
+    <value>View code</value>
     <comment>GUI</comment>
   </data>
   <data name="columnSetting" xml:space="preserve">
@@ -226,7 +226,7 @@ Add translation credits here!</comment>
     <comment>Scripting menu</comment>
   </data>
   <data name="PSInfo" xml:space="preserve">
-    <value>What does this template/script do?\r\n</value>
+    <value>What does this script do?\r\n</value>
     <comment>Scripting menu</comment>
   </data>
   <data name="PSMarketplace" xml:space="preserve">
@@ -236,10 +236,6 @@ Add translation credits here!</comment>
   <data name="PSSaveAs" xml:space="preserve">
     <value>Save current script as new preset script</value>
     <comment>Scripting menu</comment>
-  </data>
-  <data name="PSViewCode" xml:space="preserve">
-    <value>View code</value>
-    <comment>GUI</comment>
   </data>
   <data name="releaseUnofficial" xml:space="preserve">
     <value>You are using an unoffical version of Privatezilla.</value>
@@ -731,13 +727,13 @@ Add translation credits here!</comment>
     <value>Do you really want to revert all selected settings to Windows 10 default state?</value>
   </data>
   <data name="TxtPSInfo" xml:space="preserve">
-    <value>Welcome to the Modern Policy Editor, which allows you to apply group policies and custom settings in the form of PowerShell scripts and templates (bundled scripts).
+    <value>Welcome to the Scripting Editor, which allows you to apply third-party script files and custom settings in form of PowerShell scripts and templates (bundled scripts).
 
 Select a script to view it's description.
 
 To check the code for vulnerabilities click on "View code".
 
-To obtain new objects (templates, scripts etc.) visit the Marketplace in the upper right menu. Privatezilla uses the Marketplace of the app "SharpApp". Since this app is from the same developer and the scripting is based upon Powershell, they are also compatible with each other.</value>
+To obtain new objects (templates, scripts etc.) visit the Marketplace in the upper right menu.</value>
     <comment>GUI </comment>
   </data>
 </root>

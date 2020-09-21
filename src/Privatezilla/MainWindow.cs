@@ -1,19 +1,17 @@
 ﻿using Privatezilla.ITreeNode;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Drawing;
-using System.Globalization; // Localization
 using System.IO;
 using System.Linq;
-using System.Management.Automation;
 using System.Net;
 using System.Runtime.CompilerServices;
 using System.Text;
-using System.Threading;     // Localization
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
 
 namespace Privatezilla
 {
@@ -97,7 +95,7 @@ namespace Privatezilla
         public MainWindow()
         {
             // Uncomment lower line and add lang code to run localization test
-           // Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");  
+            // Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
 
             InitializeComponent();
 
@@ -586,7 +584,7 @@ namespace Privatezilla
         /// <summary>
         /// Run custom PowerShell scripts
         /// </summary>
-        private void BtnDoPS_Click(object sender, EventArgs e)
+        private async void BtnDoPS_Click(object sender, EventArgs e)
         {
             if (LstPS.CheckedItems.Count == 0)
             {
@@ -598,24 +596,42 @@ namespace Privatezilla
                 if (LstPS.GetItemChecked(i))
                 {
                     LstPS.SelectedIndex = i;
+                    string psdir = @"scripts\" + LstPS.SelectedItem.ToString() + ".ps1";
+                    var ps1File = psdir;
+
+                    var equals = new[] { "Silent" };
+                    var str = TxtPSInfo.Text;
+
                     BtnDoPS.Text = Properties.Resources.statusDoPSProcessing;
                     PnlPS.Enabled = false;
 
-                    //TxtOutputPS.Clear();
-                    using (PowerShell powerShell = PowerShell.Create())
+                    // Silent
+                    if (equals.Any(str.Contains))
                     {
-                        powerShell.AddScript(TxtConsolePS.Text);
-                        powerShell.AddCommand("Out-String");
-                        Collection<PSObject> PSOutput = powerShell.Invoke();
-                        StringBuilder stringBuilder = new StringBuilder();
-                        foreach (PSObject pSObject in PSOutput)
-                            stringBuilder.AppendLine(pSObject.ToString());
+                        var startInfo = new ProcessStartInfo()
+                        {
+                            FileName = "powershell.exe",
+                            Arguments = $"-executionpolicy bypass -file \"{ps1File}\"",
+                            UseShellExecute = false,
+                            CreateNoWindow = true,
+                        };
 
-                        TxtOutputPS.Text = stringBuilder.ToString();
-
-                        BtnDoPS.Text = Properties.Resources.statusDoPSApply;
-                        PnlPS.Enabled = true;
+                        await Task.Run(() => { Process.Start(startInfo).WaitForExit(); });
                     }
+                    else   // Create ConsoleWindow
+                    {
+                        var startInfo = new ProcessStartInfo()
+                        {
+                            FileName = "powershell.exe",
+                            Arguments = $"-executionpolicy bypass -file \"{ps1File}\"",
+                            UseShellExecute = false,
+                        };
+
+                        await Task.Run(() => { Process.Start(startInfo).WaitForExit(); });
+                    }
+
+                    BtnDoPS.Text = Properties.Resources.statusDoPSApply;
+                    PnlPS.Enabled = true;
 
                     // Done!
                     MessageBox.Show("Script " + "\"" + LstPS.Text + "\" " + Properties.Resources.msgPSSuccess, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -632,12 +648,10 @@ namespace Privatezilla
             {
                 ChkCodePS.Text = Properties.Resources.PSBack;
                 TxtConsolePS.Visible = true;
-                TxtOutputPS.Visible = false;
             }
             else
             {
-                ChkCodePS.Text = Properties.Resources.PSViewCode;
-                TxtOutputPS.Visible = true;
+                ChkCodePS.Text = Properties.Resources.ChkCodePS;
                 TxtConsolePS.Visible = false;
             }
         }
@@ -677,7 +691,6 @@ namespace Privatezilla
         /// <summary>
         /// Save PowerShell script files as new preset script files
         /// </summary>
-
         private void PSSaveAs_Click(object sender, EventArgs e)
         {
             if (ChkCodePS.Checked == false)
@@ -711,7 +724,7 @@ namespace Privatezilla
 
         private void PSMarketplace_Click(object sender, EventArgs e)
         {
-            Process.Start("http://www.builtbybel.com/marketplace");
+            Process.Start("https://github.com/builtbybel/privatezilla/tree/master/scripts");
         }
 
         private void CommunityPkg_Click(object sender, EventArgs e)

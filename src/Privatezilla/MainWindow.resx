@@ -145,7 +145,7 @@
     <value>PnlNav</value>
   </data>
   <data name="&gt;&gt;TvwSettings.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="LblMainMenu.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -175,7 +175,7 @@
     <value>PnlNav</value>
   </data>
   <data name="&gt;&gt;LblMainMenu.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <metadata name="MainMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -273,7 +273,7 @@
     <value>PnlNav</value>
   </data>
   <data name="&gt;&gt;LblPS.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="LblSettings.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -306,7 +306,7 @@
     <value>PnlNav</value>
   </data>
   <data name="&gt;&gt;LblSettings.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="LstPS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -525,7 +525,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;PnlSettings.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="BtnSettingsUndo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -558,7 +558,7 @@
     <value>PnlSettingsBottom</value>
   </data>
   <data name="&gt;&gt;BtnSettingsUndo.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="BtnSettingsDo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -591,7 +591,7 @@
     <value>PnlSettingsBottom</value>
   </data>
   <data name="&gt;&gt;BtnSettingsDo.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="BtnSettingsAnalyze.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -624,7 +624,7 @@
     <value>PnlSettingsBottom</value>
   </data>
   <data name="&gt;&gt;BtnSettingsAnalyze.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="PnlPS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -681,13 +681,13 @@
     <value>110</value>
   </data>
   <data name="TxtPSInfo.Text" xml:space="preserve">
-    <value>Welcome to the Modern Policy Editor, which allows you to apply group policies and custom settings in the form of PowerShell scripts and templates (bundled scripts).
+    <value>Welcome to the Scripting Editor, which allows you to apply third-party script files and custom settings in form of PowerShell scripts and templates (bundled scripts).
 
 Select a script to view it's description.
 
 To check the code for vulnerabilities click on "View code".
 
-To obtain new objects (templates, scripts etc.) visit the Marketplace in the upper right menu. Privatezilla uses the Marketplace of the app "SharpApp". Since this app is from the same developer and the scripting is based upon Powershell, they are also compatible with each other.
+To obtain new objects (templates, scripts etc.) visit the Marketplace in the upper right menu. 
 </value>
   </data>
   <data name="&gt;&gt;TxtPSInfo.Name" xml:space="preserve">
@@ -702,43 +702,40 @@ To obtain new objects (templates, scripts etc.) visit the Marketplace in the upp
   <data name="&gt;&gt;TxtPSInfo.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="TxtOutputPS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="LblPSHeader.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
-  <data name="TxtOutputPS.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Consolas, 9pt</value>
+  <data name="LblPSHeader.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
   </data>
-  <data name="TxtOutputPS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>242, 48</value>
+  <data name="LblPSHeader.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="TxtOutputPS.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="LblPSHeader.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 0, 0, 0</value>
   </data>
-  <data name="TxtOutputPS.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Both</value>
+  <data name="LblPSHeader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>716, 45</value>
   </data>
-  <data name="TxtOutputPS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>474, 722</value>
+  <data name="LblPSHeader.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
   </data>
-  <data name="TxtOutputPS.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="LblPSHeader.Text" xml:space="preserve">
+    <value>Apply PowerShell Script</value>
   </data>
-  <data name="TxtOutputPS.Text" xml:space="preserve">
-    <value>PS</value>
+  <data name="LblPSHeader.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
-  <data name="TxtOutputPS.WordWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;LblPSHeader.Name" xml:space="preserve">
+    <value>LblPSHeader</value>
   </data>
-  <data name="&gt;&gt;TxtOutputPS.Name" xml:space="preserve">
-    <value>TxtOutputPS</value>
+  <data name="&gt;&gt;LblPSHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TxtOutputPS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TxtOutputPS.Parent" xml:space="preserve">
+  <data name="&gt;&gt;LblPSHeader.Parent" xml:space="preserve">
     <value>PnlPS</value>
   </data>
-  <data name="&gt;&gt;TxtOutputPS.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;LblPSHeader.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="TxtConsolePS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -780,42 +777,6 @@ To obtain new objects (templates, scripts etc.) visit the Marketplace in the upp
   <data name="&gt;&gt;TxtConsolePS.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="LblPSHeader.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="LblPSHeader.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 12pt, style=Bold</value>
-  </data>
-  <data name="LblPSHeader.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="LblPSHeader.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 0, 0, 0</value>
-  </data>
-  <data name="LblPSHeader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>716, 45</value>
-  </data>
-  <data name="LblPSHeader.TabIndex" type="System.Int32, mscorlib">
-    <value>116</value>
-  </data>
-  <data name="LblPSHeader.Text" xml:space="preserve">
-    <value>Apply PowerShell Script</value>
-  </data>
-  <data name="LblPSHeader.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;LblPSHeader.Name" xml:space="preserve">
-    <value>LblPSHeader</value>
-  </data>
-  <data name="&gt;&gt;LblPSHeader.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LblPSHeader.Parent" xml:space="preserve">
-    <value>PnlPS</value>
-  </data>
-  <data name="&gt;&gt;LblPSHeader.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="PnlPS.Location" type="System.Drawing.Point, System.Drawing">
     <value>366, 0</value>
   </data>
@@ -838,7 +799,7 @@ To obtain new objects (templates, scripts etc.) visit the Marketplace in the upp
     <value>$this</value>
   </data>
   <data name="&gt;&gt;PnlPS.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <metadata name="PSMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 19</value>
@@ -899,6 +860,42 @@ To obtain new objects (templates, scripts etc.) visit the Marketplace in the upp
   <data name="&gt;&gt;PSMenu.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="BtnDoPS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="BtnDoPS.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnDoPS.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="BtnDoPS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>508, 14</value>
+  </data>
+  <data name="BtnDoPS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 32</value>
+  </data>
+  <data name="BtnDoPS.TabIndex" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <data name="BtnDoPS.Text" xml:space="preserve">
+    <value>Apply selected</value>
+  </data>
+  <data name="BtnDoPS.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BtnDoPS.Name" xml:space="preserve">
+    <value>BtnDoPS</value>
+  </data>
+  <data name="&gt;&gt;BtnDoPS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnDoPS.Parent" xml:space="preserve">
+    <value>PnlSettingsBottom</value>
+  </data>
+  <data name="&gt;&gt;BtnDoPS.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="ChkCodePS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
@@ -942,42 +939,6 @@ To obtain new objects (templates, scripts etc.) visit the Marketplace in the upp
     <value>PnlSettingsBottom</value>
   </data>
   <data name="&gt;&gt;ChkCodePS.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="BtnDoPS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="BtnDoPS.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="BtnDoPS.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
-  </data>
-  <data name="BtnDoPS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>508, 14</value>
-  </data>
-  <data name="BtnDoPS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 32</value>
-  </data>
-  <data name="BtnDoPS.TabIndex" type="System.Int32, mscorlib">
-    <value>114</value>
-  </data>
-  <data name="BtnDoPS.Text" xml:space="preserve">
-    <value>Apply selected</value>
-  </data>
-  <data name="BtnDoPS.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;BtnDoPS.Name" xml:space="preserve">
-    <value>BtnDoPS</value>
-  </data>
-  <data name="&gt;&gt;BtnDoPS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BtnDoPS.Parent" xml:space="preserve">
-    <value>PnlSettingsBottom</value>
-  </data>
-  <data name="&gt;&gt;BtnDoPS.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="PnlSettingsBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">

@@ -106,7 +106,7 @@ namespace Privatezilla.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die View Code ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die View code ähnelt.
         /// </summary>
         internal static string ChkCodePS {
             get {
@@ -283,7 +283,7 @@ namespace Privatezilla.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die What does this template/script do?\r\n ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die What does this script do?\r\n ähnelt.
         /// </summary>
         internal static string PSInfo {
             get {
@@ -306,15 +306,6 @@ namespace Privatezilla.Properties {
         internal static string PSSaveAs {
             get {
                 return ResourceManager.GetString("PSSaveAs", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die View code ähnelt.
-        /// </summary>
-        internal static string PSViewCode {
-            get {
-                return ResourceManager.GetString("PSViewCode", resourceCulture);
             }
         }
         
@@ -1480,13 +1471,13 @@ namespace Privatezilla.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Welcome to the Modern Policy Editor, which allows you to apply group policies and custom settings in the form of PowerShell scripts and templates (bundled scripts).
+        ///   Sucht eine lokalisierte Zeichenfolge, die Welcome to the Scripting Editor, which allows you to apply third-party script files and custom settings in form of PowerShell scripts and templates (bundled scripts).
         ///
         ///Select a script to view it&apos;s description.
         ///
         ///To check the code for vulnerabilities click on &quot;View code&quot;.
         ///
-        ///To obtain new objects (templates, scripts etc.) visit the Marketplace in the upper right menu. Privatezilla uses the Marketplace of the app &quot;SharpApp&quot;. Since this app is from the same developer and the scripting is based upon Powershell [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///To obtain new objects (templates, scripts etc.) visit the Marketplace in the upper right menu. ähnelt.
         /// </summary>
         internal static string TxtPSInfo {
             get {
