@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Privatezilla.Locales;
 
 namespace Privatezilla.Setting.Updates
 {
@@ -9,12 +10,12 @@ namespace Privatezilla.Setting.Updates
 
         public override string ID()
         {
-            return Properties.Resources.settingsUpdatesUpdateSharing;
+            return Locale.settingsUpdatesUpdateSharing;
         }
 
         public override string Info()
         {
-            return Properties.Resources.settingsUpdatesUpdateSharingInfo;
+            return Locale.settingsUpdatesUpdateSharingInfo;
         }
 
         public override bool CheckSetting()

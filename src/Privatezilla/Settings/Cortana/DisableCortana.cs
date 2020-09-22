@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Privatezilla.Locales;
 
 namespace Privatezilla.Setting.Cortana
 {
@@ -9,12 +10,12 @@ namespace Privatezilla.Setting.Cortana
 
         public override string ID()
         {
-            return Properties.Resources.settingsCortanaDisableCortana;
+            return Locale.settingsCortanaDisableCortana;
         }
 
         public override string Info()
         {
-            return Properties.Resources.settingsCortanaDisableCortanaInfo.Replace("\\n", "\n");
+            return Locale.settingsCortanaDisableCortanaInfo.Replace("\\n", "\n");
         }
 
         public override bool CheckSetting()

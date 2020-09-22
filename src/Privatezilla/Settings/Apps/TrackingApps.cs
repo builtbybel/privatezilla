@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Privatezilla.Locales;
 
 namespace Privatezilla.Setting.Apps
 {
@@ -9,12 +10,12 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return Properties.Resources.settingsAppsTrackingApps;
+            return Locale.settingsAppsTrackingApps;
         }
 
         public override string Info()
         {
-            return Properties.Resources.settingsAppsTrackingAppsInfo;
+            return Locale.settingsAppsTrackingAppsInfo;
         }
 
         public override bool CheckSetting()

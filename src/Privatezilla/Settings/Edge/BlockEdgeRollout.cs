@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Privatezilla.Locales;
 
 namespace Privatezilla.Setting.Edge
 {
@@ -9,12 +10,12 @@ namespace Privatezilla.Setting.Edge
 
         public override string ID()
         {
-            return Properties.Resources.settingsEdgeBlockEdgeRollout;
+            return Locale.settingsEdgeBlockEdgeRollout;
         }
 
         public override string Info()
         {
-            return Properties.Resources.settingsEdgeBlockEdgeRolloutInfo;
+            return Locale.settingsEdgeBlockEdgeRolloutInfo;
         }
 
         public override bool CheckSetting()

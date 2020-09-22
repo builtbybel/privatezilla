@@ -76,6 +76,11 @@
   <ItemGroup>
     <Compile Include="Helpers\WindowsHelper.cs" />
     <Compile Include="Interfaces\IListView.cs" />
+    <Compile Include="Locales\Locale.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Locale.resx</DependentUpon>
+    </Compile>
     <Compile Include="Settings\Apps\AccountInfo.cs" />
     <Compile Include="Settings\Apps\AppNotifications.cs" />
     <Compile Include="Settings\Apps\BackgroundApps.cs" />
@@ -148,11 +153,16 @@
     <Compile Include="Settings\Cortana\DisableCortana.cs" />
     <Compile Include="Helpers\SetttingsBase.cs" />
     <Compile Include="Settings\Privacy\DisableTelemetry.cs" />
+    <EmbeddedResource Include="Locales\Locale.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Locale.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.es.resx" />
+    <EmbeddedResource Include="Locales\Locale.es.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -163,8 +173,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Properties\Resources.ru.resx" />
-    <EmbeddedResource Include="Properties\Resources.zh.resx" />
+    <EmbeddedResource Include="Locales\Locale.ru.resx" />
+    <EmbeddedResource Include="Locales\Locale.zh.resx" />
     <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Privatezilla.Locales;
 
 namespace Privatezilla.Setting.Privacy
 {
@@ -9,12 +10,12 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return Properties.Resources.settingsPrivacyDisableBiometrics;
+            return Locale.settingsPrivacyDisableBiometrics;
         }
 
         public override string Info()
         {
-            return Properties.Resources.settingsPrivacyDisableBiometricsInfo;
+            return Locale.settingsPrivacyDisableBiometricsInfo;
         }
 
         public override bool CheckSetting()

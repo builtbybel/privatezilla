@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Privatezilla.Locales;
 
 namespace Privatezilla.Setting.Apps
 {
@@ -9,12 +10,12 @@ namespace Privatezilla.Setting.Apps
 
         public override string ID()
         {
-            return Properties.Resources.settingsAppsAppNotifications;
+            return Locale.settingsAppsAppNotifications;
         }
 
         public override string Info()
         {
-            return Properties.Resources.settingsAppsAppNotificationsInfo.Replace("\\n", "\n");
+            return Locale.settingsAppsAppNotificationsInfo.Replace("\\n", "\n");
         }
 
         public override bool CheckSetting()

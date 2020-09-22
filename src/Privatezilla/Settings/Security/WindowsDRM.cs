@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Privatezilla.Locales;
 
 namespace Privatezilla.Setting.Security
 {
@@ -9,12 +10,12 @@ namespace Privatezilla.Setting.Security
 
         public override string ID()
         {
-            return Properties.Resources.settingsSecurityWindowsDRM;
+            return Locale.settingsSecurityWindowsDRM;
         }
 
         public override string Info()
         {
-            return Properties.Resources.settingsSecurityWindowsDRMInfo;
+            return Locale.settingsSecurityWindowsDRMInfo;
         }
 
         public override bool CheckSetting()

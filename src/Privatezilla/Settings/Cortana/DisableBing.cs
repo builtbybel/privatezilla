@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Privatezilla.Locales;
 
 namespace Privatezilla.Setting.Cortana
 {
@@ -10,12 +11,12 @@ namespace Privatezilla.Setting.Cortana
 
         public override string ID()
         {
-            return Properties.Resources.settingsCortanaDisableBing;
+            return Locale.settingsCortanaDisableBing;
         }
 
         public override string Info()
         {
-            return Properties.Resources.settingsCortanaDisableBingInfo;
+            return Locale.settingsCortanaDisableBingInfo;
         }
 
         public override bool CheckSetting()

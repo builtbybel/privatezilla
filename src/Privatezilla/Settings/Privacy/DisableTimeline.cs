@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Privatezilla.Locales;
 
 namespace Privatezilla.Setting.Privacy
 {
@@ -10,12 +11,12 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return Properties.Resources.settingsPrivacyDisableTimeline;
+            return Locale.settingsPrivacyDisableTimeline;
         }
 
         public override string Info()
         {
-            return Properties.Resources.settingsPrivacyDisableTimelineInfo.Replace("\\n", "\n");
+            return Locale.settingsPrivacyDisableTimelineInfo.Replace("\\n", "\n");
         }
 
         public override bool CheckSetting()

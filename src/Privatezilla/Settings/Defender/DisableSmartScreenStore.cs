@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Privatezilla.Locales;
 
 namespace Privatezilla.Setting.Defender
 {
@@ -9,12 +10,12 @@ namespace Privatezilla.Setting.Defender
 
         public override string ID()
         {
-            return Properties.Resources.settingsDefenderDisableSmartScreenStore;
+            return Locale.settingsDefenderDisableSmartScreenStore;
         }
 
         public override string Info()
         {
-            return Properties.Resources.settingsDefenderDisableSmartScreenStoreInfo;
+            return Locale.settingsDefenderDisableSmartScreenStoreInfo;
         }
 
         public override bool CheckSetting()

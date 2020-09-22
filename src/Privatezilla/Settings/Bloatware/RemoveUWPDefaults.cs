@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Management.Automation;
 using System.IO;
+using Privatezilla.Locales;
 
 namespace Privatezilla.Setting.Bloatware
 {
@@ -8,12 +9,12 @@ namespace Privatezilla.Setting.Bloatware
     {
         public override string ID()
         {
-            return Properties.Resources.settingsBloatwareRemoveUWPDefaults;
+            return Locale.settingsBloatwareRemoveUWPDefaults;
         }
 
         public override string Info()
         {
-            return Properties.Resources.settingsBloatwareRemoveUWPDefaultsInfo.Replace("\\n", "\n");
+            return Locale.settingsBloatwareRemoveUWPDefaultsInfo.Replace("\\n", "\n");
         }
 
         public override bool CheckSetting()

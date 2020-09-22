@@ -53,17 +53,17 @@
             this.BtnSettingsAnalyze = new System.Windows.Forms.Button();
             this.PnlPS = new System.Windows.Forms.Panel();
             this.BtnMenuPS = new System.Windows.Forms.Button();
-            this.TxtPSInfo = new System.Windows.Forms.TextBox();
             this.LblPSHeader = new System.Windows.Forms.Label();
             this.TxtConsolePS = new System.Windows.Forms.TextBox();
+            this.TxtPSInfo = new System.Windows.Forms.TextBox();
             this.PSMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.PSImport = new System.Windows.Forms.ToolStripMenuItem();
             this.PSSaveAs = new System.Windows.Forms.ToolStripMenuItem();
             this.PSMarketplace = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.PnlSettingsBottom = new System.Windows.Forms.Panel();
-            this.ChkCodePS = new System.Windows.Forms.CheckBox();
             this.BtnDoPS = new System.Windows.Forms.Button();
+            this.ChkCodePS = new System.Windows.Forms.CheckBox();
             this.MainMenu.SuspendLayout();
             this.PnlNav.SuspendLayout();
             this.PnlSettings.SuspendLayout();
@@ -272,9 +272,9 @@
             resources.ApplyResources(this.PnlPS, "PnlPS");
             this.PnlPS.BackColor = System.Drawing.Color.White;
             this.PnlPS.Controls.Add(this.BtnMenuPS);
-            this.PnlPS.Controls.Add(this.TxtPSInfo);
             this.PnlPS.Controls.Add(this.LblPSHeader);
             this.PnlPS.Controls.Add(this.TxtConsolePS);
+            this.PnlPS.Controls.Add(this.TxtPSInfo);
             this.PnlPS.Name = "PnlPS";
             // 
             // BtnMenuPS
@@ -288,15 +288,6 @@
             this.BtnMenuPS.Name = "BtnMenuPS";
             this.BtnMenuPS.UseVisualStyleBackColor = false;
             this.BtnMenuPS.Click += new System.EventHandler(this.BtnMenuPS_Click);
-            // 
-            // TxtPSInfo
-            // 
-            resources.ApplyResources(this.TxtPSInfo, "TxtPSInfo");
-            this.TxtPSInfo.BackColor = System.Drawing.Color.White;
-            this.TxtPSInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtPSInfo.ForeColor = System.Drawing.Color.Black;
-            this.TxtPSInfo.Name = "TxtPSInfo";
-            this.TxtPSInfo.ReadOnly = true;
             // 
             // LblPSHeader
             // 
@@ -313,6 +304,15 @@
             this.TxtConsolePS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtConsolePS.ForeColor = System.Drawing.Color.Black;
             this.TxtConsolePS.Name = "TxtConsolePS";
+            // 
+            // TxtPSInfo
+            // 
+            resources.ApplyResources(this.TxtPSInfo, "TxtPSInfo");
+            this.TxtPSInfo.BackColor = System.Drawing.Color.White;
+            this.TxtPSInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtPSInfo.ForeColor = System.Drawing.Color.Black;
+            this.TxtPSInfo.Name = "TxtPSInfo";
+            this.TxtPSInfo.ReadOnly = true;
             // 
             // PSMenu
             // 
@@ -362,6 +362,16 @@
             resources.ApplyResources(this.PnlSettingsBottom, "PnlSettingsBottom");
             this.PnlSettingsBottom.Name = "PnlSettingsBottom";
             // 
+            // BtnDoPS
+            // 
+            resources.ApplyResources(this.BtnDoPS, "BtnDoPS");
+            this.BtnDoPS.BackColor = System.Drawing.Color.Gainsboro;
+            this.BtnDoPS.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.BtnDoPS.FlatAppearance.BorderSize = 0;
+            this.BtnDoPS.Name = "BtnDoPS";
+            this.BtnDoPS.UseVisualStyleBackColor = false;
+            this.BtnDoPS.Click += new System.EventHandler(this.BtnDoPS_Click);
+            // 
             // ChkCodePS
             // 
             resources.ApplyResources(this.ChkCodePS, "ChkCodePS");
@@ -373,16 +383,6 @@
             this.ChkCodePS.UseVisualStyleBackColor = false;
             this.ChkCodePS.CheckedChanged += new System.EventHandler(this.ChkCodePS_CheckedChanged);
             // 
-            // BtnDoPS
-            // 
-            resources.ApplyResources(this.BtnDoPS, "BtnDoPS");
-            this.BtnDoPS.BackColor = System.Drawing.Color.Gainsboro;
-            this.BtnDoPS.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.BtnDoPS.FlatAppearance.BorderSize = 0;
-            this.BtnDoPS.Name = "BtnDoPS";
-            this.BtnDoPS.UseVisualStyleBackColor = false;
-            this.BtnDoPS.Click += new System.EventHandler(this.BtnDoPS_Click);
-            // 
             // MainWindow
             // 
             resources.ApplyResources(this, "$this");
@@ -390,8 +390,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.PnlSettingsBottom);
             this.Controls.Add(this.PnlNav);
-            this.Controls.Add(this.PnlPS);
             this.Controls.Add(this.PnlSettings);
+            this.Controls.Add(this.PnlPS);
             this.Name = "MainWindow";
             this.ShowIcon = false;
             this.MainMenu.ResumeLayout(false);

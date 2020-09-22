@@ -525,7 +525,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;PnlSettings.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="BtnSettingsUndo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -662,46 +662,6 @@
   <data name="&gt;&gt;BtnMenuPS.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="TxtPSInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
-  </data>
-  <data name="TxtPSInfo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semilight, 9.75pt</value>
-  </data>
-  <data name="TxtPSInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 48</value>
-  </data>
-  <data name="TxtPSInfo.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="TxtPSInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 714</value>
-  </data>
-  <data name="TxtPSInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>110</value>
-  </data>
-  <data name="TxtPSInfo.Text" xml:space="preserve">
-    <value>Welcome to the Scripting Editor, which allows you to apply third-party script files and custom settings in form of PowerShell scripts and templates (bundled scripts).
-
-Select a script to view it's description.
-
-To check the code for vulnerabilities click on "View code".
-
-To obtain new objects (templates, scripts etc.) visit the Marketplace in the upper right menu. 
-</value>
-  </data>
-  <data name="&gt;&gt;TxtPSInfo.Name" xml:space="preserve">
-    <value>TxtPSInfo</value>
-  </data>
-  <data name="&gt;&gt;TxtPSInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TxtPSInfo.Parent" xml:space="preserve">
-    <value>PnlPS</value>
-  </data>
-  <data name="&gt;&gt;TxtPSInfo.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="LblPSHeader.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -736,7 +696,7 @@ To obtain new objects (templates, scripts etc.) visit the Marketplace in the upp
     <value>PnlPS</value>
   </data>
   <data name="&gt;&gt;LblPSHeader.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="TxtConsolePS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -775,6 +735,46 @@ To obtain new objects (templates, scripts etc.) visit the Marketplace in the upp
     <value>PnlPS</value>
   </data>
   <data name="&gt;&gt;TxtConsolePS.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="TxtPSInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="TxtPSInfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 9.75pt</value>
+  </data>
+  <data name="TxtPSInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 48</value>
+  </data>
+  <data name="TxtPSInfo.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TxtPSInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 714</value>
+  </data>
+  <data name="TxtPSInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="TxtPSInfo.Text" xml:space="preserve">
+    <value>Welcome to the Scripting Editor, which allows you to apply third-party script files and custom settings in form of PowerShell scripts and templates (bundled scripts).
+
+Select a script to view it's description.
+
+To check the code for vulnerabilities click on "View code".
+
+To obtain new objects (templates, scripts etc.) visit the Marketplace in the upper right menu. 
+</value>
+  </data>
+  <data name="&gt;&gt;TxtPSInfo.Name" xml:space="preserve">
+    <value>TxtPSInfo</value>
+  </data>
+  <data name="&gt;&gt;TxtPSInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtPSInfo.Parent" xml:space="preserve">
+    <value>PnlPS</value>
+  </data>
+  <data name="&gt;&gt;TxtPSInfo.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="PnlPS.Location" type="System.Drawing.Point, System.Drawing">
@@ -799,7 +799,7 @@ To obtain new objects (templates, scripts etc.) visit the Marketplace in the upp
     <value>$this</value>
   </data>
   <data name="&gt;&gt;PnlPS.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <metadata name="PSMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 19</value>

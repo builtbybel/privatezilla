@@ -13,6 +13,8 @@ using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
 
+using Privatezilla.Locales;
+
 namespace Privatezilla
 {
     public partial class MainWindow : Form
@@ -54,15 +56,15 @@ namespace Privatezilla
 
             if (equals == 0)
             {
-                MessageBox.Show(Properties.Resources.releaseUpToDate, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information); // Up-to-date
+                MessageBox.Show(Locale.releaseUpToDate, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information); // Up-to-date
             }
             else if (equals < 0)
             {
-                MessageBox.Show(Properties.Resources.releaseUnofficial, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Warning); // Unofficial
+                MessageBox.Show(Locale.releaseUnofficial, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Warning); // Unofficial
             }
             else // New release available!
             {
-                if (MessageBox.Show(Properties.Resources.releaseUpdateAvailable + LatestVersion + Properties.Resources.releaseUpdateYourVersion.Replace("\\r\\n", "\r\n") + CurrentVersion + Properties.Resources.releaseUpdateAvailableURL.Replace("\\r\\n", "\r\n\n"), this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) // New release available!
+                if (MessageBox.Show(Locale.releaseUpdateAvailable + LatestVersion + Locale.releaseUpdateYourVersion.Replace("\\r\\n", "\r\n") + CurrentVersion + Locale.releaseUpdateAvailableURL.Replace("\\r\\n", "\r\n\n"), this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) // New release available!
                 {
                     Process.Start("https://github.com/builtbybel/privatezilla/releases/tag/" + LatestVersion);
                 }
@@ -71,31 +73,31 @@ namespace Privatezilla
 
         public void Globalization()
         {
-            BtnDoPS.Text = Properties.Resources.BtnDoPS;
-            BtnSettingsAnalyze.Text = Properties.Resources.BtnSettingsAnalyze;
-            BtnSettingsDo.Text = Properties.Resources.BtnSettingsDo;
-            BtnSettingsUndo.Text = Properties.Resources.BtnSettingsUndo;
-            ChkCodePS.Text = Properties.Resources.ChkCodePS;
-            LblPS.Text = Properties.Resources.LblPS;
-            LblPSHeader.Text = Properties.Resources.LblPSHeader;
-            LblSettings.Text = Properties.Resources.LblSettings;
-            LblStatus.Text = Properties.Resources.LblStatus;
-            TxtPSInfo.Text = Properties.Resources.TxtPSInfo;
-            CheckRelease.Text = Properties.Resources.CheckRelease;
-            CommunityPkg.Text = Properties.Resources.CommunityPkg;
-            Help.Text = Properties.Resources.Help;
-            Info.Text = Properties.Resources.Info;
-            PSImport.Text = Properties.Resources.PSImport;
-            PSMarketplace.Text = Properties.Resources.PSMarketplace;
-            PSSaveAs.Text = Properties.Resources.PSSaveAs;
-            Setting.Text = Properties.Resources.columnSetting; // Status column
-            State.Text = Properties.Resources.columnState;     // State column
+            BtnDoPS.Text = Locale.BtnDoPS;
+            BtnSettingsAnalyze.Text = Locale.BtnSettingsAnalyze;
+            BtnSettingsDo.Text = Locale.BtnSettingsDo;
+            BtnSettingsUndo.Text = Locale.BtnSettingsUndo;
+            ChkCodePS.Text = Locale.ChkCodePS;
+            LblPS.Text = Locale.LblPS;
+            LblPSHeader.Text = Locale.LblPSHeader;
+            LblSettings.Text = Locale.LblSettings;
+            LblStatus.Text = Locale.LblStatus;
+            TxtPSInfo.Text = Locale.TxtPSInfo;
+            CheckRelease.Text = Locale.CheckRelease;
+            CommunityPkg.Text = Locale.CommunityPkg;
+            Help.Text = Locale.Help;
+            Info.Text = Locale.Info;
+            PSImport.Text = Locale.PSImport;
+            PSMarketplace.Text = Locale.PSMarketplace;
+            PSSaveAs.Text = Locale.PSSaveAs;
+            Setting.Text = Locale.columnSetting; // Status column
+            State.Text = Locale.columnState;     // State column
         }
 
         public MainWindow()
         {
             // Uncomment lower line and add lang code to run localization test
-            // Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
+            // Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru");
 
             InitializeComponent();
 
@@ -123,7 +125,7 @@ namespace Privatezilla
             };
 
             // Settings > Privacy
-            TreeNode privacy = new TreeNode(Properties.Resources.rootSettingsPrivacy, new TreeNode[] {
+            TreeNode privacy = new TreeNode(Locale.rootSettingsPrivacy, new TreeNode[] {
                 new SettingNode(new Setting.Privacy.DisableTelemetry()),
                 new SettingNode(new Setting.Privacy.DisableCompTelemetry()),
                 new SettingNode(new Setting.Privacy.DisableAds()),
@@ -151,23 +153,23 @@ namespace Privatezilla
             };
 
             // Policies > Cortana
-            TreeNode cortana = new TreeNode(Properties.Resources.rootSettingsCortana, new TreeNode[] {
+            TreeNode cortana = new TreeNode(Locale.rootSettingsCortana, new TreeNode[] {
                 new SettingNode(new Setting.Cortana.DisableCortana()),
                 new SettingNode(new Setting.Cortana.DisableBing()),
                 new SettingNode(new Setting.Cortana.UninstallCortana()),
             });
 
             // Settings > Bloatware
-            TreeNode bloatware = new TreeNode(Properties.Resources.rootSettingsBloatware, new TreeNode[] {
+            TreeNode bloatware = new TreeNode(Locale.rootSettingsBloatware, new TreeNode[] {
                 new SettingNode(new Setting.Bloatware.RemoveUWPAll()),
                 new SettingNode(new Setting.Bloatware.RemoveUWPDefaults()),
             })
             {
-                ToolTipText = Properties.Resources.rootSettingsBloatwareInfo
+                ToolTipText = Locale.rootSettingsBloatwareInfo
             };
 
             // Settings > App permissions
-            TreeNode apps = new TreeNode(Properties.Resources.rootSettingsApps, new TreeNode[] {
+            TreeNode apps = new TreeNode(Locale.rootSettingsApps, new TreeNode[] {
                 new SettingNode(new Setting.Apps.AppNotifications()),
                 new SettingNode(new Setting.Apps.Camera()),
                 new SettingNode(new Setting.Apps.Microphone()),
@@ -195,24 +197,24 @@ namespace Privatezilla
             });
 
             // Settings > Updates
-            TreeNode updates = new TreeNode(Properties.Resources.rootSettingsUpdates, new TreeNode[] {
+            TreeNode updates = new TreeNode(Locale.rootSettingsUpdates, new TreeNode[] {
                 new SettingNode(new Setting.Updates.DisableUpdates()),
                 new SettingNode(new Setting.Updates.DisableUpdatesSharing()),
                 new SettingNode(new Setting.Updates.BlockMajorUpdates()),
             });
 
             // Settings > Gaming
-            TreeNode gaming = new TreeNode(Properties.Resources.rootSettingsGaming, new TreeNode[] {
+            TreeNode gaming = new TreeNode(Locale.rootSettingsGaming, new TreeNode[] {
                 new SettingNode(new Setting.Gaming.DisableGameBar()),
             });
 
             // Settings > Windows Defender
-            TreeNode defender = new TreeNode(Properties.Resources.rootSettingsDefender, new TreeNode[] {
+            TreeNode defender = new TreeNode(Locale.rootSettingsDefender, new TreeNode[] {
                 new SettingNode(new Setting.Defender.DisableSmartScreenStore()),
             });
 
             // Settings > Microsoft Edge
-            TreeNode edge = new TreeNode(Properties.Resources.rootSettingsEdge, new TreeNode[] {
+            TreeNode edge = new TreeNode(Locale.rootSettingsEdge, new TreeNode[] {
                 new SettingNode(new Setting.Edge.DisableAutoFillCredits()),
                 new SettingNode(new Setting.Edge.EdgeBackground()),
                 new SettingNode(new Setting.Edge.DisableSync()),
@@ -220,7 +222,7 @@ namespace Privatezilla
             });
 
             // Settings > Security
-            TreeNode security = new TreeNode(Properties.Resources.rootSettingsSecurity, new TreeNode[] {
+            TreeNode security = new TreeNode(Locale.rootSettingsSecurity, new TreeNode[] {
                 new SettingNode(new Setting.Security.DisablePassword()),
                 new SettingNode(new Setting.Security.WindowsDRM()),
             });
@@ -249,7 +251,7 @@ namespace Privatezilla
             ToolTip tooltip = new ToolTip();
             tooltip.AutoPopDelay = 15000;
             tooltip.IsBalloon = true;
-            tooltip.SetToolTip(this.TvwSettings, Properties.Resources.LblSettings);
+            tooltip.SetToolTip(this.TvwSettings, Locale.LblSettings);
         }
 
         private List<SettingNode> CollectSettingNodes()
@@ -335,7 +337,7 @@ namespace Privatezilla
         private async void BtnSettingsAnalyze_Click(object sender, EventArgs e)
         {
             Reset();
-            LblStatus.Text = Properties.Resources.statusDoWait;
+            LblStatus.Text = Locale.statusDoWait;
             BtnSettingsAnalyze.Enabled = false;
 
             LvwStatus.BeginUpdate();
@@ -352,12 +354,12 @@ namespace Privatezilla
 
                 if (shouldPerform)
                 {
-                    state.SubItems.Add(Properties.Resources.statusFailedConfigure); // Not configured
+                    state.SubItems.Add(Locale.statusFailedConfigure); // Not configured
                     state.BackColor = Color.LavenderBlush;
                 }
                 else
                 {
-                    state.SubItems.Add(Properties.Resources.statusSuccessConfigure); // Configured
+                    state.SubItems.Add(Locale.statusSuccessConfigure); // Configured
                     state.BackColor = Color.Honeydew;
                 }
 
@@ -369,7 +371,7 @@ namespace Privatezilla
             DoProgress(100);
 
             // Summary
-            LblStatus.Text = Properties.Resources.statusFinishAnalyze;
+            LblStatus.Text = Locale.statusFinishAnalyze;
             BtnSettingsAnalyze.Enabled = true;
             LvwStatus.EndUpdate();
 
@@ -388,7 +390,7 @@ namespace Privatezilla
             foreach (SettingNode node in treeNodes)
             {
                 // Add status info
-                LblStatus.Text = Properties.Resources.statusDoWait + " (" + node.Text + ")";
+                LblStatus.Text = Locale.statusDoWait + " (" + node.Text + ")";
 
                 var setting = node.Setting;
                 ConfiguredTaskAwaitable<bool> performTask = Task<bool>.Factory.StartNew(() => setting.DoSetting()).ConfigureAwait(true);
@@ -398,12 +400,12 @@ namespace Privatezilla
                 var listItem = new ListViewItem(setting.ID());
                 if (result)
                 {
-                    listItem.SubItems.Add(Properties.Resources.statusSuccessApply); // Applied
+                    listItem.SubItems.Add(Locale.statusSuccessApply); // Applied
                     listItem.BackColor = Color.Honeydew;
                 }
                 else
                 {
-                    listItem.SubItems.Add(Properties.Resources.statusFailedApply); // Not applied
+                    listItem.SubItems.Add(Locale.statusFailedApply); // Not applied
                     listItem.BackColor = Color.LavenderBlush;
                 }
 
@@ -413,7 +415,7 @@ namespace Privatezilla
 
             DoProgress(100);
 
-            LblStatus.Text = Properties.Resources.statusFinishApply;
+            LblStatus.Text = Locale.statusFinishApply;
             BtnSettingsDo.Enabled = true;
             LvwStatus.EndUpdate();
 
@@ -425,7 +427,7 @@ namespace Privatezilla
         /// </summary>
         private async void UndoSettings(List<SettingNode> treeNodes)
         {
-            LblStatus.Text = Properties.Resources.statusDoWait;
+            LblStatus.Text = Locale.statusDoWait;
             BtnSettingsUndo.Enabled = false;
             LvwStatus.BeginUpdate();
 
@@ -439,12 +441,12 @@ namespace Privatezilla
                 var listItem = new ListViewItem(setting.ID());
                 if (result)
                 {
-                    listItem.SubItems.Add(Properties.Resources.statusSuccessApply); // Applied
+                    listItem.SubItems.Add(Locale.statusSuccessApply); // Applied
                     listItem.BackColor = Color.Honeydew;
                 }
                 else
                 {
-                    listItem.SubItems.Add(Properties.Resources.statusFailedApply); // Not applied
+                    listItem.SubItems.Add(Locale.statusFailedApply); // Not applied
                     listItem.BackColor = Color.LavenderBlush;
                 }
 
@@ -454,7 +456,7 @@ namespace Privatezilla
 
             DoProgress(100);
 
-            LblStatus.Text = Properties.Resources.statusFinishUndo;
+            LblStatus.Text = Locale.statusFinishUndo;
             BtnSettingsUndo.Enabled = true;
             LvwStatus.EndUpdate();
 
@@ -471,7 +473,7 @@ namespace Privatezilla
 
         private void BtnSettingsUndo_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show(Properties.Resources.statusUndoSettings, this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            if (MessageBox.Show(Locale.statusUndoSettings, this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 Reset();
 
@@ -483,7 +485,7 @@ namespace Privatezilla
         private void Info_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Privatezilla" + "\nVersion " + Program.GetCurrentVersionTostring() + " (Phoenix)\r\n" +
-                                            Properties.Resources.infoApp.Replace("\\t", "\t"), "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                            Locale.infoApp.Replace("\\t", "\t"), "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void LblMainMenu_Click(object sender, EventArgs e)
@@ -493,7 +495,7 @@ namespace Privatezilla
 
         private void Help_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Properties.Resources.helpApp.Replace("\\r\\n", "\r\n"), Help.Text, MessageBoxButtons.OK, MessageBoxIcon.Question);
+            MessageBox.Show(Locale.helpApp.Replace("\\r\\n", "\r\n"), Help.Text, MessageBoxButtons.OK, MessageBoxIcon.Question);
         }
 
         /// <summary>
@@ -575,7 +577,7 @@ namespace Privatezilla
                     TxtConsolePS.Text = content.ToString();
 
                     // View Info
-                    TxtPSInfo.Text = Properties.Resources.PSInfo.Replace("\\r\\n", "\r\n") + string.Join(Environment.NewLine, System.IO.File.ReadAllLines(psdir).Where(s => s.StartsWith("###")).Select(s => s.Substring(3).Replace("###", "\r\n\n")));
+                    TxtPSInfo.Text = Locale.PSInfo.Replace("\\r\\n", "\r\n") + string.Join(Environment.NewLine, System.IO.File.ReadAllLines(psdir).Where(s => s.StartsWith("###")).Select(s => s.Substring(3).Replace("###", "\r\n\n")));
                 }
             }
             catch { }
@@ -588,7 +590,7 @@ namespace Privatezilla
         {
             if (LstPS.CheckedItems.Count == 0)
             {
-                MessageBox.Show(Properties.Resources.msgPSSelect, BtnDoPS.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(Locale.msgPSSelect, BtnDoPS.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
             for (int i = 0; i < LstPS.Items.Count; i++)
@@ -602,7 +604,7 @@ namespace Privatezilla
                     var equals = new[] { "Silent" };
                     var str = TxtPSInfo.Text;
 
-                    BtnDoPS.Text = Properties.Resources.statusDoPSProcessing;
+                    BtnDoPS.Text = Locale.statusDoPSProcessing;
                     PnlPS.Enabled = false;
 
                     // Silent
@@ -630,11 +632,11 @@ namespace Privatezilla
                         await Task.Run(() => { Process.Start(startInfo).WaitForExit(); });
                     }
 
-                    BtnDoPS.Text = Properties.Resources.statusDoPSApply;
+                    BtnDoPS.Text = Locale.statusDoPSApply;
                     PnlPS.Enabled = true;
 
                     // Done!
-                    MessageBox.Show("Script " + "\"" + LstPS.Text + "\" " + Properties.Resources.msgPSSuccess, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Script " + "\"" + LstPS.Text + "\" " + Locale.msgPSSuccess, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
@@ -646,12 +648,12 @@ namespace Privatezilla
         {
             if (ChkCodePS.Checked == true)
             {
-                ChkCodePS.Text = Properties.Resources.PSBack;
+                ChkCodePS.Text = Locale.PSBack;
                 TxtConsolePS.Visible = true;
             }
             else
             {
-                ChkCodePS.Text = Properties.Resources.ChkCodePS;
+                ChkCodePS.Text = Locale.ChkCodePS;
                 TxtConsolePS.Visible = false;
             }
         }
@@ -695,7 +697,7 @@ namespace Privatezilla
         {
             if (ChkCodePS.Checked == false)
             {
-                MessageBox.Show(Properties.Resources.msgPSSave, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(Locale.msgPSSave, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {

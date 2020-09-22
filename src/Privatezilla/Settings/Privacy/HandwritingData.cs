@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Privatezilla.Locales;
 
 namespace Privatezilla.Setting.Privacy
 {
@@ -13,12 +14,12 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return Properties.Resources.settingsPrivacyHandwritingData;
+            return Locale.settingsPrivacyHandwritingData;
         }
 
         public override string Info()
         {
-            return Properties.Resources.settingsPrivacyHandwritingDataInfo;
+            return Locale.settingsPrivacyHandwritingDataInfo;
         }
 
         public override bool CheckSetting()

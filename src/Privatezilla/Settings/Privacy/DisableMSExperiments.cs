@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Privatezilla.Locales;
 
 namespace Privatezilla.Setting.Privacy
 {
@@ -9,13 +10,13 @@ namespace Privatezilla.Setting.Privacy
 
         public override string ID()
         {
-            return Properties.Resources.settingsPrivacyDisableMSExperiments;
+            return Locale.settingsPrivacyDisableMSExperiments;
   
         }
 
         public override string Info()
         {
-            return Properties.Resources.settingsPrivacyDisableMSExperimentsInfo;
+            return Locale.settingsPrivacyDisableMSExperimentsInfo;
         }
 
         public override bool CheckSetting()
