@@ -1,5 +1,5 @@
 ### (Silent) This script disables unwanted Windows services. ###
-### If you do not want to disable certain services comment out the corresponding lines below.###
+### If you do not want to disable certain services comment out the corresponding in code section and save the script as a new preset script.###
 ### Author of this script: https://github.com/W4RH4WK/Debloat-Windows-10
 
 $services = @(
