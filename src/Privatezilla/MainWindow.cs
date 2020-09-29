@@ -97,7 +97,7 @@ namespace Privatezilla
         public MainWindow()
         {
             // Uncomment lower line and add lang code to run localization test
-            // Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru");
+             //Thread.CurrentThread.CurrentUICulture = new CultureInfo("it");
 
             InitializeComponent();
 
