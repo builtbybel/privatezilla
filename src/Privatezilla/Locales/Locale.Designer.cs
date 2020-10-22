@@ -19,7 +19,7 @@ namespace Privatezilla.Locales {
     // -Klasse über ein Tool wie ResGen oder Visual Studio automatisch generiert.
     // Um einen Member hinzuzufügen oder zu entfernen, bearbeiten Sie die .ResX-Datei und führen dann ResGen
     // mit der /str-Option erneut aus, oder Sie erstellen Ihr VS-Projekt neu.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Locale {
@@ -1332,6 +1332,24 @@ namespace Privatezilla.Locales {
         internal static string settingsUpdatesBlockMajorUpdatesInfo {
             get {
                 return ResourceManager.GetString("settingsUpdatesBlockMajorUpdatesInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Disable safeguards for Feature Updates ähnelt.
+        /// </summary>
+        internal static string settingsUpdatesDisableSafeguards {
+            get {
+                return ResourceManager.GetString("settingsUpdatesDisableSafeguards", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Microsoft uses diagnostic data to determine whether devices that use Windows Update are ready for a feature update in order to ensure a smooth experience.\nWhen Microsoft determines a device is not ready to update due to a known issue, a safeguard hold (also known as a compatibility hold or update block) is generated to delay the device&apos;s upgrade and protect the end-user experience.\nThis setting will opt out of safeguard protections allowing you to bypass any feature upgrade blocks. ähnelt.
+        /// </summary>
+        internal static string settingsUpdatesDisableSafeguardsInfo {
+            get {
+                return ResourceManager.GetString("settingsUpdatesDisableSafeguardsInfo", resourceCulture);
             }
         }
         

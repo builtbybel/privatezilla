@@ -677,6 +677,12 @@ Add translation credits here!</comment>
     <value>This setting called "TargetReleaseVersionInfo" prevents Windows 10 feature updates from being installed until the specified version reaches the end of support.\nIt will specify your currently used Windows 10 version as the target release version of Windows 10 that you wish the system to be on (supports only Pro and enterprise versions).</value>
     <comment>Settings &gt; Updates</comment>
   </data>
+  <data name="settingsUpdatesDisableSafeguards" xml:space="preserve">
+    <value>Disable safeguards for Feature Updates</value>
+  </data>
+  <data name="settingsUpdatesDisableSafeguardsInfo" xml:space="preserve">
+    <value>Microsoft uses diagnostic data to determine whether devices that use Windows Update are ready for a feature update in order to ensure a smooth experience.\nWhen Microsoft determines a device is not ready to update due to a known issue, a safeguard hold (also known as a compatibility hold or update block) is generated to delay the device's upgrade and protect the end-user experience.\nThis setting will opt out of safeguard protections allowing you to bypass any feature upgrade blocks.</value>
+  </data>
   <data name="settingsUpdatesDisableUpdates" xml:space="preserve">
     <value>Disable forced Windows updates</value>
     <comment>Settings &gt; Updates</comment>

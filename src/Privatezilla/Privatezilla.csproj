@@ -145,6 +145,7 @@
     <Compile Include="Settings\Security\DisablePassword.cs" />
     <Compile Include="Settings\Security\WindowsDRM.cs" />
     <Compile Include="Settings\Updates\BlockMajorUpdates.cs" />
+    <Compile Include="Settings\Updates\DisableSafeguards.cs" />
     <Compile Include="Settings\Updates\DisableUpdates.cs" />
     <Compile Include="Settings\Updates\UpdatesSharing.cs" />
     <Compile Include="Program.cs" />

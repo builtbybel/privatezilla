@@ -201,6 +201,7 @@ namespace Privatezilla
                 new SettingNode(new Setting.Updates.DisableUpdates()),
                 new SettingNode(new Setting.Updates.DisableUpdatesSharing()),
                 new SettingNode(new Setting.Updates.BlockMajorUpdates()),
+                new SettingNode(new Setting.Updates.DisableSafeguards()),
             });
 
             // Settings > Gaming
