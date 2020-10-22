@@ -42,7 +42,7 @@ Privatezilla integrates the most critical Windows 10 privacy settings and allows
 
 ### System Requirements
 
-- Windows 10 (supports 1809 - 2004)
+- Windows 10 (supports 1809 - 2009)
 
 ## Download
 
