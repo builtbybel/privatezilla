@@ -66,7 +66,8 @@ All objects (templates and scripts) included can be viewed [here](https://github
 
 ### How-to Install
 * **[Download](https://github.com/builtbybel/privatezilla/blob/master/scripts/packages.zip?raw=true)** the latest `packages.zip` file.
-* **Extract the package** to Privatezilla installation directory
+* **Extract the package** to Privatezilla installation directory 
+   *the extracted package must have the name scripts*
 * **Restart Privatezilla**
 
 ### Intro of community package after Installing
