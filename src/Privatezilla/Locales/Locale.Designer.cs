@@ -1336,7 +1336,7 @@ namespace Privatezilla.Locales {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Disable safeguards for Feature Updates ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Disable safeguards for feature updates ähnelt.
         /// </summary>
         internal static string settingsUpdatesDisableSafeguards {
             get {

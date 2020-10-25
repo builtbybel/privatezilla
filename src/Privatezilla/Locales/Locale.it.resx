@@ -171,11 +171,8 @@
     <comment>Main menu</comment>
   </data>
   <data name="infoApp" xml:space="preserve">
-    <value>
-L'app open source per le impostazioni sulla privacy di Windows 10.
-																						
-
-Non è in alcun modo correlata a Microsoft ed è un progetto completamente indipendente.
+    <value>L'app open source per le impostazioni sulla privacy di Windows 10.
+									Non è in alcun modo correlata a Microsoft ed è un progetto completamente indipendente.
 
 Tutte le info e crediti su questo progetto le trovi su
 \tgithub.com/builtbybel/privatezilla
@@ -238,9 +235,6 @@ Traduzione di: garf02</comment>
     <value>Salva lo script corrente come nuovo script preimpostato</value>
     <comment>Scripting menu</comment>
   </data>
-											   
-									
-		 
   <data name="releaseUnofficial" xml:space="preserve">
     <value>Stai usando una versione non ufficiale di Privatezilla.</value>
   </data>

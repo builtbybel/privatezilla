@@ -154,6 +154,7 @@
     <Compile Include="Settings\Cortana\DisableCortana.cs" />
     <Compile Include="Helpers\SetttingsBase.cs" />
     <Compile Include="Settings\Privacy\DisableTelemetry.cs" />
+    <EmbeddedResource Include="Locales\Locale.de.resx" />
     <EmbeddedResource Include="Locales\Locale.it.resx" />
     <EmbeddedResource Include="Locales\Locale.resx">
       <Generator>ResXFileCodeGenerator</Generator>

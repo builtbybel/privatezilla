@@ -678,7 +678,8 @@ Add translation credits here!</comment>
     <comment>Settings &gt; Updates</comment>
   </data>
   <data name="settingsUpdatesDisableSafeguards" xml:space="preserve">
-    <value>Disable safeguards for Feature Updates</value>
+    <value>Disable safeguards for feature updates</value>
+    <comment>Settings &gt; Updates</comment>
   </data>
   <data name="settingsUpdatesDisableSafeguardsInfo" xml:space="preserve">
     <value>Microsoft uses diagnostic data to determine whether devices that use Windows Update are ready for a feature update in order to ensure a smooth experience.\nWhen Microsoft determines a device is not ready to update due to a known issue, a safeguard hold (also known as a compatibility hold or update block) is generated to delay the device's upgrade and protect the end-user experience.\nThis setting will opt out of safeguard protections allowing you to bypass any feature upgrade blocks.</value>
