@@ -465,11 +465,11 @@ Traduzione di: garf02</comment>
     <comment>Settings &gt; Edge</comment>
   </data>
   <data name="settingsEdgeBlockEdgeRollout" xml:space="preserve">
-    <value>Block Installation of New Microsoft Edge</value>
+    <value>Blocca Installazione del Nuovo Microsoft Edge</value>
     <comment>Settings &gt; Edge</comment>
   </data>
   <data name="settingsEdgeBlockEdgeRolloutInfo" xml:space="preserve">
-    <value>This will block Windows 10 Update Force Installing of the new Chromium-based Microsoft Edge web browser if it's not installed already on the device.</value>
+    <value>Questo bloccherà l'installazione forzata dell'aggiornamento di Windows 10 del nuovo browser Web Microsoft Edge basato su Chromium se non è già installato sul dispositivo.</value>
     <comment>Settings &gt; Edge</comment>
   </data>
   <data name="settingsEdgeDisableSync" xml:space="preserve">
