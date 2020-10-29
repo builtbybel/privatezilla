@@ -148,7 +148,7 @@
     <value>Zustand</value>
   </data>
   <data name="CommunityPkg" xml:space="preserve">
-    <value>Community Package beziehen</value>
+    <value>Community-Paket beziehen</value>
     <comment>Main menu</comment>
   </data>
   <data name="Help" xml:space="preserve">
@@ -172,7 +172,7 @@
     <value>
 Die Open-Source Windows 10 Privatsphären-Einstellungs-App.
 
-Diese App ist keineswegs mit Microsoft verbunden und ist ein unabhängiges Projekt.
+Diese App steht in keinerlei Vebindung zu Microsoft und ist ein unabhängiges Projekt.
 
 Alle Infos und Credits zu dem Projekt auf
 \tgithub.com/builtbybel/privatezilla
@@ -200,7 +200,7 @@ Sie können mir außerdem folgen auf
     <comment>GUI</comment>
   </data>
   <data name="LblStatus" xml:space="preserve">
-    <value>Drücke Analysieren um nach konfigurierten einstellungen zu suchen.</value>
+    <value>Drücke Analysieren um nach konfigurierten Einstellungen zu suchen.</value>
     <comment>GUI</comment>
   </data>
   <data name="msgAppCompatibility" xml:space="preserve">
@@ -279,7 +279,7 @@ Sie können mir außerdem folgen auf
     <value>Sicherheit</value>
   </data>
   <data name="rootSettingsUpdates" xml:space="preserve">
-    <value>Aktualisierungen</value>
+    <value>Updates</value>
   </data>
   <data name="settingsAppsAccountInfo" xml:space="preserve">
     <value>App-Zugriff auf Kontoinformationen deaktivieren</value>
@@ -363,7 +363,7 @@ Sie können mir außerdem folgen auf
     <value>App-Zugriff auf Aufgaben deaktivieren</value>
   </data>
   <data name="settingsAppsTrackingApps" xml:space="preserve">
-    <value>Die Nachverfolgung von App-Starts deaktivieren</value>
+    <value>Nachverfolgung von App-Starts deaktivieren</value>
   </data>
   <data name="settingsAppsTrackingAppsInfo" xml:space="preserve">
     <value>Dies ermöglicht Ihnen schnellen Zugriff auf Ihre Liste der am häufigsten verwendeten Apps sowohl im Startmenü als auch bei der Suche auf Ihrem Gerät.</value>
@@ -498,7 +498,7 @@ Sie können mir außerdem folgen auf
     <value>Experimentelle Einstellungen deaktivieren</value>
   </data>
   <data name="settingsPrivacyDisableMSExperimentsInfo" xml:space="preserve">
-    <value>In bestimmten Versionen von Windows 10 könnten Benutzer Microsoft mit dem System experimentieren lassen, um Benutzereinstellungen oder das Verhalten von Geräten zu studieren. Dadurch kann Microsoft mit den Einstellungen auf Ihrem PC „Experimente durchführen“ und sollte daher mit dieser Einstellung deaktiviert werden.</value>
+    <value>In bestimmten Versionen von Windows 10 könnten Benutzer Microsoft mit dem System experimentieren lassen, um Benutzereinstellungen oder das Verhalten von Geräten zu studieren.\nDadurch kann Microsoft mit den Einstellungen auf Ihrem PC „Experimente durchführen“ und sollte daher mit dieser Einstellung deaktiviert werden.</value>
   </data>
   <data name="settingsPrivacyDisableTelemetry" xml:space="preserve">
     <value>Telemetrie deaktivieren</value>
@@ -578,6 +578,12 @@ Sie können mir außerdem folgen auf
   <data name="settingsUpdatesBlockMajorUpdatesInfo" xml:space="preserve">
     <value>Die Einstellung mit dem Namen "TargetReleaseVersionInfo" verhindert die Installation von Windows 10 Funktionsupdates, bis die angegebene Version das Ende des Supports erreicht.\nEs wird Ihre aktuell verwendete Windows 10-Version als Ziel-Release-Version von Windows 10 angeben, auf der das System verwendet werden soll (unterstützt nur Pro-- und Enterprise-Versionen).</value>
   </data>
+  <data name="settingsUpdatesDisableSafeguards" xml:space="preserve">
+    <value>Update-Blockaden für Funktionsupdates deaktivieren</value>
+  </data>
+  <data name="settingsUpdatesDisableSafeguardsInfo" xml:space="preserve">
+    <value>Microsoft verwendet Diagnosedaten, um zu ermitteln, ob Geräte, die Windows Update verwenden, für ein Funktions Update bereit sind, um eine reibungslose Nutzung zu gewährleisten.\nWenn Microsoft feststellt, dass ein Gerät aufgrund eines bekannten Problems nicht aktualisiert werden kann, wird ein SafeGuard-halte Bereich generiert, um das Upgrade des Geräts zu verzögern und die Benutzeroberfläche zu schützen.\nMit dieser Einstellung werden die genannten Sicherheitsvorkehrungen deaktiviert, so dass Sie alle Update-Blockaden umgehen können.</value>
+  </data>
   <data name="settingsUpdatesDisableUpdates" xml:space="preserve">
     <value>Erzwungene Windows-Updates deaktivieren</value>
   </data>
@@ -588,7 +594,7 @@ Sie können mir außerdem folgen auf
     <value>Teilen von Windows-Updates deaktivieren</value>
   </data>
   <data name="settingsUpdatesUpdateSharingInfo" xml:space="preserve">
-    <value>Mit Windows 10 können Sie Updates aus verschiedenen Quellen herunterladen, um die Aktualisierung des Betriebssystems zu beschleunigen. Dies wird das Teilen Ihrer Dateien an andere deaktivieren und Ihre IP-Adresse nicht beliebigen Computern aussetzen.</value>
+    <value>Mit Windows 10 können Sie Updates aus verschiedenen Quellen herunterladen, um die Aktualisierung des Betriebssystems zu beschleunigen.\nDies wird das Teilen Ihrer Dateien an andere deaktivieren und Ihre IP-Adresse nicht beliebigen Computern aussetzen.</value>
   </data>
   <data name="statusDoPSApply" xml:space="preserve">
     <value>Anwenden</value>
