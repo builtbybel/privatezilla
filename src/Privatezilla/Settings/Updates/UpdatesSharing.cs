@@ -15,7 +15,7 @@ namespace Privatezilla.Setting.Updates
 
         public override string Info()
         {
-            return Locale.settingsUpdatesUpdateSharingInfo;
+            return Locale.settingsUpdatesUpdateSharingInfo.Replace("\\n", "\n");
         }
 
         public override bool CheckSetting()

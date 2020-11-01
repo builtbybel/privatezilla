@@ -534,7 +534,7 @@ Sie können mir außerdem folgen auf
     <value>Holen Sie mehr aus Windows heraus deaktivieren</value>
   </data>
   <data name="settingsPrivacyGetMoreOutOfWindowsInfo" xml:space="preserve">
-    <value>Jüngste Windows 10-Versionen zeigen gelegentlich das Hinweisfenster "Get even More Out of Windows" an, wenn Sie sich bei Ihrem Benutzerkonto anmelden. Falls Sie das als störend empfinden, können Sie es mit dieser Einstellung deaktivieren.</value>
+    <value>Unter dem Titel „Get even more out of Windows“ informiert die Pop-up-Meldung über neue oder verbesserte Funktionen des Betriebssystems wie Windows Hello, Microsoft 365, OneDrive oder die Synchronisation von Windows-PCs und Smartphones.\nFalls Sie das als störend empfinden, können Sie es mit dieser Einstellung deaktivieren.</value>
   </data>
   <data name="settingsPrivacyHandwritingData" xml:space="preserve">
     <value>Verwenden von Handschriftdaten unterbinden</value>
@@ -552,7 +552,7 @@ Sie können mir außerdem folgen auf
     <value>Inventarsammler deaktivieren</value>
   </data>
   <data name="settingsPrivacyInventoryCollectorInfo" xml:space="preserve">
-    <value>Der Inventory Collector macht eine Bestandasaufnahme von Applikationen, Geräte und Treiber auf dem System und sendet die Informationen an Microsoft. Diese Informationen dienen dazu, Kompatibilitätsprobleme zu diagnostizieren.\nHinweis: Diese Einstellung hat keine Auswirkung, wenn das Programm zur Verbesserung der Kundenerfahrung ausgeschaltet ist. Der Inventarsammler wird ausgeschaltet.</value>
+    <value>Der Inventory Collector macht eine Bestandasaufnahme von Applikationen, Geräte und Treiber auf dem System und sendet die Informationen an Microsoft.\nDiese Informationen dienen dazu, Kompatibilitätsprobleme zu diagnostizieren.\nHinweis: Diese Einstellung hat keine Auswirkung, wenn das Programm zur Verbesserung der Kundenerfahrung ausgeschaltet ist. Der Inventarsammler wird ausgeschaltet.</value>
   </data>
   <data name="settingsPrivacySuggestedContent" xml:space="preserve">
     <value>Empfohlene Inhalte in der Einstellungs-App blockieren</value>

@@ -349,6 +349,9 @@
             // ToolTip
             // 
             this.ToolTip.AutomaticDelay = 0;
+            this.ToolTip.AutoPopDelay = 15000;
+            this.ToolTip.InitialDelay = 500;
+            this.ToolTip.ReshowDelay = 100;
             this.ToolTip.UseAnimation = false;
             this.ToolTip.UseFading = false;
             // 

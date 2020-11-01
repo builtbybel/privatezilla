@@ -16,7 +16,7 @@ namespace Privatezilla.Setting.Privacy
 
         public override string Info()
         {
-            return Locale.settingsPrivacyDisableMSExperimentsInfo;
+            return Locale.settingsPrivacyDisableMSExperimentsInfo.Replace("\\n", "\n");
         }
 
         public override bool CheckSetting()
