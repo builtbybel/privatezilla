@@ -1,4 +1,5 @@
 ﻿using Privatezilla.ITreeNode;
+using Privatezilla.Locales;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -10,10 +11,6 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Globalization;
-using System.Threading;
-
-using Privatezilla.Locales;
 
 namespace Privatezilla
 {
@@ -97,7 +94,7 @@ namespace Privatezilla
         public MainWindow()
         {
             // Uncomment lower line and add lang code to run localization test
-           // Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr");
+            // Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
 
             InitializeComponent();
 
@@ -338,6 +335,8 @@ namespace Privatezilla
         private async void BtnSettingsAnalyze_Click(object sender, EventArgs e)
         {
             Reset();
+            int performSettingsCount = 0;
+
             LblStatus.Text = Locale.statusDoWait;
             BtnSettingsAnalyze.Enabled = false;
 
@@ -357,6 +356,8 @@ namespace Privatezilla
                 {
                     state.SubItems.Add(Locale.statusFailedConfigure); // Not configured
                     state.BackColor = Color.LavenderBlush;
+
+                    performSettingsCount += 1;
                 }
                 else
                 {
@@ -372,6 +373,10 @@ namespace Privatezilla
             DoProgress(100);
 
             // Summary
+            ListViewItem sum = new ListViewItem(Locale.summarySelected + " " + $"{selectedSettings.Count}" + " | " + Locale.summaryConfigured + " " + $"{selectedSettings.Count - performSettingsCount}" + " | " + Locale.summaryNotConfigured + " " + $"{performSettingsCount}");
+            sum.SubItems.Add(Locale.summaryInfo);
+            LvwStatus.Items.Insert(0, sum);
+
             LblStatus.Text = Locale.statusFinishAnalyze;
             BtnSettingsAnalyze.Enabled = true;
             LvwStatus.EndUpdate();

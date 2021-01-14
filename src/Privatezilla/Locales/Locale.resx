@@ -182,7 +182,7 @@ All infos and credits about this project on
 You can also follow me on
 \ttwitter.com/builtbybel
 
-(C#) 2020, Builtbybel</value>
+(C#) 2021, Builtbybel</value>
     <comment>About the app
 Add translation credits here!</comment>
   </data>
@@ -732,6 +732,22 @@ Add translation credits here!</comment>
   </data>
   <data name="statusUndoSettings" xml:space="preserve">
     <value>Do you really want to revert all selected settings to Windows 10 default state?</value>
+  </data>
+  <data name="summaryConfigured" xml:space="preserve">
+    <value>Configured:</value>
+    <comment>Summary ONLY</comment>
+  </data>
+  <data name="summaryInfo" xml:space="preserve">
+    <value>Summary</value>
+    <comment>Summary ONLY</comment>
+  </data>
+  <data name="summaryNotConfigured" xml:space="preserve">
+    <value>Not Configured:</value>
+    <comment>Summary ONLY</comment>
+  </data>
+  <data name="summarySelected" xml:space="preserve">
+    <value>Selected:</value>
+    <comment>Summary ONLY</comment>
   </data>
   <data name="TxtPSInfo" xml:space="preserve">
     <value>Welcome to the Scripting Editor, which allows you to apply third-party script files and custom settings in form of PowerShell scripts and templates (bundled scripts).

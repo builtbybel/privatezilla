@@ -184,7 +184,7 @@ namespace Privatezilla.Locales {
         ///You can also follow me on
         ///\ttwitter.com/builtbybel
         ///
-        ///(C#) 2020, Builtbybel ähnelt.
+        ///(C#) 2021, Builtbybel ähnelt.
         /// </summary>
         internal static string infoApp {
             get {
@@ -1485,6 +1485,42 @@ namespace Privatezilla.Locales {
         internal static string statusUndoSettings {
             get {
                 return ResourceManager.GetString("statusUndoSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Configured: ähnelt.
+        /// </summary>
+        internal static string summaryConfigured {
+            get {
+                return ResourceManager.GetString("summaryConfigured", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Summary ähnelt.
+        /// </summary>
+        internal static string summaryInfo {
+            get {
+                return ResourceManager.GetString("summaryInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Not Configured: ähnelt.
+        /// </summary>
+        internal static string summaryNotConfigured {
+            get {
+                return ResourceManager.GetString("summaryNotConfigured", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Selected: ähnelt.
+        /// </summary>
+        internal static string summarySelected {
+            get {
+                return ResourceManager.GetString("summarySelected", resourceCulture);
             }
         }
         

@@ -184,7 +184,7 @@ Sie können mir außerdem folgen auf
 Übersetzer: uDEV (https://crowdin.com/profile/uDEV)
 ☆━━━━━━━━━━━━━━━☆
 
-(C#) 2020, Builtbybel</value>
+(C#) 2021, Builtbybel</value>
     <comment>infoApp</comment>
   </data>
   <data name="LblPS" xml:space="preserve">
@@ -602,9 +602,6 @@ Sie können mir außerdem folgen auf
   <data name="statusDoPSProcessing" xml:space="preserve">
     <value>Wird verarbeitet</value>
   </data>
-  <data name="statusDoSettings" xml:space="preserve">
-    <value>Wollen Sie wirklich alle ausgewählten Einstellung zu den Windows 10 Standardeinstellungen zurücksetzen?"</value>
-  </data>
   <data name="statusDoWait" xml:space="preserve">
     <value>Bitte warten ...</value>
   </data>
@@ -628,6 +625,21 @@ Sie können mir außerdem folgen auf
   </data>
   <data name="statusSuccessConfigure" xml:space="preserve">
     <value>Konfiguriert</value>
+  </data>
+  <data name="statusUndoSettings" xml:space="preserve">
+    <value>Wollen Sie wirklich alle ausgewählten Einstellung zu den Windows 10 Standardeinstellungen zurücksetzen?</value>
+  </data>
+  <data name="summaryConfigured" xml:space="preserve">
+    <value>Konfiguriert:</value>
+  </data>
+  <data name="summaryInfo" xml:space="preserve">
+    <value>Ergebnisse</value>
+  </data>
+  <data name="summaryNotConfigured" xml:space="preserve">
+    <value>Nicht konfiguriert:</value>
+  </data>
+  <data name="summarySelected" xml:space="preserve">
+    <value>Ausgewählt:</value>
   </data>
   <data name="TxtPSInfo" xml:space="preserve">
     <value>Willkommen beim Skripting Editor, welcher Ihnen erlaubt, Gruppenrichtlinien und benutzerdefinierte Einstellungen in der Form von PowerShell Skripten und Vorlagen(gebündelte Skripts) anzuwenden.
