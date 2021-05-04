@@ -642,7 +642,7 @@ Add translation credits here!</comment>
     <comment>Settings &gt; Privacy</comment>
   </data>
   <data name="settingsPrivacyInventoryCollectorInfo" xml:space="preserve">
-    <value>The Inventory Collector inventories applications files devices and drivers on the system and sends the information to Microsoft. This information is used to help diagnose compatibility problems.\nNote: This setting setting has no effect if the Customer Experience Improvement Program is turned off. The Inventory Collector will be off.</value>
+    <value>The Inventory Collector inventories applications files devices and drivers on the system and sends the information to Microsoft. This information is used to help diagnose compatibility problems.\nNote: This setting has no effect if the Customer Experience Improvement Program is turned off. The Inventory Collector will be off.</value>
     <comment>Settings &gt; Privacy</comment>
   </data>
   <data name="settingsPrivacySuggestedContent" xml:space="preserve">
