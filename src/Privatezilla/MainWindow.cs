@@ -12,6 +12,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Globalization;
+using System.Threading;
+
 namespace Privatezilla
 {
     public partial class MainWindow : Form
@@ -94,7 +97,7 @@ namespace Privatezilla
         public MainWindow()
         {
             // Uncomment lower line and add lang code to run localization test
-            // Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
+            // Thread.CurrentThread.CurrentUICulture = new CultureInfo("de");
 
             InitializeComponent();
 
