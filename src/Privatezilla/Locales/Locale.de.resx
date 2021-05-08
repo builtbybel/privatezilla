@@ -158,8 +158,8 @@
   <data name="helpApp" xml:space="preserve">
     <value>Info zu einer Einstellung: \r\nBewegen Sie den Cursor über eine Einstellung, um eine kurze Erläuterung anzuzeigen
                                            \r\nAnalyse (Button): Bestimmt, welche Einstellungen auf Ihrem System aktiviert und konfiguriert werden oder nicht. Es werden noche KEINE Systemänderungen vorgenommen! 
-                                           \r\nAusgewählte (Button): Dies wird alle ausgewählten Einstellungen aktivieren.
-                                           \r\nAusgewählte zurücksetzen (Button): Damit werden die Standardeinstellungen für Windows 10 wiederhergestellt.
+                                           \r\nAusgewähltes anwenden (Button): Dies wird alle ausgewählten Einstellungen aktivieren.
+                                           \r\nAusgewähltes zurücksetzen (Button): Damit werden die Standardeinstellungen für Windows 10 wiederhergestellt.
                                            \r\nKonfiguriert (Zustand): Dies gibt an, dass Ihre Privatsphäre geschützt ist.
                                            \r\nNicht konfiguriert (Zustand): Dies bedeutet, dass die Windows 10-Einstellungen vorhanden sind.</value>
     <comment>Main menu</comment>

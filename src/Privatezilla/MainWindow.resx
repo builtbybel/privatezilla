@@ -413,11 +413,14 @@
   <data name="PBar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
+  <data name="PBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="PBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 41</value>
+    <value>13, 54</value>
   </data>
   <data name="PBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>814, 5</value>
+    <value>702, 5</value>
   </data>
   <data name="PBar.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -456,10 +459,10 @@
     <value>Segoe UI Semilight, 12pt</value>
   </data>
   <data name="LvwStatus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 50</value>
+    <value>9, 62</value>
   </data>
   <data name="LvwStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>704, 720</value>
+    <value>704, 708</value>
   </data>
   <data name="LvwStatus.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -486,7 +489,7 @@
     <value>9, 7</value>
   </data>
   <data name="LblStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>704, 40</value>
+    <value>704, 50</value>
   </data>
   <data name="LblStatus.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>

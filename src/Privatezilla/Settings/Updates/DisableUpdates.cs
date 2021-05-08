@@ -60,10 +60,9 @@ namespace Privatezilla.Setting.Updates
                 return true;
             }
             catch
-            {}
+            { }
 
             return false;
         }
-
     }
 }

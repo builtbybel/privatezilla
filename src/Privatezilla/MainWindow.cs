@@ -12,9 +12,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using System.Globalization;
-using System.Threading;
-
 namespace Privatezilla
 {
     public partial class MainWindow : Form
@@ -376,11 +373,9 @@ namespace Privatezilla
             DoProgress(100);
 
             // Summary
-            ListViewItem sum = new ListViewItem(Locale.summarySelected + " " + $"{selectedSettings.Count}" + " | " + Locale.summaryConfigured + " " + $"{selectedSettings.Count - performSettingsCount}" + " | " + Locale.summaryNotConfigured + " " + $"{performSettingsCount}");
-            sum.SubItems.Add(Locale.summaryInfo);
-            LvwStatus.Items.Insert(0, sum);
+            var sum = (Locale.summarySelected + " " + $"{selectedSettings.Count}" + " - " + Locale.summaryConfigured + " " + $"{selectedSettings.Count - performSettingsCount}" + " - " + Locale.summaryNotConfigured + " " + $"{performSettingsCount}");
+            LblStatus.Text = Locale.statusFinishAnalyze + "\n" + sum;
 
-            LblStatus.Text = Locale.statusFinishAnalyze;
             BtnSettingsAnalyze.Enabled = true;
             LvwStatus.EndUpdate();
 
@@ -493,7 +488,7 @@ namespace Privatezilla
 
         private void Info_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Privatezilla" + "\nVersion " + Program.GetCurrentVersionTostring() + " (Phoenix)\r\n" +
+            MessageBox.Show("Privatezilla" + "\nVersion " + Program.GetCurrentVersionTostring() + " (Pollux)\r\n" +
                                             Locale.infoApp.Replace("\\t", "\t"), "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

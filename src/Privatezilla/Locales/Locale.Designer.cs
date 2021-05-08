@@ -1255,7 +1255,7 @@ namespace Privatezilla.Locales {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die The Inventory Collector inventories applications files devices and drivers on the system and sends the information to Microsoft. This information is used to help diagnose compatibility problems.\nNote: This setting setting has no effect if the Customer Experience Improvement Program is turned off. The Inventory Collector will be off. ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die The Inventory Collector inventories applications files devices and drivers on the system and sends the information to Microsoft. This information is used to help diagnose compatibility problems.\nNote: This setting has no effect if the Customer Experience Improvement Program is turned off. The Inventory Collector will be off. ähnelt.
         /// </summary>
         internal static string settingsPrivacyInventoryCollectorInfo {
             get {
