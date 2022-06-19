@@ -4,7 +4,7 @@ namespace Privatezilla.Setting.Bloatware
 {
     public static class BloatwareList
     {
-        // Our Windows 11 bloatware list
+        // Our Windows 10 bloatware list
         public static IEnumerable<string> GetList()
         {
             var apps = new List<string>
