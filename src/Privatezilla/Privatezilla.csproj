@@ -95,6 +95,7 @@
     <Compile Include="Settings\Apps\FileSystem.cs" />
     <Compile Include="Settings\Apps\EyeGaze.cs" />
     <Compile Include="Settings\Bloatware\RemoveUWPDefaults.cs" />
+    <Compile Include="Settings\Bloatware\UWPAppsEngine.cs" />
     <Compile Include="Settings\Defender\DisableSmartScreenStore.cs" />
     <Compile Include="Settings\Edge\BlockEdgeRollout.cs" />
     <Compile Include="Settings\Privacy\DisableCEIP.cs" />

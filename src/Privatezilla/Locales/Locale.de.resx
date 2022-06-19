@@ -378,10 +378,10 @@ Sie können mir außerdem folgen auf
     <value>Dadurch werden alle integrierten Apps, außer der Microsoft Store, entfernt.</value>
   </data>
   <data name="settingsBloatwareRemoveUWPDefaults" xml:space="preserve">
-    <value>Alle integrierten Apps, außer Standard-Apps, entfernen</value>
+    <value>Nur vorinstallierte Bloatware Apps entfernen</value>
   </data>
   <data name="settingsBloatwareRemoveUWPDefaultsInfo" xml:space="preserve">
-    <value>Dadurch werden alle integrierten Apps, außer folgenden, entfernt:\nMicrosoft Store\nApp Installer\nKalender\nMail\nRechner\nKamera\nSkype\nGroove Music\nKarte\n3D Paint\nIhr Telefon\nFotos\nNotizen\nWetter\nXbox</value>
+    <value>Der Abgleich findet anhand einer Community Liste statt</value>
   </data>
   <data name="settingsCortanaDisableBing" xml:space="preserve">
     <value>Bing in Windows-Suche deaktivieren</value>

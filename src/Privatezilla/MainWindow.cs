@@ -281,6 +281,7 @@ namespace Privatezilla
             LvwStatus.Refresh();
         }
 
+
         private void IncrementProgress()
         {
             _progress += _progressIncrement;
@@ -367,7 +368,7 @@ namespace Privatezilla
 
                 state.Tag = setting;
                 LvwStatus.Items.Add(state);
-                IncrementProgress();
+
             }
 
             DoProgress(100);
@@ -684,6 +685,7 @@ namespace Privatezilla
                     try
                     {
                         File.Copy(fileName, strDestPath + @"\" + Path.GetFileName(fileName));
+                        File.Delete(fileName);
                     }
                     catch (Exception ex)
                     { MessageBox.Show(ex.Message, this.Text); }

@@ -411,11 +411,11 @@ Add translation credits here!</comment>
     <comment>Settings &gt; Bloatware</comment>
   </data>
   <data name="settingsBloatwareRemoveUWPDefaults" xml:space="preserve">
-    <value>Remove all built-in apps except defaults</value>
+    <value>Remove pre-installed bloatware apps ONLY</value>
     <comment>Settings &gt; Bloatware</comment>
   </data>
   <data name="settingsBloatwareRemoveUWPDefaultsInfo" xml:space="preserve">
-    <value>This will remove all built-in apps except the following:\nMicrosoft Store\nApp Installer\nCalendar\nMail\nCalculator\nCamera\nSkype\nGroove Music\nMaps\nPaint 3D\nYour Phone\nPhotos\nSticky Notes\nWeather\nXbox</value>
+    <value>This will search and remove pre-installed bloatware apps fully automatically.\nThe matching takes place on the basis of a community list</value>
     <comment>Settings &gt; Bloatware</comment>
   </data>
   <data name="settingsCortanaDisableBing" xml:space="preserve">

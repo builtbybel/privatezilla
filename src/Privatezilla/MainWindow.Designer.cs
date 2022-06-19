@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
-            this.TvwSettings = new System.Windows.Forms.TreeView();
             this.LblMainMenu = new System.Windows.Forms.Button();
             this.MainMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.Help = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,6 +39,7 @@
             this.PnlNav = new System.Windows.Forms.Panel();
             this.LblPS = new System.Windows.Forms.LinkLabel();
             this.LblSettings = new System.Windows.Forms.LinkLabel();
+            this.TvwSettings = new System.Windows.Forms.TreeView();
             this.LstPS = new System.Windows.Forms.CheckedListBox();
             this.PnlSettings = new System.Windows.Forms.Panel();
             this.assetOpenGitHub = new System.Windows.Forms.PictureBox();
@@ -72,20 +72,6 @@
             this.PSMenu.SuspendLayout();
             this.PnlSettingsBottom.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // TvwSettings
-            // 
-            resources.ApplyResources(this.TvwSettings, "TvwSettings");
-            this.TvwSettings.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.TvwSettings.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TvwSettings.CheckBoxes = true;
-            this.TvwSettings.LineColor = System.Drawing.Color.DarkOrchid;
-            this.TvwSettings.Name = "TvwSettings";
-            this.TvwSettings.ShowLines = false;
-            this.TvwSettings.ShowNodeToolTips = true;
-            this.TvwSettings.ShowPlusMinus = false;
-            this.TvwSettings.TabStop = false;
-            this.TvwSettings.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.TvwSetting_AfterCheck);
             // 
             // LblMainMenu
             // 
@@ -169,6 +155,20 @@
             this.LblSettings.TabStop = true;
             this.LblSettings.VisitedLinkColor = System.Drawing.Color.DimGray;
             this.LblSettings.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LblSettings_LinkClicked);
+            // 
+            // TvwSettings
+            // 
+            resources.ApplyResources(this.TvwSettings, "TvwSettings");
+            this.TvwSettings.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.TvwSettings.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TvwSettings.CheckBoxes = true;
+            this.TvwSettings.LineColor = System.Drawing.Color.DarkOrchid;
+            this.TvwSettings.Name = "TvwSettings";
+            this.TvwSettings.ShowLines = false;
+            this.TvwSettings.ShowNodeToolTips = true;
+            this.TvwSettings.ShowPlusMinus = false;
+            this.TvwSettings.TabStop = false;
+            this.TvwSettings.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.TvwSetting_AfterCheck);
             // 
             // LstPS
             // 
@@ -411,7 +411,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.TreeView TvwSettings;
         private System.Windows.Forms.Button LblMainMenu;
         private System.Windows.Forms.ContextMenuStrip MainMenu;
         private System.Windows.Forms.ToolStripMenuItem Info;
@@ -422,12 +421,7 @@
         private System.Windows.Forms.LinkLabel LblPS;
         private System.Windows.Forms.CheckedListBox LstPS;
         private System.Windows.Forms.Panel PnlSettings;
-        private System.Windows.Forms.ListView LvwStatus;
-        private System.Windows.Forms.ColumnHeader Setting;
-        private System.Windows.Forms.ColumnHeader State;
         private System.Windows.Forms.Button BtnSettingsUndo;
-        private System.Windows.Forms.ProgressBar PBar;
-        private System.Windows.Forms.Label LblStatus;
         private System.Windows.Forms.Button BtnSettingsDo;
         private System.Windows.Forms.Button BtnSettingsAnalyze;
         private System.Windows.Forms.Panel PnlPS;
@@ -445,6 +439,12 @@
         private System.Windows.Forms.Panel PnlSettingsBottom;
         private System.Windows.Forms.Button BtnDoPS;
         private System.Windows.Forms.CheckBox ChkCodePS;
+        private System.Windows.Forms.TreeView TvwSettings;
+        private System.Windows.Forms.ProgressBar PBar;
+        private System.Windows.Forms.ListView LvwStatus;
+        private System.Windows.Forms.ColumnHeader Setting;
+        private System.Windows.Forms.ColumnHeader State;
+        private System.Windows.Forms.Label LblStatus;
     }
 }
 

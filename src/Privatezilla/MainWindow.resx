@@ -117,42 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TvwSettings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="TvwSettings.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semilight, 12pt</value>
-  </data>
-  <data name="TvwSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 88</value>
-  </data>
-  <data name="TvwSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 746</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TvwSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;TvwSettings.Name" xml:space="preserve">
-    <value>TvwSettings</value>
-  </data>
-  <data name="&gt;&gt;TvwSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TvwSettings.Parent" xml:space="preserve">
-    <value>PnlNav</value>
-  </data>
-  <data name="&gt;&gt;TvwSettings.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="LblMainMenu.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="LblMainMenu.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="LblMainMenu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe MDL2 Assets, 12pt, style=Bold</value>
   </data>
@@ -182,6 +155,15 @@
   </metadata>
   <data name="MainMenu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="MainMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 116</value>
+  </data>
+  <data name="&gt;&gt;MainMenu.Name" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;MainMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Help.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12.75pt</value>
@@ -226,15 +208,6 @@
   </data>
   <data name="Info.Text" xml:space="preserve">
     <value>Info</value>
-  </data>
-  <data name="MainMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>271, 116</value>
-  </data>
-  <data name="&gt;&gt;MainMenu.Name" xml:space="preserve">
-    <value>MainMenu</value>
-  </data>
-  <data name="&gt;&gt;MainMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <metadata name="PnlNav.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -308,6 +281,33 @@
   <data name="&gt;&gt;LblSettings.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="TvwSettings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="TvwSettings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 12pt</value>
+  </data>
+  <data name="TvwSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 88</value>
+  </data>
+  <data name="TvwSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 746</value>
+  </data>
+  <data name="TvwSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;TvwSettings.Name" xml:space="preserve">
+    <value>TvwSettings</value>
+  </data>
+  <data name="&gt;&gt;TvwSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TvwSettings.Parent" xml:space="preserve">
+    <value>PnlNav</value>
+  </data>
+  <data name="&gt;&gt;TvwSettings.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="LstPS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
@@ -365,6 +365,78 @@
   <data name="PnlSettings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="&gt;&gt;assetOpenGitHub.Name" xml:space="preserve">
+    <value>assetOpenGitHub</value>
+  </data>
+  <data name="&gt;&gt;assetOpenGitHub.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;assetOpenGitHub.Parent" xml:space="preserve">
+    <value>PnlSettings</value>
+  </data>
+  <data name="&gt;&gt;assetOpenGitHub.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PBar.Name" xml:space="preserve">
+    <value>PBar</value>
+  </data>
+  <data name="&gt;&gt;PBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PBar.Parent" xml:space="preserve">
+    <value>PnlSettings</value>
+  </data>
+  <data name="&gt;&gt;PBar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;LvwStatus.Name" xml:space="preserve">
+    <value>LvwStatus</value>
+  </data>
+  <data name="&gt;&gt;LvwStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LvwStatus.Parent" xml:space="preserve">
+    <value>PnlSettings</value>
+  </data>
+  <data name="&gt;&gt;LvwStatus.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;LblStatus.Name" xml:space="preserve">
+    <value>LblStatus</value>
+  </data>
+  <data name="&gt;&gt;LblStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblStatus.Parent" xml:space="preserve">
+    <value>PnlSettings</value>
+  </data>
+  <data name="&gt;&gt;LblStatus.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="PnlSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 0</value>
+  </data>
+  <data name="PnlSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>716, 773</value>
+  </data>
+  <data name="PnlSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="&gt;&gt;PnlSettings.Name" xml:space="preserve">
+    <value>PnlSettings</value>
+  </data>
+  <data name="&gt;&gt;PnlSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlSettings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PnlSettings.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>229, 19</value>
+  </metadata>
   <data name="assetOpenGitHub.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -392,9 +464,6 @@
   <data name="assetOpenGitHub.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
-  <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>229, 19</value>
-  </metadata>
   <data name="assetOpenGitHub.ToolTip" xml:space="preserve">
     <value>Open @github.com/builtbybel/privatezilla</value>
   </data>
@@ -443,18 +512,6 @@
   <data name="LvwStatus.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="Setting.Text" xml:space="preserve">
-    <value>Setting</value>
-  </data>
-  <data name="Setting.Width" type="System.Int32, mscorlib">
-    <value>550</value>
-  </data>
-  <data name="State.Text" xml:space="preserve">
-    <value>State</value>
-  </data>
-  <data name="State.Width" type="System.Int32, mscorlib">
-    <value>150</value>
-  </data>
   <data name="LvwStatus.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semilight, 12pt</value>
   </data>
@@ -479,11 +536,26 @@
   <data name="&gt;&gt;LvwStatus.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="Setting.Text" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="Setting.Width" type="System.Int32, mscorlib">
+    <value>550</value>
+  </data>
+  <data name="State.Text" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="State.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
   <data name="LblStatus.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
   <data name="LblStatus.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <data name="LblStatus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="LblStatus.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 7</value>
@@ -508,27 +580,6 @@
   </data>
   <data name="&gt;&gt;LblStatus.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="PnlSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 0</value>
-  </data>
-  <data name="PnlSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>716, 773</value>
-  </data>
-  <data name="PnlSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>113</value>
-  </data>
-  <data name="&gt;&gt;PnlSettings.Name" xml:space="preserve">
-    <value>PnlSettings</value>
-  </data>
-  <data name="&gt;&gt;PnlSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PnlSettings.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PnlSettings.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="BtnSettingsUndo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -631,6 +682,78 @@
   </data>
   <data name="PnlPS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;BtnMenuPS.Name" xml:space="preserve">
+    <value>BtnMenuPS</value>
+  </data>
+  <data name="&gt;&gt;BtnMenuPS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnMenuPS.Parent" xml:space="preserve">
+    <value>PnlPS</value>
+  </data>
+  <data name="&gt;&gt;BtnMenuPS.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LblPSHeader.Name" xml:space="preserve">
+    <value>LblPSHeader</value>
+  </data>
+  <data name="&gt;&gt;LblPSHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblPSHeader.Parent" xml:space="preserve">
+    <value>PnlPS</value>
+  </data>
+  <data name="&gt;&gt;LblPSHeader.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TxtConsolePS.Name" xml:space="preserve">
+    <value>TxtConsolePS</value>
+  </data>
+  <data name="&gt;&gt;TxtConsolePS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtConsolePS.Parent" xml:space="preserve">
+    <value>PnlPS</value>
+  </data>
+  <data name="&gt;&gt;TxtConsolePS.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;TxtPSInfo.Name" xml:space="preserve">
+    <value>TxtPSInfo</value>
+  </data>
+  <data name="&gt;&gt;TxtPSInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtPSInfo.Parent" xml:space="preserve">
+    <value>PnlPS</value>
+  </data>
+  <data name="&gt;&gt;TxtPSInfo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="PnlPS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 0</value>
+  </data>
+  <data name="PnlPS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>716, 773</value>
+  </data>
+  <data name="PnlPS.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="PnlPS.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;PnlPS.Name" xml:space="preserve">
+    <value>PnlPS</value>
+  </data>
+  <data name="&gt;&gt;PnlPS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlPS.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PnlPS.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="BtnMenuPS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -780,35 +903,20 @@ To obtain new objects (templates, scripts etc.) visit the Marketplace in the upp
   <data name="&gt;&gt;TxtPSInfo.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="PnlPS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 0</value>
-  </data>
-  <data name="PnlPS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>716, 773</value>
-  </data>
-  <data name="PnlPS.TabIndex" type="System.Int32, mscorlib">
-    <value>113</value>
-  </data>
-  <data name="PnlPS.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;PnlPS.Name" xml:space="preserve">
-    <value>PnlPS</value>
-  </data>
-  <data name="&gt;&gt;PnlPS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PnlPS.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PnlPS.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <metadata name="PSMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 19</value>
   </metadata>
   <data name="PSMenu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="PSMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 82</value>
+  </data>
+  <data name="&gt;&gt;PSMenu.Name" xml:space="preserve">
+    <value>PSMenu</value>
+  </data>
+  <data name="&gt;&gt;PSMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PSImport.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
@@ -854,14 +962,56 @@ To obtain new objects (templates, scripts etc.) visit the Marketplace in the upp
   <data name="PSMarketplace.Text" xml:space="preserve">
     <value>Visit Marketplace</value>
   </data>
-  <data name="PSMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>353, 82</value>
+  <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>229, 19</value>
+  </metadata>
+  <data name="&gt;&gt;BtnDoPS.Name" xml:space="preserve">
+    <value>BtnDoPS</value>
   </data>
-  <data name="&gt;&gt;PSMenu.Name" xml:space="preserve">
-    <value>PSMenu</value>
+  <data name="&gt;&gt;BtnDoPS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PSMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;BtnDoPS.Parent" xml:space="preserve">
+    <value>PnlSettingsBottom</value>
+  </data>
+  <data name="&gt;&gt;BtnDoPS.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ChkCodePS.Name" xml:space="preserve">
+    <value>ChkCodePS</value>
+  </data>
+  <data name="&gt;&gt;ChkCodePS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChkCodePS.Parent" xml:space="preserve">
+    <value>PnlSettingsBottom</value>
+  </data>
+  <data name="&gt;&gt;ChkCodePS.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="PnlSettingsBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="PnlSettingsBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>367, 779</value>
+  </data>
+  <data name="PnlSettingsBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>716, 58</value>
+  </data>
+  <data name="PnlSettingsBottom.TabIndex" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <data name="&gt;&gt;PnlSettingsBottom.Name" xml:space="preserve">
+    <value>PnlSettingsBottom</value>
+  </data>
+  <data name="&gt;&gt;PnlSettingsBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlSettingsBottom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PnlSettingsBottom.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="BtnDoPS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -943,30 +1093,6 @@ To obtain new objects (templates, scripts etc.) visit the Marketplace in the upp
   </data>
   <data name="&gt;&gt;ChkCodePS.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="PnlSettingsBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="PnlSettingsBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 779</value>
-  </data>
-  <data name="PnlSettingsBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>716, 58</value>
-  </data>
-  <data name="PnlSettingsBottom.TabIndex" type="System.Int32, mscorlib">
-    <value>114</value>
-  </data>
-  <data name="&gt;&gt;PnlSettingsBottom.Name" xml:space="preserve">
-    <value>PnlSettingsBottom</value>
-  </data>
-  <data name="&gt;&gt;PnlSettingsBottom.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PnlSettingsBottom.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PnlSettingsBottom.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

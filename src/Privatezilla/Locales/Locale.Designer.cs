@@ -19,7 +19,7 @@ namespace Privatezilla.Locales {
     // -Klasse über ein Tool wie ResGen oder Visual Studio automatisch generiert.
     // Um einen Member hinzuzufügen oder zu entfernen, bearbeiten Sie die .ResX-Datei und führen dann ResGen
     // mit der /str-Option erneut aus, oder Sie erstellen Ihr VS-Projekt neu.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Locale {
@@ -733,7 +733,7 @@ namespace Privatezilla.Locales {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Remove all built-in apps except defaults ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Remove pre-installed bloatware apps ONLY ähnelt.
         /// </summary>
         internal static string settingsBloatwareRemoveUWPDefaults {
             get {
@@ -742,7 +742,7 @@ namespace Privatezilla.Locales {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die This will remove all built-in apps except the following:\nMicrosoft Store\nApp Installer\nCalendar\nMail\nCalculator\nCamera\nSkype\nGroove Music\nMaps\nPaint 3D\nYour Phone\nPhotos\nSticky Notes\nWeather\nXbox ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die This will search and remove pre-installed bloatware apps fully automatically.\nThe matching takes place on the basis of a community list ähnelt.
         /// </summary>
         internal static string settingsBloatwareRemoveUWPDefaultsInfo {
             get {
