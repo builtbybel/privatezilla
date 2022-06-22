@@ -197,7 +197,7 @@ Traduzione di: garf02</comment>
     <comment>GUI</comment>
   </data>
   <data name="LblStatus" xml:space="preserve">
-    <value>Press Analyze to check for configured settings.</value>
+    <value>Premere Analizza per controllare la configurazione delle impostazioni.</value>
     <comment>GUI</comment>
   </data>
   <data name="msgAppCompatibility" xml:space="preserve">
