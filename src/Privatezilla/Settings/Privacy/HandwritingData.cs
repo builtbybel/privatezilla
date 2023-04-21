@@ -10,6 +10,8 @@ namespace Privatezilla.Setting.Privacy
         private const string RestrictImplicitTextCollection = @"HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\InputPersonalization";
         private const string PreventHandwritingErrorReports = @"HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\HandwritingErrorReports";
         private const string PreventHandwritingDataSharing = @"HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TabletPC";
+        private const string AllowLinguisticDataCollection = @"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\TextInput";
+        
         private const int DesiredValue = 1;
 
         public override string ID()
@@ -29,7 +31,8 @@ namespace Privatezilla.Setting.Privacy
                  RegistryHelper.IntEquals(RestrictImplicitInkCollection, "RestrictImplicitInkCollection", DesiredValue) &&
                  RegistryHelper.IntEquals(RestrictImplicitTextCollection, "RestrictImplicitTextCollection", DesiredValue) &&
                  RegistryHelper.IntEquals(PreventHandwritingErrorReports, "PreventHandwritingErrorReports", DesiredValue) &&
-                 RegistryHelper.IntEquals(PreventHandwritingDataSharing, "PreventHandwritingDataSharing", DesiredValue)
+                 RegistryHelper.IntEquals(PreventHandwritingDataSharing, "PreventHandwritingDataSharing", DesiredValue) &&
+                 RegistryHelper.IntEquals(AllowLinguisticDataCollection, "AllowLinguisticDataCollection", 0)
              );
         }
 
@@ -42,6 +45,7 @@ namespace Privatezilla.Setting.Privacy
                 Registry.SetValue(RestrictImplicitTextCollection, "RestrictImplicitTextCollection", DesiredValue, RegistryValueKind.DWord);
                 Registry.SetValue(PreventHandwritingErrorReports, "PreventHandwritingErrorReports", DesiredValue, RegistryValueKind.DWord);
                 Registry.SetValue(PreventHandwritingDataSharing, "PreventHandwritingDataSharing", DesiredValue, RegistryValueKind.DWord);
+                Registry.SetValue(AllowLinguisticDataCollection, "AllowLinguisticDataCollection", 0, RegistryValueKind.DWord);
                 return true;
             }
             catch
@@ -58,7 +62,8 @@ namespace Privatezilla.Setting.Privacy
                 Registry.SetValue(RestrictImplicitInkCollection, "RestrictImplicitInkCollection", 0, RegistryValueKind.DWord);
                 Registry.SetValue(RestrictImplicitTextCollection, "RestrictImplicitTextCollection", 0, RegistryValueKind.DWord);
                 Registry.SetValue(PreventHandwritingErrorReports, "PreventHandwritingErrorReports", 0, RegistryValueKind.DWord);
-                Registry.SetValue(PreventHandwritingDataSharing, "PreventHandwritingDataSharing", 0, RegistryValueKind.DWord); ;
+                Registry.SetValue(PreventHandwritingDataSharing, "PreventHandwritingDataSharing", 0, RegistryValueKind.DWord);
+                Registry.SetValue(AllowLinguisticDataCollection, "AllowLinguisticDataCollection", 1, RegistryValueKind.DWord);
                 return true;
             }
             catch
