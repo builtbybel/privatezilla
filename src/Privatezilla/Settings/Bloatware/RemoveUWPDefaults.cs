@@ -1,49 +1,65 @@
 ﻿using System;
 using System.Management.Automation;
 using System.IO;
+using Privatezilla.Locales;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace Privatezilla.Setting.Bloatware
 {
     internal class RemoveUWPDefaults : SettingBase
     {
+        private readonly PowerShell powerShell = PowerShell.Create();
+
         public override string ID()
         {
-            return "Remove all built-in apps except defaults";
+            return Locale.settingsBloatwareRemoveUWPDefaults;
         }
 
         public override string Info()
         {
-            return "This will remove all built-in apps except the following:\nMicrosoft Store\nApp Installer\nCalendar\nMail\nCalculator\nCamera\nSkype\nGroove Music\nMaps\nPaint 3D\nYour Phone\nPhotos\nSticky Notes\nWeather\nXbox";
+            return Locale.settingsBloatwareRemoveUWPDefaultsInfo.Replace("\\n", "\n");
+        }
+
+        private void RemoveApps(string str)
+        {
+            using (PowerShell script = PowerShell.Create())
+            {
+                script.AddScript("Get-AppxPackage " + str + " | Remove-AppxPackage");
+
+                script.Invoke();
+            }
+
+
+            return;
         }
 
         public override bool CheckSetting()
         {
-            // NOTE! OPTIMIZE
-            // Check if app Windows.Photos exists and return false as configured
-            var appPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Packages", "Microsoft.Windows.Photos_8wekyb3d8bbwe");
+            var apps = BloatwareList.GetList();
 
-            if (Directory.Exists(appPath))
+            powerShell.Commands.Clear();
+            powerShell.AddCommand("get-appxpackage");
+            powerShell.AddCommand("Select").AddParameter("property", "name");
+
+
+            foreach (PSObject result in powerShell.Invoke())
             {
-                return false;
-            }
+                string current = result.ToString();
 
+                if (!apps.Contains(Regex.Replace(current, "(@{Name=)|(})", ""))) continue;
+            }
 
             return true;
         }
 
         public override bool DoSetting()
         {
-            using (PowerShell script = PowerShell.Create())
-            {
-                script.AddScript("Get-appxprovisionedpackage –online | where-object {$_.packagename –notlike “*store*” -and $_.packagename –notlike “*appinstaller*” -and $_.packagename –notlike “*calculator*” -and $_.packagename –notlike “*photos*” -and $_.packagename –notlike “*sticky*” -and $_.packagename –notlike “*skypeapp*” -and $_.packagename –notlike “*alarms*” -and $_.packagename –notlike “*maps*” -and $_.packagename –notlike “*camera*” -and $_.packagename –notlike “*xbox*” -and $_.packagename –notlike “*communicationssapps*” -and $_.packagename –notlike “*zunemusic*” -and $_.packagename –notlike “*mspaint*” -and $_.packagename –notlike “*yourphone*” -and $_.packagename –notlike “*bingweather*”} | Remove-AppxProvisionedPackage –online");
-                script.AddScript("Get-AppxPackage | where-object {$_.name –notlike “*store*” -and $_.name –notlike “*appinstaller*” -and $_.name –notlike “*calculator*” -and $_.name –notlike “*photos*” -and $_.name –notlike “*sticky*” -and $_.name –notlike “*skypeapp*” -and $_.name –notlike“*alarms*” -and $_.name –notlike “*maps*” -and $_.name –notlike “*camera*” -and $_.name –notlike “*xbox*” -and $_.name –notlike “*communicationssapps*” -and $_.name –notlike “*zunemusic*” -and $_.name –notlike “*mspaint*” -and $_.name –notlike “*yourphone*” -and $_.name –notlike “*bingweather*”} | Remove-AppxPackage");
+            var apps = BloatwareList.GetList();
 
-                try
-                {
-                    script.Invoke();
-                }
-                catch
-                { }
+            foreach (var str in apps)
+            {
+                RemoveApps(str);
             }
 
             return true;
