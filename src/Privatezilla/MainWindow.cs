@@ -91,6 +91,18 @@ namespace Privatezilla
             State.Text = Locale.columnState;     // State column
         }
 
+        private void AutoAdjustScreensize()
+        {
+            var screen = Screen.FromControl(this);
+            var screenSize = screen.Bounds.Size;
+
+            if (Width > screenSize.Width)
+                Width = screenSize.Width;
+
+            if (Height > screenSize.Height)
+                Height = screenSize.Height - 30; //Height -30 because of the Windows Task bar
+        }
+
         public MainWindow()
         {
             // Uncomment lower line and add lang code to run localization test
@@ -109,6 +121,9 @@ namespace Privatezilla
 
             // GUI localization
             Globalization();
+
+            //Adjust to current screensize if window is too big
+            AutoAdjustScreensize();
         }
 
         public void InitializeSettings()
